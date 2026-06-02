@@ -1,0 +1,20 @@
+set_property SRC_FILE_INFO {cfile:d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_processing_system7_0_0/diagrama_bloques_processing_system7_0_0/diagrama_bloques_processing_system7_0_0_in_context.xdc rfile:../../../GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_processing_system7_0_0/diagrama_bloques_processing_system7_0_0/diagrama_bloques_processing_system7_0_0_in_context.xdc id:1 order:EARLY scoped_inst:diagrama_bloques_i/processing_system7_0} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/Zybo-Z7-Master.xdc rfile:../../../Zybo-Z7-Master.xdc id:2} [current_design]
+current_instance diagrama_bloques_i/processing_system7_0
+set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 20.000 [get_ports {}]
+current_instance
+set_property src_info {type:XDC file:2 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
+set_property src_info {type:XDC file:2 line:137 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33     } [get_ports { BUZZER_PWM }]; #IO_L5P_T0_34 Sch=jd_p[1]
+set_property src_info {type:XDC file:2 line:138 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T15   IOSTANDARD LVCMOS33     } [get_ports { BTN0 }]; #IO_L5N_T0_34 Sch=jd_n[1]
+set_property src_info {type:XDC file:2 line:139 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33     } [get_ports { BTN1 }]; #IO_L6P_T0_34 Sch=jd_p[2]
+set_property src_info {type:XDC file:2 line:140 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33     } [get_ports { BTN_JY }]; #IO_L6N_T0_VREF_34 Sch=jd_n[2]
+set_property src_info {type:XDC file:2 line:143 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33     } [get_ports { iic_rtl_scl_io }]; #IO_L21P_T3_DQS_34 Sch=jd_p[4]
+set_property src_info {type:XDC file:2 line:144 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33     } [get_ports { iic_rtl_sda_io }]; #IO_L21N_T3_DQS_34 Sch=jd_n[4]

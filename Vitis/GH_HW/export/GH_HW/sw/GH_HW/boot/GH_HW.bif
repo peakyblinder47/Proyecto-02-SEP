@@ -1,0 +1,7 @@
+/*GH_HW*/
+the_ROM_image:
+{
+  [bootloader]<GH_HW/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

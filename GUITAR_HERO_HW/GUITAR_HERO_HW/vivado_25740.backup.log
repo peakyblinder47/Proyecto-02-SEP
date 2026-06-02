@@ -1,0 +1,222 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May 31 19:13:48 2026
+# Process ID: 25740
+# Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27256 D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.xpr
+# Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/vivado.log
+# Journal file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'diagrama_bloques.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+diagrama_bloques_BUZZER_AXI_0_1
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1056.586 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:user:BUZZER_AXI:1.0 - BUZZER_AXI_0
+Adding component instance block -- xilinx.com:module_ref:Debouncer:1.0 - Debouncer_0
+Adding component instance block -- xilinx.com:module_ref:Debouncer:1.0 - Debouncer_1
+Adding component instance block -- xilinx.com:module_ref:Debouncer:1.0 - Debouncer_2
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Successfully read diagram <diagrama_bloques> from BD file <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1473.426 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 [get_ips  diagrama_bloques_BUZZER_AXI_0_1] -log ip_upgrade.log
+Upgrading 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd'
+INFO: [IP_Flow 19-3422] Upgraded diagrama_bloques_BUZZER_AXI_0_1 (BUZZER_AXI_v1.0 1.0) from revision 3 to revision 5
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+Wrote  : <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ui/bd_3441bf86.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips diagrama_bloques_BUZZER_AXI_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd]
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_AXI_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques.hwh
+Generated Block Design Tcl file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques_bd.tcl
+Generated Hardware Definition File D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1473.426 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all diagrama_bloques_BUZZER_AXI_0_1] }
+catch { config_ip_cache -export [get_ips -all diagrama_bloques_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP diagrama_bloques_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 3.815 MB.
+export_ip_user_files -of_objects [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd]
+launch_runs diagrama_bloques_BUZZER_AXI_0_1_synth_1 -jobs 6
+[Sun May 31 19:15:07 2026] Launched diagrama_bloques_BUZZER_AXI_0_1_synth_1...
+Run output will be captured here: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -directory D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/sim_scripts -ip_user_files_dir D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files -ipstatic_source_dir D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.cache/compile_simlib/modelsim} {questa=D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.cache/compile_simlib/questa} {riviera=D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.cache/compile_simlib/riviera} {activehdl=D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun May 31 19:15:30 2026] Launched diagrama_bloques_BUZZER_AXI_0_1_synth_1, synth_1...
+Run output will be captured here:
+diagrama_bloques_BUZZER_AXI_0_1_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/runme.log
+synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/runme.log
+[Sun May 31 19:15:30 2026] Launched impl_1...
+Run output will be captured here: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1/runme.log
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 1 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1541.566 ; gain = 34.078
+ipx::edit_ip_in_project -upgrade true -name BUZZER_AXI_v1_0_project -directory D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.tmp/BUZZER_AXI_v1_0_project d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/proyecto-02-sep/guitar_hero_hw/guitar_hero_hw/guitar_hero_hw.tmp/buzzer_axi_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1541.566 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1541.566 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-4300] HDL parameter 'CLK_FREQ' has its value changed from '125000000' to '50000000'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project GUITAR_HERO_HW
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+report_ip_status -name ip_status
+current_project BUZZER_AXI_v1_0_project
+current_project GUITAR_HERO_HW
+upgrade_ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 [get_ips  diagrama_bloques_BUZZER_AXI_0_1] -log ip_upgrade.log
+Upgrading 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd'
+INFO: [IP_Flow 19-3422] Upgraded diagrama_bloques_BUZZER_AXI_0_1 (BUZZER_AXI_v1.0 1.0) from revision 5 to revision 6
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+Wrote  : <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ui/bd_3441bf86.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips diagrama_bloques_BUZZER_AXI_0_1] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_AXI_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques.hwh
+Generated Block Design Tcl file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques_bd.tcl
+Generated Hardware Definition File D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP diagrama_bloques_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 4.122 MB.
+[Sun May 31 20:20:21 2026] Launched diagrama_bloques_BUZZER_AXI_0_1_synth_1, synth_1...
+Run output will be captured here:
+diagrama_bloques_BUZZER_AXI_0_1_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/runme.log
+synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/runme.log
+[Sun May 31 20:20:21 2026] Launched impl_1...
+Run output will be captured here: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2118.219 ; gain = 0.000
+report_ip_status -name ip_status 
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2150.148 ; gain = 31.930
+current_project BUZZER_AXI_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+set_property core_revision 7 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project GUITAR_HERO_HW
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+report_ip_status -name ip_status
+current_project BUZZER_AXI_v1_0_project
+current_project GUITAR_HERO_HW
+upgrade_ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 [get_ips  diagrama_bloques_BUZZER_AXI_0_1] -log ip_upgrade.log
+Upgrading 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd'
+INFO: [IP_Flow 19-3422] Upgraded diagrama_bloques_BUZZER_AXI_0_1 (BUZZER_AXI_v1.0 1.0) from revision 6 to revision 7
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips diagrama_bloques_BUZZER_AXI_0_1] -no_script -sync -force -quiet
+make_wrapper -files [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -top
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2150.148 ; gain = 0.000
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'diagrama_bloques.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_AXI_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques.hwh
+Generated Block Design Tcl file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques_bd.tcl
+Generated Hardware Definition File D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP diagrama_bloques_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 4.428 MB.
+[Sun May 31 20:35:18 2026] Launched diagrama_bloques_BUZZER_AXI_0_1_synth_1, synth_1...
+Run output will be captured here:
+diagrama_bloques_BUZZER_AXI_0_1_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/runme.log
+synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/runme.log
+[Sun May 31 20:35:18 2026] Launched impl_1...
+Run output will be captured here: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2150.148 ; gain = 0.000
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2150.148 ; gain = 0.000
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 31 22:42:45 2026...

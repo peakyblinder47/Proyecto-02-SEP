@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May 31 20:37:02 2026
+# Process ID: 3920
+# Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1
+# Command line: vivado.exe -log diagrama_bloques_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source diagrama_bloques_wrapper.tcl -notrace
+# Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1/diagrama_bloques_wrapper.vdi
+# Journal file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source diagrama_bloques_wrapper.tcl -notrace

@@ -1,0 +1,58 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun May 31 20:34:27 2026
+| Host         : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'diagrama_bloques_BUZZER_AXI_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of diagrama_bloques_BUZZER_AXI_0_1 (xilinx.com:user:BUZZER_AXI:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun May 31 20:19:27 2026
+| Host         : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'diagrama_bloques_BUZZER_AXI_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of diagrama_bloques_BUZZER_AXI_0_1 (xilinx.com:user:BUZZER_AXI:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun May 31 19:14:48 2026
+| Host         : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'diagrama_bloques_BUZZER_AXI_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of diagrama_bloques_BUZZER_AXI_0_1 (xilinx.com:user:BUZZER_AXI:1.0) from (Rev. 3) to (Rev. 5)
+

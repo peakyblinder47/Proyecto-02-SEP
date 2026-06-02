@@ -1,0 +1,268 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May 31 14:10:57 2026
+# Process ID: 17232
+# Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10632 D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.xpr
+# Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/vivado.log
+# Journal file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1049.438 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:module_ref:BUZZER:1.0 - BUZZER_0
+Successfully read diagram <diagrama_bloques> from BD file <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1051.328 ; gain = 1.891
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_traffic_gen:3.0 axi_traffic_gen_0
+endgroup
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range_value property on PARAM_VALUE.ATG_HLT_CH_SELECT is not allowed in procedure update_gui_for_PARAM_VALUE.TRAFFIC_PROFILE
+delete_bd_objs [get_bd_cells axi_traffic_gen_0]
+create_peripheral xilinx.com user BUZZER_AXI 1.0 -dir D:/Proyecto-02-SEP/IP_CORES/BUZZER
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:BUZZER_AXI:1.0]
+generate_peripheral -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:BUZZER_AXI:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:BUZZER_AXI:1.0]
+set_property  ip_repo_paths  D:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0 [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0'.
+ipx::edit_ip_in_project -upgrade true -name edit_BUZZER_AXI_v1_0 -directory D:/Proyecto-02-SEP/IP_CORES/BUZZER d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1142.078 ; gain = 33.930
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1154.676 ; gain = 46.527
+update_compile_order -fileset sources_1
+current_project GUITAR_HERO_HW
+current_project edit_BUZZER_AXI_v1_0
+ipx::merge_project_changes ports [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project GUITAR_HERO_HW
+delete_bd_objs [get_bd_nets BTN1] [get_bd_nets BUZZER_0_BUZZER_PWM] [get_bd_nets clk_0_1] [get_bd_nets BTN_JY_0_1] [get_bd_nets BTN0_0_1] [get_bd_nets BUZZER_0_LEDS] [get_bd_cells BUZZER_0]
+delete_bd_objs [get_bd_ports LEDS]
+delete_bd_objs [get_bd_ports BUZZER_PWM]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_ports BTN1]
+delete_bd_objs [get_bd_ports BTN0]
+delete_bd_objs [get_bd_ports BTN_JY]
+delete_bd_objs [get_bd_ports clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 BUZZER_AXI_0
+endgroup
+delete_bd_objs [get_bd_cells BUZZER_AXI_0]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  D:/Proyecto-02-SEP/IP_CORES [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\Proyecto-02-SEP\IP_CORES\BUZZER\BUZZER_AXI_1.0\hdl\BUZZER_AXI_v1_0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\Proyecto-02-SEP\IP_CORES\BUZZER\BUZZER_AXI_1.0\hdl\BUZZER_AXI_v1_0_S00_AXI.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 BUZZER_AXI_0
+endgroup
+set_property location {4 1034 317} [get_bd_cells BUZZER_AXI_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/BUZZER_AXI_0/S00_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins BUZZER_AXI_0/S00_AXI]
+Slave segment '/BUZZER_AXI_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+startgroup
+make_bd_pins_external  [get_bd_pins BUZZER_AXI_0/PWM]
+endgroup
+set_property name PWM [get_bd_ports PWM_0]
+export_ip_user_files -of_objects  [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/new/BUZZER.vhd] -no_script -reset -force -quiet
+remove_files  D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/new/BUZZER.vhd
+update_module_reference diagrama_bloques_BUZZER_0_0
+ERROR: [filemgmt 56-189] Failed to resolve reference. Nothing was found in the project to match the name 'BUZZER'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+close [ open D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/new/Debouncer.vhd w ]
+add_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/new/Debouncer.vhd
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference Debouncer Debouncer_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+set_property location {0.5 157 -71} [get_bd_cells Debouncer_0]
+set_property location {1 163 -12} [get_bd_cells Debouncer_0]
+copy_bd_objs /  [get_bd_cells {Debouncer_0}]
+copy_bd_objs /  [get_bd_cells {Debouncer_1}]
+startgroup
+make_bd_pins_external  [get_bd_pins Debouncer_0/clk]
+endgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins Debouncer_1/clk]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins Debouncer_2/clk]
+set_property name clk [get_bd_ports clk_0]
+startgroup
+make_bd_pins_external  [get_bd_pins Debouncer_0/btn_AL]
+endgroup
+set_property name BTN0 [get_bd_ports btn_AL_0]
+startgroup
+make_bd_pins_external  [get_bd_pins Debouncer_1/btn_AL]
+endgroup
+set_property name BTN1 [get_bd_ports btn_AL_0]
+startgroup
+make_bd_pins_external  [get_bd_pins Debouncer_2/btn_AL]
+endgroup
+set_property name BTN_JY [get_bd_ports btn_AL_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {3 509 -21} [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.NUM_PORTS {3}] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_ports BTN0] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_ports BTN1] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins xlconcat_0/In2]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports clk] [get_bd_pins xlconcat_0/In2]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports BTN1] [get_bd_pins xlconcat_0/In1]'
+connect_bd_net [get_bd_ports BTN1] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_ports BTN_JY] [get_bd_pins xlconcat_0/In2]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports BTN_JY] [get_bd_pins xlconcat_0/In2]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports BTN1] [get_bd_pins xlconcat_0/In1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports BTN0] [get_bd_pins xlconcat_0/In0]'
+connect_bd_net [get_bd_pins Debouncer_0/press] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins Debouncer_1/press] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins Debouncer_2/press] [get_bd_pins xlconcat_0/In2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {5 1331 -85} [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {3} CONFIG.C_INTERRUPT_PRESENT {1}] [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins axi_gpio_0/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+set_property location {4 1306 -55} [get_bd_cells axi_gpio_0]
+startgroup
+set_property -dict [list CONFIG.C_INTERRUPT_PRESENT {0}] [get_bd_cells axi_gpio_0]
+endgroup
+regenerate_bd_layout
+set_property name BUZZER_PWM [get_bd_ports PWM]
+make_wrapper -files [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -top
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+Wrote  : <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ui/bd_3441bf86.ui> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
+make_wrapper: Time (s): cpu = 00:00:09 ; elapsed = 00:00:27 . Memory (MB): peak = 1633.398 ; gain = 153.141
+add_files -norecurse D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+update_compile_order -fileset sources_1
+set_property top diagrama_bloques_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'diagrama_bloques.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /iic_rtl, whose name 'iic_rtl' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /iic_rtl manually.
+Wrote  : <D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.srcs\sources_1\bd\diagrama_bloques\diagrama_bloques.bd> 
+Wrote  : <D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ui/bd_3441bf86.ui> 
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/sim/diagrama_bloques.vhd
+VHDL Output written to : D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Debouncer_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+Exporting to file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques.hwh
+Generated Block Design Tcl file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hw_handoff/diagrama_bloques_bd.tcl
+Generated Hardware Definition File D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.hwdef
+[Sun May 31 17:44:37 2026] Launched diagrama_bloques_axi_iic_0_0_synth_1, diagrama_bloques_rst_ps7_0_50M_0_synth_1, diagrama_bloques_Debouncer_1_0_synth_1, diagrama_bloques_axi_gpio_0_0_synth_1, diagrama_bloques_xbar_0_synth_1, diagrama_bloques_Debouncer_0_1_synth_1, diagrama_bloques_auto_pc_0_synth_1, diagrama_bloques_BUZZER_AXI_0_1_synth_1, diagrama_bloques_Debouncer_0_0_synth_1, diagrama_bloques_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+diagrama_bloques_axi_iic_0_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_axi_iic_0_0_synth_1/runme.log
+diagrama_bloques_rst_ps7_0_50M_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_rst_ps7_0_50M_0_synth_1/runme.log
+diagrama_bloques_Debouncer_1_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_Debouncer_1_0_synth_1/runme.log
+diagrama_bloques_axi_gpio_0_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_axi_gpio_0_0_synth_1/runme.log
+diagrama_bloques_xbar_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_xbar_0_synth_1/runme.log
+diagrama_bloques_Debouncer_0_1_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_Debouncer_0_1_synth_1/runme.log
+diagrama_bloques_auto_pc_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_auto_pc_0_synth_1/runme.log
+diagrama_bloques_BUZZER_AXI_0_1_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/runme.log
+diagrama_bloques_Debouncer_0_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_Debouncer_0_0_synth_1/runme.log
+diagrama_bloques_processing_system7_0_0_synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_processing_system7_0_0_synth_1/runme.log
+synth_1: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/runme.log
+[Sun May 31 17:44:39 2026] Launched impl_1...
+Run output will be captured here: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1710.250 ; gain = 76.852
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 3 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1787.887 ; gain = 59.418
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project edit_BUZZER_AXI_v1_0
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml' ignored by IP packager.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project GUITAR_HERO_HW
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.

@@ -1,0 +1,1321 @@
+!SESSION 2026-06-01 16:38:56.188 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\Proyecto-02-SEP\Vitis\.metadata\.bak_0.log
+Created Time: 2026-06-01 17:37:19.206
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:19.206
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:19.213
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-06-01 17:37:19.213
+!MESSAGE Generating MD5 hash for file: D:\Proyecto-02-SEP\Vitis\GH_HW\export\GH_HW\sw\GH_HW\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:19.217
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:19.219
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:29.017
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-1066
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:29.041
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-1066
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.046
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.052
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.055
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.069
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.069
+!MESSAGE XSCT Command: [version -server], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.071
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.071
+!MESSAGE XSCT Command: [version], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.073
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.073
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.084
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.084
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.112
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.115
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.123
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.123
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.144
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.150
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.161
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.161
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.178
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.192
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.192
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.220
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.220
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.229
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.250
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.250
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.260
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.261
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.273
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.273
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.304
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.308
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.308
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.310
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.328
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.328
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.412
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:30.412
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.424
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.456
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.465
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.467
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.498
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.498
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.543
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:33.543
+!MESSAGE XSCT Command: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:34.759
+!MESSAGE XSCT command with result: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:34.790
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:34.832
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:34.833
+!MESSAGE XSCT Command: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.088
+!MESSAGE XSCT command with result: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, diagrama_bloques_wrapper_14]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.088
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.090
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.092
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.109
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.111
+!MESSAGE XSCT Command: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.114
+!MESSAGE XSCT command with result: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.114
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.667
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.667
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.699
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.699
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.729
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:37.729
+!MESSAGE XSCT Command: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.020
+!MESSAGE XSCT command with result: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.020
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.089
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.178
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.194
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.194
+!MESSAGE XSCT Command: [con], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:37:38.228
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.561
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.582
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.584
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.590
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-06-01 17:41:55.590
+!MESSAGE Generating MD5 hash for file: D:\Proyecto-02-SEP\Vitis\GH_HW\export\GH_HW\sw\GH_HW\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.592
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:41:55.615
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:02.394
+!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-1123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:02.418
+!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-1123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.413
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.418
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.420
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.442
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.442
+!MESSAGE XSCT Command: [version -server], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.444
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.444
+!MESSAGE XSCT Command: [version], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.446
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.446
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.458
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.458
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.485
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.485
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.496
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.496
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.520
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.522
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.532
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.532
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.556
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.556
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.567
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.568
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.590
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.590
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.600
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.603
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.623
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.623
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.635
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.635
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.665
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.665
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.691
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.691
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.693
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.693
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.711
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.711
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.786
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:03.786
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:06.793
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:06.822
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.369
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.370
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.405
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.405
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.470
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:08.470
+!MESSAGE XSCT Command: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:09.701
+!MESSAGE XSCT command with result: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:09.757
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:09.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:09.923
+!MESSAGE XSCT Command: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.623
+!MESSAGE XSCT command with result: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, diagrama_bloques_wrapper_15]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.623
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.626
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.626
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.796
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.798
+!MESSAGE XSCT Command: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.800
+!MESSAGE XSCT command with result: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:12.800
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.362
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.364
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.371
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.371
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.529
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.531
+!MESSAGE XSCT Command: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.790
+!MESSAGE XSCT command with result: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.790
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.866
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.946
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.975
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:13.975
+!MESSAGE XSCT Command: [con], Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:42:14.013
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-48: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.195
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.225
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.225
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.229
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-06-01 17:44:06.231
+!MESSAGE Generating MD5 hash for file: D:\Proyecto-02-SEP\Vitis\GH_HW\export\GH_HW\sw\GH_HW\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.233
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:06.237
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-45: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:19.768
+!MESSAGE XSCT Command: [disconnect tcfchan#17], Thread: Thread-1180
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:19.805
+!MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-1180
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.808
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.817
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.820
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.830
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.830
+!MESSAGE XSCT Command: [version -server], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.835
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.835
+!MESSAGE XSCT Command: [version], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.837
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.837
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.846
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.846
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.871
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.871
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.880
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.880
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.904
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.911
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.919
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.919
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.935
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.948
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.954
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.958
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.983
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.983
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.992
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:20.996
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.019
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.021
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.028
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.030
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.054
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.058
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.080
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.080
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.080
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.089
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.109
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.109
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.186
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:21.188
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.206
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.233
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.251
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.251
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.278
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.279
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.327
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:24.327
+!MESSAGE XSCT Command: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:25.538
+!MESSAGE XSCT command with result: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:25.585
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:25.607
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:25.607
+!MESSAGE XSCT Command: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.478
+!MESSAGE XSCT command with result: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, diagrama_bloques_wrapper_16]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.478
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.478
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.478
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.493
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.497
+!MESSAGE XSCT Command: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.500
+!MESSAGE XSCT command with result: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.500
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.970
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.986
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.993
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:28.993
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.014
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.014
+!MESSAGE XSCT Command: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.259
+!MESSAGE XSCT command with result: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.260
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.332
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.432
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.458
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.458
+!MESSAGE XSCT Command: [con], Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 17:44:29.506
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-44: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.892
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.906
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.907
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.925
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-06-01 18:06:17.925
+!MESSAGE Generating MD5 hash for file: D:\Proyecto-02-SEP\Vitis\GH_HW\export\GH_HW\sw\GH_HW\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.927
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:06:17.929
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-46: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:20.640
+!MESSAGE XSCT Command: [disconnect tcfchan#18], Thread: Thread-1240
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:20.664
+!MESSAGE XSCT command with result: [disconnect tcfchan#18], Result: [null, ]. Thread: Thread-1240
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.657
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.669
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#19]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.672
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.692
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.694
+!MESSAGE XSCT Command: [version -server], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.695
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.697
+!MESSAGE XSCT Command: [version], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.697
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.698
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.705
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.711
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.740
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.740
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.760
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.760
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.792
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.805
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.805
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.833
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.833
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.852
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.852
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.886
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.886
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.896
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.896
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.940
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.944
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.956
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.956
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.989
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:21.989
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.037
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.037
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.044
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.044
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.074
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.074
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.153
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:22.153
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.169
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.211
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.217
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.217
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.264
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.264
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.328
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:25.338
+!MESSAGE XSCT Command: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:26.564
+!MESSAGE XSCT command with result: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:26.619
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:26.652
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:26.652
+!MESSAGE XSCT Command: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.870
+!MESSAGE XSCT command with result: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, diagrama_bloques_wrapper_17]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.874
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.876
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.876
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.894
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.894
+!MESSAGE XSCT Command: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.901
+!MESSAGE XSCT command with result: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:29.902
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.675
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.675
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.698
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.698
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.726
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:30.736
+!MESSAGE XSCT Command: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.030
+!MESSAGE XSCT command with result: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.030
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.098
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.208
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.230
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.230
+!MESSAGE XSCT Command: [con], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:08:31.310
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.032
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.051
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.053
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.061
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-06-01 18:10:14.063
+!MESSAGE Generating MD5 hash for file: D:\Proyecto-02-SEP\Vitis\GH_HW\export\GH_HW\sw\GH_HW\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.063
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:14.067
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:21.073
+!MESSAGE XSCT Command: [disconnect tcfchan#19], Thread: Thread-1300
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:21.112
+!MESSAGE XSCT command with result: [disconnect tcfchan#19], Result: [null, ]. Thread: Thread-1300
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.082
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.094
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#20]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.095
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.114
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.114
+!MESSAGE XSCT Command: [version -server], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.114
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.114
+!MESSAGE XSCT Command: [version], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.119
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.119
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.130
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.130
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.166
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.185
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.185
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.264
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.266
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.290
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.336
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.336
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.349
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.349
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.385
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.385
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.398
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.398
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.429
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.431
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.441
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.442
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.484
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.485
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.507
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FB80A" && level == 0}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.507
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.518
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.520
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.539
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.542
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.634
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:22.634
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.646
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.686
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.703
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FB80A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.703
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.728
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.728
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.807
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:25.807
+!MESSAGE XSCT Command: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:27.033
+!MESSAGE XSCT command with result: [fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:27.081
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:27.107
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:27.110
+!MESSAGE XSCT Command: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.779
+!MESSAGE XSCT command with result: [loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, diagrama_bloques_wrapper_18]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.779
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.781
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.781
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.800
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.800
+!MESSAGE XSCT Command: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.804
+!MESSAGE XSCT command with result: [source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:30.806
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.513
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.513
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.566
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.567
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.587
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.588
+!MESSAGE XSCT Command: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.897
+!MESSAGE XSCT command with result: [dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.906
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:31.966
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:32.062
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:32.083
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:32.083
+!MESSAGE XSCT Command: [con], Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-06-01 18:10:32.124
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-61: Launching Debugger_GH_SW-Default
+
+!ENTRY org.eclipse.tcf 4 0 2026-06-01 18:19:29.781
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read(Unknown Source)
+	at java.base/java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)

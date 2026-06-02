@@ -1,0 +1,504 @@
+#include <stdio.h>
+#include <string.h>
+
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "ff.h"
+#include "sleep.h"
+#include "xstatus.h"
+#include "platform.h"
+
+// ================================================================
+// AJUSTAR SEGÚN xparameters.h
+// ================================================================
+
+// Busca en xparameters.h el nombre real de tu IP.
+// Probablemente sea algo parecido a esto:
+#define BUZZER_BASEADDR XPAR_BUZZER_AXI_0_S00_AXI_BASEADDR
+
+// Busca el DEVICE_ID del AXI GPIO conectado a los botones.
+#define BTN_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define BTN_GPIO_CHANNEL   1
+
+// Nombre del WAV en la raíz de la SD.
+// Usa nombre 8.3 para evitar problemas si FatFs no tiene long file names.
+#define SONG_PATH "paint8.WAV"
+
+// ================================================================
+// Registros BUZZER_AXI
+// ================================================================
+
+#define BUZZER_REG_CTRL        0x00
+#define BUZZER_REG_DATA        0x04
+#define BUZZER_REG_FIFO_FREE   0x04
+#define BUZZER_REG_SAMPLES     0x08
+#define BUZZER_REG_FIFO_LEVEL  0x0C
+
+#define CTRL_PLAY        (1u << 0)
+#define CTRL_CLEAR_FIFO  (1u << 1)
+#define CTRL_CLEAR_FLAGS (1u << 2)
+#define CTRL_MUTE        (1u << 3)
+#define CTRL_PAUSE       (1u << 4)
+
+// ================================================================
+// Botones
+// ================================================================
+
+#define BTN_START_MASK 0x01  // BTN0
+#define BTN_STOP_MASK  0x02  // BTN1
+
+// ================================================================
+// Audio esperado
+// ================================================================
+
+#define EXPECTED_SAMPLE_RATE 8000
+#define EXPECTED_CHANNELS    1
+#define EXPECTED_BITS        8
+
+#define AUDIO_BUFFER_BYTES   512  // Debe ser múltiplo de 4
+
+// ================================================================
+// Variables globales
+// ================================================================
+
+static FATFS fatfs;
+static XGpio BtnGpio;
+
+typedef struct {
+    FIL file;
+    u32 data_start;
+    u32 data_size;
+    u32 bytes_sent;
+    int active;
+    int eof_reached;
+} AudioPlayer;
+
+static AudioPlayer player;
+static u8 audio_buffer[AUDIO_BUFFER_BYTES];
+
+// ================================================================
+// Helpers little-endian para WAV
+// ================================================================
+
+static u16 read_le16(const u8 *p)
+{
+    return (u16)p[0] | ((u16)p[1] << 8);
+}
+
+static u32 read_le32(const u8 *p)
+{
+    return (u32)p[0]
+        | ((u32)p[1] << 8)
+        | ((u32)p[2] << 16)
+        | ((u32)p[3] << 24);
+}
+
+// ================================================================
+// Acceso al IP BUZZER_AXI
+// ================================================================
+
+static void Buzzer_WriteCtrl(u32 value)
+{
+    Xil_Out32(BUZZER_BASEADDR + BUZZER_REG_CTRL, value);
+}
+
+static void Buzzer_Clear(void)
+{
+    // Apagar reproducción
+    Buzzer_WriteCtrl(0);
+
+    // Limpiar FIFO y flags.
+    // bit 1 = clear FIFO
+    // bit 2 = clear flags
+    Buzzer_WriteCtrl(CTRL_CLEAR_FIFO | CTRL_CLEAR_FLAGS);
+
+    // Volver a control en 0.
+    Buzzer_WriteCtrl(0);
+}
+
+static void Buzzer_Play(void)
+{
+    Buzzer_WriteCtrl(CTRL_PLAY);
+}
+
+static void Buzzer_Stop(void)
+{
+    Buzzer_WriteCtrl(0);
+}
+
+static u32 Buzzer_GetFreeWords(void)
+{
+    return Xil_In32(BUZZER_BASEADDR + BUZZER_REG_FIFO_FREE);
+}
+
+static u32 Buzzer_GetFifoLevel(void)
+{
+    return Xil_In32(BUZZER_BASEADDR + BUZZER_REG_FIFO_LEVEL);
+}
+
+static u32 Buzzer_GetStatus(void)
+{
+    return Xil_In32(BUZZER_BASEADDR + BUZZER_REG_CTRL);
+}
+
+static void Buzzer_WriteAudioWord(u32 word)
+{
+    // En nuestro VHDL, cualquier escritura a registros 1, 2 o 3
+    // mete una palabra de 32 bits al FIFO.
+    // Usamos siempre 0x04 por simplicidad.
+    Xil_Out32(BUZZER_BASEADDR + BUZZER_REG_DATA, word);
+}
+
+// ================================================================
+// Parser WAV simple pero robusto
+// Busca chunk "fmt " y chunk "data"
+// ================================================================
+
+static int Wav_OpenAndValidate(AudioPlayer *p, const char *filename)
+{
+    FRESULT fr;
+    UINT br;
+    u8 header[12];
+
+    memset(p, 0, sizeof(AudioPlayer));
+
+    fr = f_open(&p->file, filename, FA_READ);
+    if (fr != FR_OK) {
+        xil_printf("ERROR: no se pudo abrir %s. FR=%d\r\n", filename, fr);
+        return -1;
+    }
+
+    fr = f_read(&p->file, header, 12, &br);
+    if (fr != FR_OK || br != 12) {
+        xil_printf("ERROR: no se pudo leer header WAV\r\n");
+        f_close(&p->file);
+        return -1;
+    }
+
+    if (memcmp(&header[0], "RIFF", 4) != 0 || memcmp(&header[8], "WAVE", 4) != 0) {
+        xil_printf("ERROR: archivo no es RIFF/WAVE\r\n");
+        f_close(&p->file);
+        return -1;
+    }
+
+    int found_fmt = 0;
+    int found_data = 0;
+
+    u16 audio_format = 0;
+    u16 channels = 0;
+    u32 sample_rate = 0;
+    u16 bits_per_sample = 0;
+
+    while (!found_data) {
+        u8 chunk_header[8];
+
+        fr = f_read(&p->file, chunk_header, 8, &br);
+        if (fr != FR_OK || br != 8) {
+            xil_printf("ERROR: no se encontro chunk data\r\n");
+            f_close(&p->file);
+            return -1;
+        }
+
+        u32 chunk_size = read_le32(&chunk_header[4]);
+
+        if (memcmp(&chunk_header[0], "fmt ", 4) == 0) {
+            u8 fmt[16];
+
+            if (chunk_size < 16) {
+                xil_printf("ERROR: chunk fmt invalido\r\n");
+                f_close(&p->file);
+                return -1;
+            }
+
+            fr = f_read(&p->file, fmt, 16, &br);
+            if (fr != FR_OK || br != 16) {
+                xil_printf("ERROR: no se pudo leer fmt\r\n");
+                f_close(&p->file);
+                return -1;
+            }
+
+            audio_format    = read_le16(&fmt[0]);
+            channels        = read_le16(&fmt[2]);
+            sample_rate     = read_le32(&fmt[4]);
+            bits_per_sample = read_le16(&fmt[14]);
+
+            found_fmt = 1;
+
+            // Saltar bytes extra si existen
+            if (chunk_size > 16) {
+                f_lseek(&p->file, f_tell(&p->file) + (chunk_size - 16));
+            }
+
+            // Chunks WAV pueden ir alineados a 2 bytes
+            if (chunk_size & 1) {
+                f_lseek(&p->file, f_tell(&p->file) + 1);
+            }
+        }
+        else if (memcmp(&chunk_header[0], "data", 4) == 0) {
+            if (!found_fmt) {
+                xil_printf("ERROR: data aparecio antes de fmt\r\n");
+                f_close(&p->file);
+                return -1;
+            }
+
+            p->data_start = f_tell(&p->file);
+            p->data_size = chunk_size;
+            found_data = 1;
+        }
+        else {
+            // Saltar chunk desconocido
+            f_lseek(&p->file, f_tell(&p->file) + chunk_size);
+
+            if (chunk_size & 1) {
+                f_lseek(&p->file, f_tell(&p->file) + 1);
+            }
+        }
+    }
+
+    xil_printf("WAV: format=%d, channels=%d, fs=%lu, bits=%d, data=%lu bytes\r\n",
+               audio_format, channels, sample_rate, bits_per_sample, p->data_size);
+
+    if (audio_format != 1) {
+        xil_printf("ERROR: WAV no es PCM sin compresion\r\n");
+        f_close(&p->file);
+        return -1;
+    }
+
+    if (channels != EXPECTED_CHANNELS ||
+        sample_rate != EXPECTED_SAMPLE_RATE ||
+        bits_per_sample != EXPECTED_BITS) {
+
+        xil_printf("ERROR: formato WAV no compatible.\r\n");
+        xil_printf("Esperado: mono, 8000 Hz, 8-bit PCM unsigned.\r\n");
+        f_close(&p->file);
+        return -1;
+    }
+
+    f_lseek(&p->file, p->data_start);
+
+    p->bytes_sent = 0;
+    p->active = 1;
+    p->eof_reached = 0;
+
+    return 0;
+}
+
+// ================================================================
+// Rellenar FIFO del buzzer con datos del WAV
+// ================================================================
+
+static void Audio_Update(AudioPlayer *p)
+{
+    if (!p->active) {
+        return;
+    }
+
+    // Si ya leimos todo el archivo, esperamos a que el FIFO se vacie.
+    if (p->eof_reached) {
+        if (Buzzer_GetFifoLevel() == 0) {
+            xil_printf("Fin de cancion\r\n");
+            Buzzer_Stop();
+            f_close(&p->file);
+            p->active = 0;
+        }
+        return;
+    }
+
+    u32 free_words = Buzzer_GetFreeWords();
+
+    if (free_words == 0) {
+        return;
+    }
+
+    u32 bytes_left = p->data_size - p->bytes_sent;
+
+    if (bytes_left == 0) {
+        p->eof_reached = 1;
+        return;
+    }
+
+    // Una palabra = 4 muestras = 4 bytes.
+    // Solo leemos un numero entero de palabras cuando se pueda.
+    u32 max_words_by_buffer = AUDIO_BUFFER_BYTES / 4;
+    u32 words_to_write = free_words;
+
+    if (words_to_write > max_words_by_buffer) {
+        words_to_write = max_words_by_buffer;
+    }
+
+    u32 bytes_to_read = words_to_write * 4;
+
+    if (bytes_to_read > bytes_left) {
+        bytes_to_read = bytes_left;
+    }
+
+    if (bytes_to_read == 0) {
+        return;
+    }
+
+    UINT br = 0;
+    FRESULT fr = f_read(&p->file, audio_buffer, bytes_to_read, &br);
+
+    if (fr != FR_OK) {
+        xil_printf("ERROR: f_read fallo. FR=%d\r\n", fr);
+        p->eof_reached = 1;
+        return;
+    }
+
+    if (br == 0) {
+        p->eof_reached = 1;
+        return;
+    }
+
+    p->bytes_sent += br;
+
+    // Empaquetar bytes en palabras de 32 bits.
+    // El VHDL reproduce primero bits 31:24, luego 23:16, luego 15:8, luego 7:0.
+    for (u32 i = 0; i < br; i += 4) {
+        u8 b0 = audio_buffer[i];
+
+        u8 b1 = (i + 1 < br) ? audio_buffer[i + 1] : 0x80;
+        u8 b2 = (i + 2 < br) ? audio_buffer[i + 2] : 0x80;
+        u8 b3 = (i + 3 < br) ? audio_buffer[i + 3] : 0x80;
+
+        u32 word = ((u32)b0 << 24)
+                 | ((u32)b1 << 16)
+                 | ((u32)b2 << 8)
+                 | ((u32)b3);
+
+        Buzzer_WriteAudioWord(word);
+    }
+
+    if (p->bytes_sent >= p->data_size) {
+        p->eof_reached = 1;
+    }
+}
+
+// ================================================================
+// Iniciar reproducción desde cero
+// ================================================================
+
+static int Audio_Start(AudioPlayer *p, const char *filename)
+{
+    xil_printf("Iniciando cancion: %s\r\n", filename);
+
+    // Cerrar archivo anterior si estaba activo
+    if (p->active) {
+        f_close(&p->file);
+        p->active = 0;
+    }
+
+    Buzzer_Clear();
+
+    if (Wav_OpenAndValidate(p, filename) != 0) {
+        xil_printf("No se pudo iniciar audio\r\n");
+        return -1;
+    }
+
+    // Prellenar FIFO antes de activar play.
+    // Esto reduce el riesgo de underflow justo al comenzar.
+    for (int i = 0; i < 8; i++) {
+        Audio_Update(p);
+    }
+
+    Buzzer_Play();
+
+    xil_printf("Reproduccion activada\r\n");
+
+    return 0;
+}
+
+// ================================================================
+// Detener reproducción y limpiar
+// ================================================================
+
+static void Audio_Stop(AudioPlayer *p)
+{
+    xil_printf("Deteniendo cancion\r\n");
+
+    Buzzer_Stop();
+    Buzzer_Clear();
+
+    if (p->active) {
+        f_close(&p->file);
+        p->active = 0;
+    }
+
+    p->eof_reached = 0;
+    p->bytes_sent = 0;
+}
+
+// ================================================================
+// Leer botones
+// ================================================================
+
+static u32 ReadButtons(void)
+{
+    return XGpio_DiscreteRead(&BtnGpio, BTN_GPIO_CHANNEL) & 0x7;
+}
+
+// ================================================================
+// MAIN
+// ================================================================
+
+int main(void)
+{
+	init_platform();
+    int status;
+
+    xil_printf("\r\n=== TEST BUZZER WAV AXI ===\r\n");
+
+    // Inicializar GPIO de botones
+    status = XGpio_Initialize(&BtnGpio, BTN_GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: XGpio_Initialize fallo\r\n");
+        return XST_FAILURE;
+    }
+
+    XGpio_SetDataDirection(&BtnGpio, BTN_GPIO_CHANNEL, 0xFFFFFFFF);
+
+    // Montar SD
+    FRESULT fr = f_mount(&fatfs, "0:/", 1);
+    if (fr != FR_OK) {
+        xil_printf("ERROR: no se pudo montar SD. FR=%d\r\n", fr);
+        return XST_FAILURE;
+    }
+
+    xil_printf("SD montada correctamente\r\n");
+    xil_printf("BTN0: iniciar/reiniciar\r\n");
+    xil_printf("BTN1: detener\r\n");
+
+    memset(&player, 0, sizeof(player));
+
+    Buzzer_Clear();
+
+    u32 prev_buttons = ReadButtons();
+
+    while (1) {
+        u32 buttons = ReadButtons();
+        u32 rising_edges = buttons & (~prev_buttons);
+
+        // BTN0: iniciar o reiniciar cancion
+        if (rising_edges & BTN_START_MASK) {
+            Audio_Start(&player, SONG_PATH);
+        }
+
+        // BTN1: detener
+        if (rising_edges & BTN_STOP_MASK) {
+            Audio_Stop(&player);
+        }
+
+        prev_buttons = buttons;
+
+        // Mantener alimentado el FIFO
+        Audio_Update(&player);
+
+        // Pequeña pausa para no saturar CPU.
+        // El FIFO permite este margen.
+        usleep(500);
+    }
+
+    return 0;
+}
