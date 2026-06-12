@@ -1,29 +1,10 @@
-18:10:14 **** Incremental Build of configuration Debug for project GH_SW ****
+01:15:10 **** Incremental Build of configuration Debug for project GH_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/audio.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/bspinclude/include -MMD -MP -MF"src/audio.d" -MT"src/audio.o" -o "src/audio.o" "../src/audio.c"
-In file included from ../src/audio.c:12:
-D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
-   65 | #pragma message ("For the sleep routines, Global timer is being used")
-      |         ^~~~~~~
-'Finished building: ../src/audio.c'
-' '
-'Building target: GH_SW.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/bsplib/lib -o "GH_SW.elf"  ./src/audio.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: GH_SW.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size GH_SW.elf  |tee "GH_SW.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  57324	   1200	  26736	  85260	  14d0c	GH_SW.elf
-'Finished building: GH_SW.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-18:10:15 Build Finished (took 1s.891ms)
+01:15:11 Build Finished (took 298ms)
 

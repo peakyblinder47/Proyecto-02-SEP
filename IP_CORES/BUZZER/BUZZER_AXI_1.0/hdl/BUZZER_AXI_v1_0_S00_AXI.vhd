@@ -6,7 +6,7 @@ entity BUZZER_AXI_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
         CLK_FREQ : integer := 50000000; -- 50 MHz de clock
-        SAMPLE : integer := 8000; --Número de muestras = 125MHz/8KHz=15625 ciclos de reloj
+        SAMPLE : integer := 8000; --Número de muestras = 50MHz/8KHz=6250 ciclos de reloj
         --Esto actúa como  frecuencia de muestreo del audio WAV que le daremos
         TAM_ADDR_FIFO : integer := 10;
 		-- User parameters ends
@@ -126,7 +126,7 @@ architecture arch_imp of BUZZER_AXI_v1_0_S00_AXI is
 	--En este caso, 2**10 = 1024 palabras
 	--Cada palabra de 32 bits contiene 4 muestras de audio de 8 bits
 	--1024 palabras x 4 muestras = 4096 muestras a 4096/8000=0.512 segundos
-	constant AUDIO_TIMER : integer := 6250; --Cada 15625 ciclos de clock tomamos una 
+	constant AUDIO_TIMER : integer := 6250; --Cada 6250 ciclos de clock tomamos una 
 	-- muestra de audio proveniente del FIFO
 	
 	type fifo_data is array (0 to FIFO_MAX-1) of std_logic_vector (31 downto 0);
@@ -423,8 +423,6 @@ begin
 	    status_v(6) := mute;
 	    status_v(15 downto 8) := std_logic_vector(sample_actual);
 	    
-	    -- DEBUG: muestra AUDIO_TIMER en los bits altos del status
-        status_v(31 downto 16) := std_logic_vector(to_unsigned(AUDIO_TIMER, 16));
 
 	    free_words_v := to_unsigned(FIFO_MAX, TAM_ADDR_FIFO+1) - fifo_count;
 
@@ -516,8 +514,8 @@ end process;
 -- User logic: FIFO + consumo de muestras de audio
 ------------------------------------------------
 process(S_AXI_ACLK)
-    variable loc_addr : std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
-    variable cnt_v    : unsigned(TAM_ADDR_FIFO downto 0);
+    variable loc_addr : std_logic_vector(OPT_MEM_ADDR_BITS downto 0); --Guarda el registro que lee o escribe en AXI
+    variable cnt_v    : unsigned(TAM_ADDR_FIFO downto 0); 
     variable wr_v     : unsigned(TAM_ADDR_FIFO-1 downto 0);
     variable rd_v     : unsigned(TAM_ADDR_FIFO-1 downto 0);
     variable tick_v   : std_logic;
@@ -525,8 +523,8 @@ begin
     if rising_edge(S_AXI_ACLK) then
 
         if S_AXI_ARESETN = '0' then
-
-            fifo_write_puntero <= (others => '0');
+            --Reinicia de parámetros (FIFO y demás)
+            fifo_write_puntero <= (others => '0'); 
             fifo_read_puntero  <= (others => '0');
             fifo_count         <= (others => '0');
 
@@ -543,18 +541,15 @@ begin
 
         else
 
-            ------------------------------------------------
-            -- Variables temporales para actualizar FIFO
-            ------------------------------------------------
-            cnt_v  := fifo_count;
-            wr_v   := fifo_write_puntero;
-            rd_v   := fifo_read_puntero;
-            tick_v := '0';
-
-            ------------------------------------------------
-            -- Generación de tick de muestreo
-            -- Cada AUDIO_TIMER ciclos se consume una muestra
-            ------------------------------------------------
+            --Variables para actualizar FIFO
+            cnt_v  := fifo_count; --Número actual de palabras 
+            wr_v   := fifo_write_puntero; --posición donde se escribirá la palabra
+            rd_v   := fifo_read_puntero; --posición donde se leerá la próxima palabra
+            tick_v := '0'; --1 solo cuando hay que tomar 1 muestra
+    
+            --Definimos que cada 6250 muestras se toma un dato fifo
+            --Esto viene directo de que se usará un audio estándar de 8000 Hz
+            --Con un clk de 50Mhz, entonces 50MHz/8KHz = 6250 muestras    
             if sample_counter = AUDIO_TIMER - 1 then
                 sample_counter <= 0;
                 tick_v := '1';
@@ -563,17 +558,13 @@ begin
                 tick_v := '0';
             end if;
 
-            ------------------------------------------------
-            -- Limpieza de flags de error
-            ------------------------------------------------
+            --Limpia flags de error
             if clear_flags = '1' then
                 overflow  <= '0';
                 underflow <= '0';
             end if;
 
-            ------------------------------------------------
-            -- Limpieza del FIFO
-            ------------------------------------------------
+            --Limpia FIFO
             if clear_fifo = '1' then
 
                 cnt_v := (others => '0');
@@ -589,16 +580,9 @@ begin
                 play_counter   <= (others => '0');
 
             else
-
-                ------------------------------------------------
-                -- Escrituras AXI hacia registros de datos
-                -- Reg 1 = 0x04
-                -- Reg 2 = 0x08
-                -- Reg 3 = 0x0C
-                --
-                -- Cada escritura mete una palabra de 32 bits al FIFO.
-                -- Cada palabra contiene 4 muestras de audio de 8 bits.
-                ------------------------------------------------
+                --Escritura desde AXI hacia los registros
+                -- 32 bits por palabra al escribir en el fifo
+                -- cada palabra a la vez tiene 4 muestras de un audio de 8 bits
                 loc_addr := axi_awaddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 
                 if slv_reg_wren = '1' and loc_addr /= b"00" then
@@ -614,10 +598,7 @@ begin
                 end if;
 
 
-                ------------------------------------------------
-                -- Cargar una nueva palabra desde el FIFO
-                -- si no tenemos una palabra válida actualmente.
-                ------------------------------------------------
+                --Carga nueva palabra desde el fifo
                 if validate_word = '0' and cnt_v > to_unsigned(0, cnt_v'length) then
 
                     palabra_actual <= fifo_mem(to_integer(rd_v));
@@ -630,9 +611,7 @@ begin
                 end if;
 
 
-                ------------------------------------------------
-                -- Consumir una muestra cada tick de audio
-                ------------------------------------------------
+                --tomar una muestra por cada tick
                 if tick_v = '1' then
 
                     if play = '1' and pause = '0' then
@@ -686,9 +665,6 @@ begin
 
             end if;
 
-            ------------------------------------------------
-            -- Actualización final de punteros y contador FIFO
-            ------------------------------------------------
             fifo_count         <= cnt_v;
             fifo_write_puntero <= wr_v;
             fifo_read_puntero  <= rd_v;
@@ -697,10 +673,7 @@ begin
     end if;
 end process;
 
-
-------------------------------------------------
--- User logic: generador PWM de 8 bits
-------------------------------------------------
+--Generador de PWM 
 process(S_AXI_ACLK)
 begin
     if rising_edge(S_AXI_ACLK) then
@@ -712,11 +685,7 @@ begin
     end if;
 end process;
 
-
-------------------------------------------------
--- Salida PWM
--- sample_actual define el duty cycle.
-------------------------------------------------
+--Salida de la PWM
 PWM <= '0' when play = '0' else
        '1' when pwm_counter < sample_actual else
        '0';

@@ -2,22 +2,34 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MAIN" key="selection"/>
+		<item value="PLAY_SONG" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="play_song"/>
+			<item value="song_path"/>
+			<item value="muestra"/>
+			<item value="palabra"/>
+			<item value="audio_stop"/>
+			<item value="buzer_clear"/>
+			<item value="syze_bytes"/>
+			<item value="volumen"/>
+			<item value="xil_out"/>
+			<item value="song"/>
 			<item value="main"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="cancion"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="336" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="454" key="DIALOG_HEIGHT"/>
-		<item value="801" key="DIALOG_X_ORIGIN"/>
-		<item value="217" key="DIALOG_Y_ORIGIN"/>
+		<item value="1156" key="DIALOG_X_ORIGIN"/>
+		<item value="226" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
