@@ -25,9 +25,10 @@
 #define BTN_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
 #define BTN_GPIO_CHANNEL   1
 
-#define BTN_START_MASK 0x01   // BTN0
-#define BTN_STOP_MASK  0x02   // BTN1
+#define BTN_START_MASK 0x01   // BTN0 (máscara)
+#define BTN_STOP_MASK  0x02   // BTN1 (máscara)
 
+// GPIO para el led
 #define GPIO0_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
 
 //Definiciones que servirán para el joystick
@@ -41,8 +42,17 @@
 //IDs de los interrupts en el timer
 #define AUDIO_TMRCTR_INTERRUPT_ID	XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
 
+#define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
+
+#define TIMER_CNTR_AUDIO 0
+#define AUDIO_RESET 2000
 // Gpio encargada de los botones
 static XGpio botones;
+//Timer encargado del audio
+static XTmrCtr AudioTimer;
+static XScuGic AudioIntc;
+static volatile int AudioEnableTimer = 0;
+
 //Typedef para la máquina de estados principal
 typedef enum{
 	MENU,
@@ -61,7 +71,7 @@ typedef enum {
     DERECHA
 } Direccion;
 
-static XSpi SpiADC;
+extern XSpi SpiInstance1;
 
 static u32 LeerBotones(void)
 {
@@ -153,12 +163,23 @@ static void WAIT_BTN(Estados_FSM *estado) {
     *estado = ESPERAR_BTN; //Si no apretamos nada, nos mantenemos en el estado que espera el botón
 }
 
+static void AudioTimerHandler(void *CallBackRef, u8 TmrCtrl){
+	//Mientras el timer no quede "vencido" (mientras el control no sea cero),
+	//no retronaremos nada
+	if (TmrCtrl != TIMER_CNTR_AUDIO){
+		return;
+	}
+	if (AudioEnableTimer && Audio_State() == PLAYING){
+		ACTUALIZAR_AUDIO(); //Con el estado en playing, el timer
+		//irá actualizando el audio
+	}
+}
 
 extern int read_joyx();
 extern int read_joyy();
 
 //Leemos hacia donde apunta el joystick
-static JoystickDirection(void){
+Direccion JoystickDirection(void){
 	//Lectura de los ejes x e y
 	int joyx = read_joyx();
 	int joyy = read_joyy();
@@ -186,6 +207,7 @@ static JoystickDirection(void){
 				return ABAJO;
 			}
 		}
+	return DIR_NONE;
 }
 
 int main(void)
@@ -207,7 +229,7 @@ int main(void)
     }
 
     //Inicializa ADC
-    status = init_adc(&SpiADC, SPI_DEVICE_ID_1);
+    status = init_adc(&SpiInstance1, SPI_DEVICE_ID_1);
     if (status != XST_SUCCESS) {
         xil_printf("ERROR: no se pudo inicializar ADC/SPI del joystick\r\n");
         return XST_FAILURE;
@@ -239,14 +261,18 @@ int main(void)
 
     LCD_Init(SCAN_DIR_DFT);
 
+    //Inicializamos el timer
+    status = XTmrCtr_Initialize(&AudioTimer, AUDIO_TMRCTR_DEVICE_ID);
+    status = InterruptAudioConfig(&AudioTimer); //configuración
     //Movimiento del joystick
     //int joyx_val = 0, joyy_val = 0;
     //int joy_mov = 0;
     //int prev_joystick_moved = -1;
-    //int contador_joy = 0;
+    int contador_joy = 0;
 
-    Direccion dir_joy = DIR_NONE;
-    Estados_FSM ESTADO= MENU;
+    //Definimos variables con los types definidos al inicio
+    Direccion dir_joy = DIR_NONE; //Este es para controlar la dirección del joystick
+    Estados_FSM ESTADO= MENU; //Este para cambiar los estados de la FSM
     while (1) {
     	//Máquina de estados para hacer correr el juego
     	switch(ESTADO){
@@ -282,13 +308,16 @@ int main(void)
     		usleep(2000000); // 2 segundos
     		GUI_TABLERO(); //Imprime el tablero del juego
 
-    		//Empieza la canción con AUDIO_START
+    		//Aseguramos el timer detenido antes de empezar
+    		AudioTimer_Stop();
 
     		if (AUDIO_START(SONG_PATH) != XST_SUCCESS) {
 				xil_printf("ERROR: no se pudo iniciar %s\r\n", SONG_PATH);
 				ESTADO = MENU;
 				break;
 			}
+    		//Empezamos el timer
+    		AudioTimer_Start();
     		//Mensaje para avisar que se reproduce la canción
 			xil_printf("Reproduciendo el archivo: %s\r\n", SONG_PATH);
 
@@ -302,6 +331,7 @@ int main(void)
     		//Lectura para reiniciar con el BTN1
     	    if (LeerBotones() & BTN_STOP_MASK) {
     	        xil_printf("Deteniendo la reproducción...\r\n");
+    	        AudioTimer_Stop();
     	        ESTADO = END;
 
     	        while (LeerBotones() & BTN_STOP_MASK) {
@@ -310,19 +340,40 @@ int main(void)
 
     	        break;
     	    }
-    	    //Actualizamos el audio
-    	    ACTUALIZAR_AUDIO();
+
     	    //Damos aviso del final de la canción
     	    if (Audio_State() != PLAYING) {
     	        xil_printf("Fin de la canción! \n", Audio_State());
+    	        AudioTimer_Stop();
     	        ESTADO = END;
     	        break;
     	    }
 
+    	    contador_joy ++ ;
+    	    if (contador_joy > 100){
+    	    	contador_joy = 0;
+
+    	    	AudioTimer_Stop();
+				dir_joy = JoystickDirection();
+				AudioTimer_Start();
+    	    	if (dir_joy == ARRIBA){
+    	    		GUI_DisString_EN(5,40,"ARRIBA",&Font16,GUI_BACKGROUND,CYAN);
+    	    	}
+    	    	if (dir_joy == ABAJO){
+    	    		GUI_DisString_EN(5,40,"ABAJO",&Font16,GUI_BACKGROUND,CYAN);
+    	    	}
+    	    	if (dir_joy == IZQUIERDA){
+    	    		GUI_DisString_EN(5,40,"IZQUIERDA",&Font16,GUI_BACKGROUND,CYAN);
+    	    	}
+    	    	if (dir_joy == DERECHA){
+    	    		GUI_DisString_EN(5,40,"DERECHA",&Font16,GUI_BACKGROUND,CYAN);
+    	    	}
+    	    }
     	    usleep(500);
     	    break;
 
     	case END:
+    		AudioTimer_Stop();
     		STOP_AUDIO();
     		LCD_Clear(BLACK);
     		usleep(2000000); // 2 segundos
@@ -333,7 +384,63 @@ int main(void)
 
     }
 
+
     cleanup_platform();
 
     return 0;
+}
+
+int InterruptAudioConfig(XTmrCtr *AudioTmrInstance){
+    	XScuGic_Config *IntcConfig;
+    	int status;
+
+    	XTmrCtr_SetHandler(AudioTmrInstance, AudioTimerHandler, AudioTmrInstance);
+
+    	XTmrCtr_SetOptions(AudioTmrInstance,
+						   TIMER_CNTR_AUDIO,
+						   XTC_INT_MODE_OPTION |
+						   XTC_AUTO_RELOAD_OPTION |
+						   XTC_DOWN_COUNT_OPTION);
+
+    	u32 reset_value = XPAR_TMRCTR_0_CLOCK_FREQ_HZ / AUDIO_RESET;
+    	XTmrCtr_SetResetValue(AudioTmrInstance,
+							  TIMER_CNTR_AUDIO,
+							  reset_value);
+
+    	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+
+    	status = XScuGic_CfgInitialize(&AudioIntc,
+    			 IntcConfig,
+				 IntcConfig->CpuBaseAddress);
+
+    	status = XScuGic_Connect(&AudioIntc,
+				 AUDIO_TMRCTR_INTERRUPT_ID,
+				 (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+				 AudioTmrInstance);
+
+    	XScuGic_Enable(&AudioIntc, AUDIO_TMRCTR_INTERRUPT_ID);
+
+    	Xil_ExceptionInit();
+
+		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+									 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+									 &AudioIntc);
+
+		Xil_ExceptionEnable();
+		return 0;
+    }
+
+void AudioTimer_Start(void)
+{
+    AudioEnableTimer = 1;
+    XTmrCtr_Reset(&AudioTimer, TIMER_CNTR_AUDIO);
+    XTmrCtr_Start(&AudioTimer, TIMER_CNTR_AUDIO);
+    return;
+}
+
+void AudioTimer_Stop(void)
+{
+    XTmrCtr_Stop(&AudioTimer, TIMER_CNTR_AUDIO);
+    AudioEnableTimer = 0;
+    return;
 }
