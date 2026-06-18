@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sun May 31 17:48:25 2026
+-- Date        : Fri Jun 12 12:00:20 2026
 -- Host        : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top diagrama_bloques_auto_pc_0 -prefix
 --               diagrama_bloques_auto_pc_0_ diagrama_bloques_auto_pc_0_stub.vhdl

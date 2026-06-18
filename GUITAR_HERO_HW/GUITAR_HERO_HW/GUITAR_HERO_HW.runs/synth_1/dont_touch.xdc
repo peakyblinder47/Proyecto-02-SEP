@@ -39,7 +39,22 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloque
 # IP: bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_0_0/diagrama_bloques_axi_gpio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_axi_gpio_0_0 || ORIG_REF_NAME==diagrama_bloques_axi_gpio_0_0} -quiet] -quiet
 
+# IP: bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_0_0/diagrama_bloques_axi_quad_spi_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_axi_quad_spi_0_0 || ORIG_REF_NAME==diagrama_bloques_axi_quad_spi_0_0} -quiet] -quiet
+
+# IP: bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_1_0/diagrama_bloques_axi_gpio_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_axi_gpio_1_0 || ORIG_REF_NAME==diagrama_bloques_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_axi_quad_spi_1_0 || ORIG_REF_NAME==diagrama_bloques_axi_quad_spi_1_0} -quiet] -quiet
+
 # IP: bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_auto_pc_0 || ORIG_REF_NAME==diagrama_bloques_auto_pc_0} -quiet] -quiet
+
+# IP: bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_axi_timer_0_0 || ORIG_REF_NAME==diagrama_bloques_axi_timer_0_0} -quiet] -quiet
+
+# IP: bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_1_0/diagrama_bloques_xlconcat_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==diagrama_bloques_xlconcat_1_0 || ORIG_REF_NAME==diagrama_bloques_xlconcat_1_0} -quiet] -quiet
 
 # XDC: bd/diagrama_bloques/diagrama_bloques_ooc.xdc

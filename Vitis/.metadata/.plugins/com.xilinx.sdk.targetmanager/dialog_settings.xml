@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="Auto Detect" key="GH_SW-device"/>
 	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351B3FB80A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351B3FB80A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351B3FB80A-13722093-0&quot;}}]}" key="devices_info_Local"/>
+	<item value="" key="GH_SW-bmmFile"/>
+	<item value="Local" key="GH_SW-target"/>
+	<item value="GH_SW" key="programfpga.sdxproject"/>
+	<item value="_ide/bitstream/diagrama_bloques_wrapper.bit" key="GH_SW-bitFile"/>
+	<item value="false" key="GH_SW-partial_bit"/>
+	<item value="false" key="GH_SW-skip_rev_check"/>
 </section>

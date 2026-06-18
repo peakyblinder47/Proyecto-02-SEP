@@ -1,0 +1,194 @@
+#include <stdio.h>
+#include <string.h>
+
+#include "platform.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "ff.h"
+#include "sleep.h"
+#include "xstatus.h"
+#include "xtime_l.h"
+
+#include "audio.h"
+
+// Botones GPIO
+#define BTN_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define BTN_GPIO_CHANNEL   1
+
+#define BTN_START_MASK 0x01   // BTN0
+#define BTN_STOP_MASK  0x02   // BTN1
+
+static XGpio botones;
+
+static u32 LeerBotones(void)
+{
+    return XGpio_DiscreteRead(&botones, BTN_GPIO_CHANNEL) & 0x7;
+}
+
+static void Menu(void)
+{
+	xil_printf("Escoja la canción que desea:\n");
+	xil_printf("[1] Chala Bit Chala\n");
+	xil_printf("[2] Bit al sur\n");
+	xil_printf("[3] Welcome to Vivado\n");
+	xil_printf("[4] He Barrido el IP-Core\n");
+	xil_printf("[5] Paint it Latch\n");
+	xil_printf("[6] Byteco\n");
+	xil_printf("[7] Never Gonna NAND you Up\n");
+	xil_printf("[8] Attack on Timer\n");
+	xil_printf("[9] Booster Fantasy\n");
+	xil_printf("[10] We will byte you\n");
+}
+
+static const char* ElegirCancion(int num_cancion){
+
+	if (num_cancion == 1){
+	    return "DBZ8.WAV";
+	}
+
+	if (num_cancion == 2){
+		return "PRIS8.WAV";
+	}
+
+	if (num_cancion == 3){
+		return "GR8.WAV";
+		}
+
+	if (num_cancion == 4){
+		return "LOS38.WAV";
+		}
+
+	if (num_cancion == 5){
+		return "PAINT8.WAV";
+		}
+
+	if (num_cancion == 6){
+		return "PSYC8.WAV";
+		}
+
+	if (num_cancion == 7){
+		return "RICK8.WAV";
+		}
+
+	if (num_cancion == 8){
+		return "SNK8.WAV";
+		}
+
+	if (num_cancion == 9){
+		return "SSY8.WAV";
+		}
+
+	if (num_cancion == 10){
+		return "WWRY8.WAV";
+		}
+}
+
+static void WAIT_BTN(void){ //LeerBotones solo inicializa lee botones con //return XGpio_DiscreteRead(&botones, BTN_GPIO_CHANNEL) ;
+	u32 botones_previos = LeerBotones();
+	while (1) {
+		u32 botones_actuales = LeerBotones(); //BTN_START_MASK es una máscara de bits para revisar
+		//que el botón esté presionado. Recordar que los botones
+		//vienen todos concatenados
+		if (botones_actuales & BTN_START_MASK) {
+			xil_printf("Reproduciendo canción...\n");
+			return;
+		}
+		//Loop para evitar dobles lecturas mientras apreto el botón
+		while (LeerBotones() & BTN_START_MASK){
+			usleep(500); //pausa de 500 microseg
+			}
+		return;
+	}
+	usleep(500);
+}
+
+static void ReproducirCancion(const char *song_path)
+{
+
+    if (AUDIO_START(song_path) != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo iniciar %s\r\n", song_path);
+        return;
+    }
+
+    xil_printf("Reproduciendo el archivo: %s\r\n", song_path);
+
+    //Si el
+    while (Audio_State() == PLAYING) {
+    	if (LeerBotones() & BTN_STOP_MASK){
+    		xil_printf("Deteniendo canción...\n");
+    		STOP_AUDIO();
+
+    		while (LeerBotones() & BTN_STOP_MASK){
+    			usleep(500);
+    		}
+    		break;
+    	}
+
+        //Actualiza la información de la FIFO en AXI
+        ACTUALIZAR_AUDIO();
+
+        usleep(500);
+    }
+
+    xil_printf("Volviendo al menú...\r\n");
+}
+
+int main(void)
+{
+    int status; //Estado de reproducción de la canción
+    const char* SONG_PATH; //Ruta del archivo de música en la MicroSD
+    int PATH_INDICE; //Con esta variable indicaremos qué canción tocar
+
+    init_platform(); //Inicializa la plataforma
+
+    xil_printf("=== Bienvenido a Guitar Zybo === \n");
+
+    // Inicialización de los botones
+    status = XGpio_Initialize(&botones, BTN_GPIO_DEVICE_ID);
+
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar AXI GPIO\r\n");
+        return XST_FAILURE;
+    }
+
+    // Configuramos la entrada del bloque GPIO en Vivado
+    XGpio_SetDataDirection(&botones, BTN_GPIO_CHANNEL, 0xFFFFFFFF);
+
+    // Inicialización del audio (función en audio.h)
+    //limpia el buzzer y carga el audio
+    status = PLAY_SONG();
+
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: PLAY_SONG fallo\r\n");
+        return XST_FAILURE;
+    }
+
+
+    while (1) {
+    	Menu(); //Printea el menú en pantalla
+    	xil_printf("Ingrese canción de preferencia: ");
+    	scanf("%d", &PATH_INDICE); //Input para el usuario
+
+    	SONG_PATH = ElegirCancion(PATH_INDICE);
+    	//ElegirCancion es una función que asigna una canción a partir del input que recibe
+    	//el código
+    	//Si el número no es válido, no hacemos nada
+    	if (SONG_PATH == NULL){
+    		xil_printf("Por favor ingresar opción válida\n");
+    		continue;
+    	}
+
+    	xil_printf("Escogiste la opción: %d\n", PATH_INDICE);
+
+        // Espera el botón con el cual partir la canción
+    	WAIT_BTN();
+    	//Reproduce la canción
+    	ReproducirCancion(SONG_PATH);
+    }
+
+    cleanup_platform();
+
+    return 0;
+}

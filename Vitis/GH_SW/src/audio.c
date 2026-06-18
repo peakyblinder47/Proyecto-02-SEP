@@ -98,7 +98,7 @@ int PLAY_SONG (void)
 
     state = STOP_PLAYING;
 
-    xil_printf("Audio Cargado! Listo para reproducir");
+    xil_printf("Audio Cargado! Listo para reproducir\n");
 
     return XST_SUCCESS;
 }

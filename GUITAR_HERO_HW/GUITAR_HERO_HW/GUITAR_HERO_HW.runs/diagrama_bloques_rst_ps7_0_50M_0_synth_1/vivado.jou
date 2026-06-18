@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun May 31 17:44:44 2026
-# Process ID: 28284
+# Start of session at: Fri Jun 12 11:59:15 2026
+# Process ID: 29160
 # Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_rst_ps7_0_50M_0_synth_1
 # Command line: vivado.exe -log diagrama_bloques_rst_ps7_0_50M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source diagrama_bloques_rst_ps7_0_50M_0.tcl
 # Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_rst_ps7_0_50M_0_synth_1/diagrama_bloques_rst_ps7_0_50M_0.vds

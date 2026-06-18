@@ -1,149 +1,111 @@
-timestamp=[2026-05-31 18:02:37], mode=WORKBENCH_START, duration=0:00:11.809, duration_ms=11809, data={}
-timestamp=[2026-05-31 18:02:39], mode=WORKBENCH_UI_INIT, duration=0:00:01.925, duration_ms=1925, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2026-05-31 18:02:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.522, duration_ms=5522, data={}
-timestamp=[2026-05-31 18:03:51], mode=PLATFORM_CREATION, duration=0:00:28.583, duration_ms=28583, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
-timestamp=[2026-05-31 18:06:55], mode=PLATFORM_GENERATION, duration=0:01:37.183, duration_ms=97183, data={name=GH_HW}
-timestamp=[2026-05-31 18:08:19], mode=APP_CREATION, duration=0:00:12.351, duration_ms=12351, data={name=GH_SW, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=GH_HW, application_type=application}
-timestamp=[2026-05-31 18:09:23], mode=BUILD, duration=0:00:02.674, duration_ms=2674, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 18:38:49], mode=PLATFORM_GENERATION, duration=0:00:22.895, duration_ms=22895, data={name=GH_HW}
-timestamp=[2026-05-31 18:50:57], mode=BUILD, duration=0:00:00.182, duration_ms=182, data={name=GH_SW, configuration=Debug, clean_build=true}
-timestamp=[2026-05-31 18:50:58], mode=BUILD, duration=0:00:01.106, duration_ms=1106, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 18:52:09], mode=BUILD, duration=0:00:00.326, duration_ms=326, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 18:52:16], mode=BUILD, duration=0:00:06.110, duration_ms=6110, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 19:06:22], mode=BUILD, duration=0:00:00.893, duration_ms=893, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 19:06:25], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 19:06:31], mode=BUILD, duration=0:00:05.621, duration_ms=5621, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 19:19:42], mode=PLATFORM_GENERATION, duration=0:00:03.754, duration_ms=3754, data={name=GH_HW}
-timestamp=[2026-05-31 20:03:18], mode=BUILD, duration=0:00:02.830, duration_ms=2830, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:03:24], mode=BUILD, duration=0:00:00.523, duration_ms=523, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:03:40], mode=BUILD, duration=0:00:07.371, duration_ms=7371, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:10:59], mode=BUILD, duration=0:00:01.461, duration_ms=1461, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:11:15], mode=BUILD, duration=0:00:00.513, duration_ms=513, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:11:26], mode=BUILD, duration=0:00:10.167, duration_ms=10167, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:26:51], mode=PLATFORM_GENERATION, duration=0:00:03.470, duration_ms=3470, data={name=GH_HW}
-timestamp=[2026-05-31 20:27:19], mode=BUILD, duration=0:00:01.697, duration_ms=1697, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:27:34], mode=BUILD, duration=0:00:00.520, duration_ms=520, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:27:51], mode=BUILD, duration=0:00:08.201, duration_ms=8201, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:39:49], mode=PLATFORM_GENERATION, duration=0:00:03.609, duration_ms=3609, data={name=GH_HW}
-timestamp=[2026-05-31 20:40:16], mode=BUILD, duration=0:00:02.006, duration_ms=2006, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:40:24], mode=BUILD, duration=0:00:00.491, duration_ms=491, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:40:41], mode=BUILD, duration=0:00:08.228, duration_ms=8228, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:57:03], mode=BUILD, duration=0:00:01.528, duration_ms=1528, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:57:08], mode=BUILD, duration=0:00:00.375, duration_ms=375, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 20:57:16], mode=BUILD, duration=0:00:07.610, duration_ms=7610, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:12:12], mode=BUILD, duration=0:00:01.442, duration_ms=1442, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:12:19], mode=BUILD, duration=0:00:00.509, duration_ms=509, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:12:30], mode=BUILD, duration=0:00:10.479, duration_ms=10479, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:25:35], mode=BUILD, duration=0:00:01.543, duration_ms=1543, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:25:49], mode=BUILD, duration=0:00:00.411, duration_ms=411, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:26:04], mode=BUILD, duration=0:00:14.024, duration_ms=14024, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:27:43], mode=BUILD, duration=0:00:01.858, duration_ms=1858, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:27:50], mode=BUILD, duration=0:00:00.653, duration_ms=653, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:28:04], mode=BUILD, duration=0:00:13.728, duration_ms=13728, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:29:52], mode=BUILD, duration=0:00:02.000, duration_ms=2000, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:29:59], mode=BUILD, duration=0:00:00.683, duration_ms=683, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:30:14], mode=BUILD, duration=0:00:13.852, duration_ms=13852, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:34:43], mode=BUILD, duration=0:00:01.910, duration_ms=1910, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:34:47], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:35:02], mode=BUILD, duration=0:00:13.877, duration_ms=13877, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:36:13], mode=BUILD, duration=0:00:01.870, duration_ms=1870, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:36:39], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-05-31 21:36:53], mode=BUILD, duration=0:00:13.767, duration_ms=13767, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:33:41], mode=WORKBENCH_START, duration=0:00:24.767, duration_ms=24767, data={}
-timestamp=[2026-06-01 11:33:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.121, duration_ms=121, data={}
-timestamp=[2026-06-01 11:33:43], mode=WORKBENCH_UI_INIT, duration=0:00:01.842, duration_ms=1842, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
-timestamp=[2026-06-01 11:41:05], mode=BUILD, duration=0:00:05.479, duration_ms=5479, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:41:31], mode=BUILD, duration=0:00:00.511, duration_ms=511, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:41:47], mode=BUILD, duration=0:00:14.572, duration_ms=14572, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:45:51], mode=BUILD, duration=0:00:01.467, duration_ms=1467, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:45:57], mode=BUILD, duration=0:00:00.503, duration_ms=503, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:46:07], mode=BUILD, duration=0:00:09.979, duration_ms=9979, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:56:15], mode=BUILD, duration=0:00:01.439, duration_ms=1439, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:56:26], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:56:37], mode=BUILD, duration=0:00:10.028, duration_ms=10028, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:59:38], mode=BUILD, duration=0:00:01.439, duration_ms=1439, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:59:43], mode=BUILD, duration=0:00:00.496, duration_ms=496, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 11:59:53], mode=BUILD, duration=0:00:09.869, duration_ms=9869, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:20:55], mode=WORKBENCH_START, duration=0:00:16.384, duration_ms=16384, data={}
-timestamp=[2026-06-01 15:20:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.052, duration_ms=52, data={}
-timestamp=[2026-06-01 15:20:56], mode=WORKBENCH_UI_INIT, duration=0:00:00.824, duration_ms=824, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
-timestamp=[2026-06-01 15:21:55], mode=BUILD, duration=0:00:03.336, duration_ms=3336, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:22:21], mode=BUILD, duration=0:00:00.329, duration_ms=329, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:22:29], mode=BUILD, duration=0:00:07.631, duration_ms=7631, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:24:00], mode=BUILD, duration=0:00:00.809, duration_ms=809, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:24:07], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:24:13], mode=BUILD, duration=0:00:05.483, duration_ms=5483, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:29:53], mode=BUILD, duration=0:00:00.819, duration_ms=819, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:29:59], mode=BUILD, duration=0:00:00.244, duration_ms=244, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:30:05], mode=BUILD, duration=0:00:05.299, duration_ms=5299, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:31:18], mode=BUILD, duration=0:00:00.815, duration_ms=815, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:31:28], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:31:34], mode=BUILD, duration=0:00:05.477, duration_ms=5477, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:39:32], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:39:38], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:39:44], mode=BUILD, duration=0:00:05.539, duration_ms=5539, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:46:44], mode=BUILD, duration=0:00:01.459, duration_ms=1459, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:46:49], mode=BUILD, duration=0:00:00.253, duration_ms=253, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:46:55], mode=BUILD, duration=0:00:05.681, duration_ms=5681, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:50:50], mode=BUILD, duration=0:00:00.801, duration_ms=801, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:50:55], mode=BUILD, duration=0:00:05.408, duration_ms=5408, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:51:01], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:52:44], mode=BUILD, duration=0:00:00.836, duration_ms=836, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:52:50], mode=BUILD, duration=0:00:00.308, duration_ms=308, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 15:52:56], mode=BUILD, duration=0:00:05.373, duration_ms=5373, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:20:14], mode=WORKBENCH_START, duration=0:00:27.176, duration_ms=27176, data={}
-timestamp=[2026-06-01 16:20:15], mode=WORKBENCH_UI_INIT, duration=0:00:01.330, duration_ms=1330, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
-timestamp=[2026-06-01 16:20:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.077, duration_ms=77, data={}
-timestamp=[2026-06-01 16:20:42], mode=BUILD, duration=0:00:05.277, duration_ms=5277, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:20:46], mode=BUILD, duration=0:00:00.513, duration_ms=513, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:20:59], mode=BUILD, duration=0:00:12.338, duration_ms=12338, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:27:08], mode=BUILD, duration=0:00:01.511, duration_ms=1511, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:27:13], mode=BUILD, duration=0:00:00.499, duration_ms=499, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:27:24], mode=BUILD, duration=0:00:10.123, duration_ms=10123, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:29:36], mode=BUILD, duration=0:00:01.551, duration_ms=1551, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:29:41], mode=BUILD, duration=0:00:00.492, duration_ms=492, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:29:52], mode=BUILD, duration=0:00:10.008, duration_ms=10008, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:40:58], mode=WORKBENCH_START, duration=0:00:24.534, duration_ms=24534, data={}
-timestamp=[2026-06-01 16:41:00], mode=WORKBENCH_UI_INIT, duration=0:00:01.712, duration_ms=1712, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
-timestamp=[2026-06-01 16:41:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.285, duration_ms=285, data={}
-timestamp=[2026-06-01 16:41:58], mode=BUILD, duration=0:00:04.922, duration_ms=4922, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:44:40], mode=BUILD, duration=0:00:04.289, duration_ms=4289, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:47:00], mode=BUILD, duration=0:00:00.504, duration_ms=504, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:47:03], mode=BUILD, duration=0:00:00.489, duration_ms=489, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:50:54], mode=BUILD, duration=0:00:01.489, duration_ms=1489, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:52:01], mode=BUILD, duration=0:00:01.376, duration_ms=1376, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:53:06], mode=BUILD, duration=0:00:01.434, duration_ms=1434, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:54:13], mode=BUILD, duration=0:00:01.378, duration_ms=1378, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:54:42], mode=BUILD, duration=0:00:00.508, duration_ms=508, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:55:37], mode=BUILD, duration=0:00:01.438, duration_ms=1438, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:55:40], mode=BUILD, duration=0:00:00.475, duration_ms=475, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 16:56:42], mode=BUILD, duration=0:00:01.375, duration_ms=1375, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:06:12], mode=BUILD, duration=0:00:01.507, duration_ms=1507, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:06:16], mode=BUILD, duration=0:00:00.490, duration_ms=490, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:08:06], mode=BUILD, duration=0:00:01.451, duration_ms=1451, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:14:43], mode=BUILD, duration=0:00:01.433, duration_ms=1433, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:14:53], mode=BUILD, duration=0:00:00.459, duration_ms=459, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:20:42], mode=BUILD, duration=0:00:01.440, duration_ms=1440, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:20:45], mode=BUILD, duration=0:00:00.569, duration_ms=569, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:21:24], mode=BUILD, duration=0:00:01.461, duration_ms=1461, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:27:59], mode=BUILD, duration=0:00:01.406, duration_ms=1406, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:28:00], mode=BUILD, duration=0:00:00.474, duration_ms=474, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:33:34], mode=BUILD, duration=0:00:01.622, duration_ms=1622, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:37:20], mode=BUILD, duration=0:00:01.419, duration_ms=1419, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:41:57], mode=BUILD, duration=0:00:01.449, duration_ms=1449, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 17:44:07], mode=BUILD, duration=0:00:01.496, duration_ms=1496, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 18:06:19], mode=BUILD, duration=0:00:02.056, duration_ms=2056, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-01 18:10:15], mode=BUILD, duration=0:00:01.903, duration_ms=1903, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-07 20:28:56], mode=WORKBENCH_START, duration=0:00:23.935, duration_ms=23935, data={}
-timestamp=[2026-06-07 20:28:57], mode=WORKBENCH_UI_INIT, duration=0:00:01.238, duration_ms=1238, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
-timestamp=[2026-06-07 20:28:58], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.130, duration_ms=130, data={}
-timestamp=[2026-06-08 00:57:57], mode=BUILD, duration=0:00:01.913, duration_ms=1913, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 00:59:12], mode=BUILD, duration=0:00:00.774, duration_ms=774, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 00:59:39], mode=BUILD, duration=0:00:02.309, duration_ms=2309, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:02:38], mode=BUILD, duration=0:00:01.063, duration_ms=1063, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:02:49], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:03:03], mode=BUILD, duration=0:00:13.110, duration_ms=13110, data={name=GH_SW_system, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:13:18], mode=BUILD, duration=0:00:00.496, duration_ms=496, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:15:05], mode=BUILD, duration=0:00:00.837, duration_ms=837, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:15:11], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=GH_SW, configuration=Debug, clean_build=false}
-timestamp=[2026-06-08 01:15:16], mode=BUILD, duration=0:00:05.453, duration_ms=5453, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:00:50], mode=WORKBENCH_START, duration=0:00:07.042, duration_ms=7042, data={}
+timestamp=[2026-06-12 13:00:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.593, duration_ms=593, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-06-12 13:00:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.924, duration_ms=2924, data={}
+timestamp=[2026-06-12 13:01:39], mode=PLATFORM_CREATION, duration=0:00:20.232, duration_ms=20232, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2026-06-12 13:02:42], mode=PLATFORM_GENERATION, duration=0:00:54.326, duration_ms=54326, data={name=GH_HW}
+timestamp=[2026-06-12 13:03:18], mode=APP_CREATION, duration=0:00:09.962, duration_ms=9962, data={name=GH_SW, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=GH_HW, application_type=application}
+timestamp=[2026-06-12 13:04:13], mode=BUILD, duration=0:00:05.439, duration_ms=5439, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:17:55], mode=PLATFORM_GENERATION, duration=0:00:29.981, duration_ms=29981, data={name=GH_HW}
+timestamp=[2026-06-12 13:18:04], mode=BUILD, duration=0:00:05.191, duration_ms=5191, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:18:09], mode=BUILD, duration=0:00:01.524, duration_ms=1524, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:18:14], mode=BUILD, duration=0:00:04.142, duration_ms=4142, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:18:27], mode=BUILD, duration=0:00:01.449, duration_ms=1449, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:18:30], mode=BUILD, duration=0:00:02.912, duration_ms=2912, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:19:20], mode=BUILD, duration=0:00:03.818, duration_ms=3818, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:19:31], mode=BUILD, duration=0:00:10.061, duration_ms=10061, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:23:40], mode=BUILD, duration=0:00:03.990, duration_ms=3990, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:23:50], mode=BUILD, duration=0:00:01.023, duration_ms=1023, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:24:01], mode=BUILD, duration=0:00:10.047, duration_ms=10047, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:25:43], mode=BUILD, duration=0:00:03.975, duration_ms=3975, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:25:53], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 13:26:01], mode=BUILD, duration=0:00:07.407, duration_ms=7407, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 15:55:08], mode=WORKBENCH_START, duration=0:00:20.622, duration_ms=20622, data={}
+timestamp=[2026-06-12 15:55:09], mode=WORKBENCH_UI_INIT, duration=0:00:01.055, duration_ms=1055, data={editors_count=7, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-12 15:55:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}
+timestamp=[2026-06-12 15:56:06], mode=PLATFORM_GENERATION, duration=0:00:36.892, duration_ms=36892, data={name=GH_HW}
+timestamp=[2026-06-12 15:57:03], mode=BUILD, duration=0:00:04.590, duration_ms=4590, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 15:57:09], mode=BUILD, duration=0:00:00.986, duration_ms=986, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 15:57:20], mode=BUILD, duration=0:00:10.162, duration_ms=10162, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 16:00:08], mode=WORKBENCH_START, duration=0:00:12.394, duration_ms=12394, data={}
+timestamp=[2026-06-12 16:00:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.047, duration_ms=47, data={}
+timestamp=[2026-06-12 16:00:09], mode=WORKBENCH_UI_INIT, duration=0:00:01.099, duration_ms=1099, data={editors_count=7, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-12 16:00:54], mode=PLATFORM_GENERATION, duration=0:00:33.026, duration_ms=33026, data={name=GH_HW}
+timestamp=[2026-06-12 16:09:31], mode=WORKBENCH_START, duration=0:00:20.363, duration_ms=20363, data={}
+timestamp=[2026-06-12 16:09:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.087, duration_ms=87, data={}
+timestamp=[2026-06-12 16:09:33], mode=WORKBENCH_UI_INIT, duration=0:00:01.589, duration_ms=1589, data={editors_count=7, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-12 16:42:16], mode=WORKBENCH_START, duration=0:00:22.230, duration_ms=22230, data={}
+timestamp=[2026-06-12 16:42:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.127, duration_ms=127, data={}
+timestamp=[2026-06-12 16:42:18], mode=WORKBENCH_UI_INIT, duration=0:00:01.517, duration_ms=1517, data={editors_count=7, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-12 16:51:35], mode=PLATFORM_GENERATION, duration=0:00:47.372, duration_ms=47372, data={name=GH_HW}
+timestamp=[2026-06-12 16:51:40], mode=BUILD, duration=0:00:04.269, duration_ms=4269, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 16:51:48], mode=BUILD, duration=0:00:00.789, duration_ms=789, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 16:51:56], mode=BUILD, duration=0:00:07.544, duration_ms=7544, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:03:34], mode=BUILD, duration=0:00:02.120, duration_ms=2120, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:03:59], mode=BUILD, duration=0:00:01.015, duration_ms=1015, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:04:09], mode=BUILD, duration=0:00:09.851, duration_ms=9851, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:11:16], mode=BUILD, duration=0:00:01.284, duration_ms=1284, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:11:22], mode=BUILD, duration=0:00:01.283, duration_ms=1283, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:11:36], mode=BUILD, duration=0:00:13.367, duration_ms=13367, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:25:47], mode=BUILD, duration=0:00:05.019, duration_ms=5019, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:26:57], mode=BUILD, duration=0:00:01.355, duration_ms=1355, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:28:56], mode=BUILD, duration=0:00:02.551, duration_ms=2551, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:30:50], mode=BUILD, duration=0:00:03.290, duration_ms=3290, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:32:49], mode=BUILD, duration=0:00:02.714, duration_ms=2714, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:33:01], mode=BUILD, duration=0:00:00.902, duration_ms=902, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:33:15], mode=BUILD, duration=0:00:13.125, duration_ms=13125, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:35:47], mode=BUILD, duration=0:00:02.233, duration_ms=2233, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:35:54], mode=BUILD, duration=0:00:00.923, duration_ms=923, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-12 17:36:09], mode=BUILD, duration=0:00:13.305, duration_ms=13305, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 15:21:37], mode=WORKBENCH_START, duration=0:00:26.108, duration_ms=26108, data={}
+timestamp=[2026-06-16 15:21:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.156, duration_ms=156, data={}
+timestamp=[2026-06-16 15:21:39], mode=WORKBENCH_UI_INIT, duration=0:00:01.676, duration_ms=1676, data={editors_count=12, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-16 15:26:09], mode=BUILD, duration=0:00:05.928, duration_ms=5928, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 15:26:14], mode=BUILD, duration=0:00:00.762, duration_ms=762, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 15:26:28], mode=BUILD, duration=0:00:13.414, duration_ms=13414, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:29:50], mode=BUILD, duration=0:00:08.360, duration_ms=8360, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:29:57], mode=BUILD, duration=0:00:00.980, duration_ms=980, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:30:16], mode=BUILD, duration=0:00:18.171, duration_ms=18171, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:33:07], mode=BUILD, duration=0:00:04.083, duration_ms=4083, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:33:13], mode=BUILD, duration=0:00:00.966, duration_ms=966, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-16 17:33:27], mode=BUILD, duration=0:00:13.270, duration_ms=13270, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 15:55:15], mode=WORKBENCH_START, duration=0:00:19.092, duration_ms=19092, data={}
+timestamp=[2026-06-17 15:55:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.123, duration_ms=123, data={}
+timestamp=[2026-06-17 15:55:17], mode=WORKBENCH_UI_INIT, duration=0:00:01.759, duration_ms=1759, data={editors_count=12, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-17 17:18:59], mode=BUILD, duration=0:00:03.429, duration_ms=3429, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:20:52], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:23:07], mode=BUILD, duration=0:00:01.204, duration_ms=1204, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:23:37], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:25:24], mode=BUILD, duration=0:00:00.993, duration_ms=993, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:25:32], mode=BUILD, duration=0:00:00.442, duration_ms=442, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 17:25:41], mode=BUILD, duration=0:00:08.239, duration_ms=8239, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:02:12], mode=BUILD, duration=0:00:01.075, duration_ms=1075, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:02:18], mode=BUILD, duration=0:00:00.433, duration_ms=433, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:02:24], mode=BUILD, duration=0:00:05.557, duration_ms=5557, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:16:25], mode=BUILD, duration=0:00:01.016, duration_ms=1016, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:16:29], mode=BUILD, duration=0:00:00.379, duration_ms=379, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:16:35], mode=BUILD, duration=0:00:05.474, duration_ms=5474, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:19:37], mode=BUILD, duration=0:00:01.011, duration_ms=1011, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:19:41], mode=BUILD, duration=0:00:00.444, duration_ms=444, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:19:47], mode=BUILD, duration=0:00:05.570, duration_ms=5570, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:24:08], mode=BUILD, duration=0:00:00.641, duration_ms=641, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:24:28], mode=BUILD, duration=0:00:01.003, duration_ms=1003, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:24:33], mode=BUILD, duration=0:00:00.378, duration_ms=378, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:24:39], mode=BUILD, duration=0:00:05.507, duration_ms=5507, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:33:50], mode=BUILD, duration=0:00:01.036, duration_ms=1036, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:33:54], mode=BUILD, duration=0:00:00.373, duration_ms=373, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:33:59], mode=BUILD, duration=0:00:05.522, duration_ms=5522, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:36:52], mode=BUILD, duration=0:00:00.998, duration_ms=998, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:36:56], mode=BUILD, duration=0:00:00.378, duration_ms=378, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 18:37:01], mode=BUILD, duration=0:00:05.502, duration_ms=5502, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:13:54], mode=BUILD, duration=0:00:00.964, duration_ms=964, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:16:06], mode=BUILD, duration=0:00:00.824, duration_ms=824, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:16:25], mode=BUILD, duration=0:00:00.810, duration_ms=810, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:16:45], mode=BUILD, duration=0:00:00.761, duration_ms=761, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:17:26], mode=BUILD, duration=0:00:01.272, duration_ms=1272, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:17:54], mode=BUILD, duration=0:00:01.015, duration_ms=1015, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:17:58], mode=BUILD, duration=0:00:00.384, duration_ms=384, data={name=GH_SW, configuration=Debug, clean_build=false}
+timestamp=[2026-06-17 19:18:03], mode=BUILD, duration=0:00:05.508, duration_ms=5508, data={name=GH_SW_system, configuration=Debug, clean_build=false}
+timestamp=[2026-06-18 00:35:26], mode=WORKBENCH_START, duration=0:00:24.719, duration_ms=24719, data={}
+timestamp=[2026-06-18 00:35:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.064, duration_ms=64, data={}
+timestamp=[2026-06-18 00:35:28], mode=WORKBENCH_UI_INIT, duration=0:00:01.917, duration_ms=1917, data={editors_count=13, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GH_HW,GH_SW,GH_SW_system,RemoteSystemsTempFiles}
+timestamp=[2026-06-18 00:36:39], mode=PLATFORM_GENERATION, duration=0:00:37.596, duration_ms=37596, data={name=GH_HW}

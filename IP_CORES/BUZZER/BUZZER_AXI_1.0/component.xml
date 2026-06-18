@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5d125d4c</spirit:value>
+            <spirit:value>071e258c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5d125d4c</spirit:value>
+            <spirit:value>071e258c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -655,7 +655,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>CLK_FREQ</spirit:name>
         <spirit:displayName>Clk Freq</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CLK_FREQ">50000000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CLK_FREQ">100000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>SAMPLE</spirit:name>
@@ -695,7 +695,7 @@
       <spirit:file>
         <spirit:name>hdl/BUZZER_AXI_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_edb6a43e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9fd38c15</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -785,7 +785,7 @@
     <spirit:parameter>
       <spirit:name>CLK_FREQ</spirit:name>
       <spirit:displayName>Clk Freq</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_FREQ">50000000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_FREQ">100000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SAMPLE</spirit:name>
@@ -807,8 +807,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>BUZZER_AXI_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-06-01T00:34:13Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-06-12T16:47:06Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6df5e958_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@32265dc6_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
@@ -871,16 +871,32 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@69301816_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@71bea441_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d6d4bb8_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a6f439_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7248f182_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4424b5ed_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f66ccfb_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b37ec15_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ef02bac_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3228e0c4_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1691c3b4_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6642b670_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d77ee8d_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a3cd88f_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11446efc_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2655d286_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33a456c5_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da852fb_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47644e32_ARCHIVE_LOCATION">d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="61bad05a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3541a181"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9d09e300"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0fec2ceb"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8ea0e582"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="bbb8afe5"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="874a23b9"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

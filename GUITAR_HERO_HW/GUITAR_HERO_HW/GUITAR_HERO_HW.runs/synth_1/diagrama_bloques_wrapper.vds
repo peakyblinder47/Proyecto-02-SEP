@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun May 31 20:36:06 2026
-# Process ID: 12580
+# Start of session at: Thu Jun 18 00:30:59 2026
+# Process ID: 15988
 # Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1
 # Command line: vivado.exe -log diagrama_bloques_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source diagrama_bloques_wrapper.tcl
 # Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/diagrama_bloques_wrapper.vds
@@ -13,6 +13,7 @@ source diagrama_bloques_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Proyecto-02-SEP/IP_CORES'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1081.156 ; gain = 0.000
 Command: synth_design -top diagrama_bloques_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -20,44 +21,60 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29096
+INFO: [Synth 8-7075] Helper process launched with PID 10996
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1088.883 ; gain = 27.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1090.441 ; gain = 9.285
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_wrapper' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:47]
-INFO: [Synth 8-3491] module 'diagrama_bloques' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1332' bound to instance 'diagrama_bloques_i' of component 'diagrama_bloques' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1373]
-INFO: [Synth 8-3491] module 'diagrama_bloques_BUZZER_AXI_0_1' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_BUZZER_AXI_0_1_stub.vhdl:5' bound to instance 'BUZZER_AXI_0' of component 'diagrama_bloques_BUZZER_AXI_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1754]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_BUZZER_AXI_0_1_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_0_stub.vhdl:5' bound to instance 'Debouncer_0' of component 'diagrama_bloques_Debouncer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1779]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_0_1' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_1_stub.vhdl:5' bound to instance 'Debouncer_1' of component 'diagrama_bloques_Debouncer_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1785]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_1_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_1_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_1_0_stub.vhdl:5' bound to instance 'Debouncer_2' of component 'diagrama_bloques_Debouncer_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1791]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_1_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'diagrama_bloques_axi_gpio_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'diagrama_bloques_axi_gpio_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1797]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_gpio_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'diagrama_bloques_axi_iic_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'diagrama_bloques_axi_iic_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1822]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_iic_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'diagrama_bloques_processing_system7_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'diagrama_bloques_processing_system7_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1852]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_processing_system7_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_processing_system7_0_0_stub.vhdl:76]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_ps7_0_axi_periph_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:749]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_wrapper' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:56]
+INFO: [Synth 8-3491] module 'diagrama_bloques' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2248' bound to instance 'diagrama_bloques_i' of component 'diagrama_bloques' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2306]
+INFO: [Synth 8-3491] module 'diagrama_bloques_BUZZER_AXI_0_1' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_BUZZER_AXI_0_1_stub.vhdl:5' bound to instance 'BUZZER_AXI_0' of component 'diagrama_bloques_BUZZER_AXI_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_BUZZER_AXI_0_1_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_0_stub.vhdl:5' bound to instance 'Debouncer_0' of component 'diagrama_bloques_Debouncer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2973]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_0_1' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_1_stub.vhdl:5' bound to instance 'Debouncer_1' of component 'diagrama_bloques_Debouncer_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2979]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_0_1' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'diagrama_bloques_Debouncer_1_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_1_0_stub.vhdl:5' bound to instance 'Debouncer_2' of component 'diagrama_bloques_Debouncer_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2985]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_Debouncer_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_Debouncer_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_gpio_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'diagrama_bloques_axi_gpio_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2991]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_gpio_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_gpio_1_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'diagrama_bloques_axi_gpio_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3017]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_gpio_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_iic_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'diagrama_bloques_axi_iic_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3041]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_iic_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_quad_spi_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'diagrama_bloques_axi_quad_spi_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3071]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_quad_spi_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_quad_spi_0_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_quad_spi_1_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_quad_spi_1_0_stub.vhdl:5' bound to instance 'axi_quad_spi_1' of component 'diagrama_bloques_axi_quad_spi_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3107]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_quad_spi_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_quad_spi_1_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'diagrama_bloques_axi_timer_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'diagrama_bloques_axi_timer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3143]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_axi_timer_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_axi_timer_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'diagrama_bloques_processing_system7_0_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'diagrama_bloques_processing_system7_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3172]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_processing_system7_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_ps7_0_axi_periph_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1229]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_Y5TYHL' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_Y5TYHL' (1#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:57]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_17ACQBY' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:162]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_17ACQBY' (2#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:162]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_UM2SOM' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:269]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_UM2SOM' (3#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:269]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_SY30KV' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:393]
-INFO: [Synth 8-3491] module 'diagrama_bloques_auto_pc_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'diagrama_bloques_auto_pc_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:576]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_auto_pc_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_auto_pc_0_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_SY30KV' (4#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:393]
-INFO: [Synth 8-3491] module 'diagrama_bloques_xbar_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'diagrama_bloques_xbar_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1246]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_xbar_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_xbar_0_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_ps7_0_axi_periph_0' (5#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:749]
-INFO: [Synth 8-3491] module 'diagrama_bloques_rst_ps7_0_50M_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'diagrama_bloques_rst_ps7_0_50M_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2024]
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_rst_ps7_0_50M_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-12580-LAPTOP-NHP826N0/realtime/diagrama_bloques_rst_ps7_0_50M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'diagrama_bloques_xlconcat_0_0' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_0_0/synth/diagrama_bloques_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'diagrama_bloques_xlconcat_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2037]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_123AGIP' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:370]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_123AGIP' (4#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_MMJJ7R' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:471]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_MMJJ7R' (5#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:471]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1ENTF2O' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:572]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1ENTF2O' (6#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:572]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_J2SCQ0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:673]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_J2SCQ0' (7#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:673]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_SY30KV' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:797]
+INFO: [Synth 8-3491] module 'diagrama_bloques_auto_pc_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'diagrama_bloques_auto_pc_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:980]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_auto_pc_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_SY30KV' (8#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:797]
+INFO: [Synth 8-3491] module 'diagrama_bloques_xbar_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'diagrama_bloques_xbar_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2094]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_xbar_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_ps7_0_axi_periph_0' (9#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1229]
+INFO: [Synth 8-3491] module 'diagrama_bloques_rst_ps7_0_50M_0' declared at 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'diagrama_bloques_rst_ps7_0_50M_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3421]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_rst_ps7_0_50M_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/.Xil/Vivado-15988-LAPTOP-NHP826N0/realtime/diagrama_bloques_rst_ps7_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'diagrama_bloques_xlconcat_0_0' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_0_0/synth/diagrama_bloques_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'diagrama_bloques_xlconcat_0_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3434]
 INFO: [Synth 8-6157] synthesizing module 'diagrama_bloques_xlconcat_0_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_0_0/synth/diagrama_bloques_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -94,32 +111,75 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [d:/Proyecto
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 3 - type: integer 
 	Parameter NUM_PORTS bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (6#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'diagrama_bloques_xlconcat_0_0' (7#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_0_0/synth/diagrama_bloques_xlconcat_0_0.v:58]
-INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques' (8#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:1373]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'iic_rtl_scl_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:134]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (10#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'diagrama_bloques_xlconcat_0_0' (11#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_0_0/synth/diagrama_bloques_xlconcat_0_0.v:58]
+INFO: [Synth 8-3491] module 'diagrama_bloques_xlconcat_1_0' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_1_0/synth/diagrama_bloques_xlconcat_1_0.v:58' bound to instance 'xlconcat_1' of component 'diagrama_bloques_xlconcat_1_0' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:3441]
+INFO: [Synth 8-6157] synthesizing module 'diagrama_bloques_xlconcat_1_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_1_0/synth/diagrama_bloques_xlconcat_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (11#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'diagrama_bloques_xlconcat_1_0' (12#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_xlconcat_1_0/synth/diagrama_bloques_xlconcat_1_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques' (13#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/synth/diagrama_bloques.vhd:2306]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'iic_rtl_scl_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:190]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (9#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'iic_rtl_sda_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:141]
-INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_wrapper' (10#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:47]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (14#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'iic_rtl_sda_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:197]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'spi_rtl_io0_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:204]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'spi_rtl_io1_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:211]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'spi_rtl_sck_iobuf' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:218]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'spi_rtl_ss_iobuf_0' of component 'IOBUF' [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:225]
+INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_wrapper' (15#1) [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd:56]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1145.426 ; gain = 84.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1152.711 ; gain = 71.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.426 ; gain = 84.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1152.711 ; gain = 71.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.426 ; gain = 84.223
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1152.711 ; gain = 71.555
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1145.426 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1152.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -144,8 +204,16 @@ Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_H
 Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_Debouncer_1_0/diagrama_bloques_Debouncer_1_0/diagrama_bloques_Debouncer_1_0_in_context.xdc] for cell 'diagrama_bloques_i/Debouncer_2'
 Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_0_0/diagrama_bloques_axi_gpio_0_0/diagrama_bloques_axi_gpio_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_gpio_0'
 Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_0_0/diagrama_bloques_axi_gpio_0_0/diagrama_bloques_axi_gpio_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_gpio_0'
+Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_0_0/diagrama_bloques_axi_quad_spi_0_0/diagrama_bloques_axi_quad_spi_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_quad_spi_0'
+Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_0_0/diagrama_bloques_axi_quad_spi_0_0/diagrama_bloques_axi_quad_spi_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_quad_spi_0'
+Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_1_0/diagrama_bloques_axi_gpio_1_0/diagrama_bloques_axi_gpio_1_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_gpio_1'
+Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_1_0/diagrama_bloques_axi_gpio_1_0/diagrama_bloques_axi_gpio_1_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_gpio_1'
+Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_quad_spi_1'
+Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_quad_spi_1'
 Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_in_context.xdc] for cell 'diagrama_bloques_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_in_context.xdc] for cell 'diagrama_bloques_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_timer_0'
+Finished Parsing XDC File [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0_in_context.xdc] for cell 'diagrama_bloques_i/axi_timer_0'
 Parsing XDC File [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/Zybo-Z7-Master.xdc]
 Finished Parsing XDC File [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/Zybo-Z7-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/diagrama_bloques_wrapper_propImpl.xdc].
@@ -154,21 +222,23 @@ Parsing XDC File [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_H
 Finished Parsing XDC File [D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1218.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  A total of 6 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1212.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1218.043 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'diagrama_bloques_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'diagrama_bloques_i/axi_quad_spi_1' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.090 ; gain = 150.887
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1221.008 ; gain = 139.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.090 ; gain = 150.887
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1221.008 ; gain = 139.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -445,12 +515,17 @@ Applied set_property DONT_TOUCH = true for diagrama_bloques_i/Debouncer_1. (cons
 Applied set_property DONT_TOUCH = true for diagrama_bloques_i/Debouncer_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for diagrama_bloques_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for diagrama_bloques_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for diagrama_bloques_i/axi_quad_spi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for diagrama_bloques_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for diagrama_bloques_i/axi_quad_spi_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for diagrama_bloques_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for diagrama_bloques_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for diagrama_bloques_i/xlconcat_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.090 ; gain = 150.887
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1221.008 ; gain = 139.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1212.090 ; gain = 150.887
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1221.008 ; gain = 139.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -472,25 +547,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1212.090 ; gain = 150.887
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1221.008 ; gain = 139.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.180 ; gain = 154.977
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1222.215 ; gain = 141.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.328 ; gain = 155.125
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1222.289 ; gain = 141.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1235.949 ; gain = 174.746
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.914 ; gain = 160.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -508,37 +583,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -555,9 +630,13 @@ Report BlackBoxes:
 |5     |diagrama_bloques_Debouncer_0_1          |         1|
 |6     |diagrama_bloques_Debouncer_1_0          |         1|
 |7     |diagrama_bloques_axi_gpio_0_0           |         1|
-|8     |diagrama_bloques_axi_iic_0_0            |         1|
-|9     |diagrama_bloques_processing_system7_0_0 |         1|
-|10    |diagrama_bloques_rst_ps7_0_50M_0        |         1|
+|8     |diagrama_bloques_axi_gpio_1_0           |         1|
+|9     |diagrama_bloques_axi_iic_0_0            |         1|
+|10    |diagrama_bloques_axi_quad_spi_0_0       |         1|
+|11    |diagrama_bloques_axi_quad_spi_1_0       |         1|
+|12    |diagrama_bloques_axi_timer_0_0          |         1|
+|13    |diagrama_bloques_processing_system7_0_0 |         1|
+|14    |diagrama_bloques_rst_ps7_0_50M_0        |         1|
 +------+----------------------------------------+----------+
 
 Report Cell Usage: 
@@ -570,37 +649,41 @@ Report Cell Usage:
 |4     |diagrama_bloques_Debouncer_1_0_bbox          |     1|
 |5     |diagrama_bloques_auto_pc_0_bbox              |     1|
 |6     |diagrama_bloques_axi_gpio_0_0_bbox           |     1|
-|7     |diagrama_bloques_axi_iic_0_0_bbox            |     1|
-|8     |diagrama_bloques_processing_system7_0_0_bbox |     1|
-|9     |diagrama_bloques_rst_ps7_0_50M_0_bbox        |     1|
-|10    |diagrama_bloques_xbar_0_bbox                 |     1|
-|11    |IBUF                                         |     4|
-|12    |IOBUF                                        |     2|
-|13    |OBUF                                         |     1|
+|7     |diagrama_bloques_axi_gpio_1_0_bbox           |     1|
+|8     |diagrama_bloques_axi_iic_0_0_bbox            |     1|
+|9     |diagrama_bloques_axi_quad_spi_0_0_bbox       |     1|
+|10    |diagrama_bloques_axi_quad_spi_1_0_bbox       |     1|
+|11    |diagrama_bloques_axi_timer_0_0_bbox          |     1|
+|12    |diagrama_bloques_processing_system7_0_0_bbox |     1|
+|13    |diagrama_bloques_rst_ps7_0_50M_0_bbox        |     1|
+|14    |diagrama_bloques_xbar_0_bbox                 |     1|
+|15    |IBUF                                         |     4|
+|16    |IOBUF                                        |     6|
+|17    |OBUF                                         |     6|
 +------+---------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1241.711 ; gain = 113.844
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1241.711 ; gain = 180.508
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1247.691 ; gain = 98.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.691 ; gain = 166.535
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1241.711 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1247.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1269.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  A total of 6 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+89 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1260.371 ; gain = 199.168
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1269.590 ; gain = 188.434
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/synth_1/diagrama_bloques_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file diagrama_bloques_wrapper_utilization_synth.rpt -pb diagrama_bloques_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 31 20:36:54 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 18 00:31:51 2026...

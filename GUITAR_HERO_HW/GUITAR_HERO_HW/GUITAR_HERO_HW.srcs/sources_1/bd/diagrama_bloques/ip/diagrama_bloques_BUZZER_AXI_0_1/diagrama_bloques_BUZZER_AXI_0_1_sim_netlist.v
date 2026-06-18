@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sun May 31 20:36:02 2026
+// Date        : Fri Jun 12 12:48:22 2026
 // Host        : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/diagrama_bloques_BUZZER_AXI_0_1_sim_netlist.v
@@ -38,9 +38,9 @@ module diagrama_bloques_BUZZER_AXI_0_1
     s00_axi_rvalid,
     s00_axi_rready);
   output PWM;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
@@ -428,7 +428,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
   wire \sample_actual[7]_i_5_n_0 ;
   wire \sample_counter[0]_i_1_n_0 ;
   wire \sample_counter[0]_i_3_n_0 ;
-  wire [12:0]sample_counter_reg;
+  wire [13:0]sample_counter_reg;
   wire \sample_counter_reg[0]_i_2_n_0 ;
   wire \sample_counter_reg[0]_i_2_n_1 ;
   wire \sample_counter_reg[0]_i_2_n_2 ;
@@ -437,6 +437,8 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
   wire \sample_counter_reg[0]_i_2_n_5 ;
   wire \sample_counter_reg[0]_i_2_n_6 ;
   wire \sample_counter_reg[0]_i_2_n_7 ;
+  wire \sample_counter_reg[12]_i_1_n_3 ;
+  wire \sample_counter_reg[12]_i_1_n_6 ;
   wire \sample_counter_reg[12]_i_1_n_7 ;
   wire \sample_counter_reg[4]_i_1_n_0 ;
   wire \sample_counter_reg[4]_i_1_n_1 ;
@@ -476,8 +478,8 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
   wire [3:2]NLW_minusOp_carry__1_CO_UNCONNECTED;
   wire [3:3]NLW_minusOp_carry__1_O_UNCONNECTED;
   wire [3:3]\NLW_play_counter_reg[28]_i_1_CO_UNCONNECTED ;
-  wire [3:0]\NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED ;
-  wire [3:1]\NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED ;
+  wire [3:1]\NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED ;
+  wire [3:2]\NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED ;
 
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 PWM0_carry
@@ -765,15 +767,15 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[16]),
         .O(reg_data_out[16]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
-  LUT3 #(
-    .INIT(8'h0B)) 
-    \axi_rdata[17]_i_1 
-       (.I0(play_counter_reg[17]),
-        .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
-        .O(reg_data_out[17]));
   (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'h40)) 
+    \axi_rdata[17]_i_1 
+       (.I0(axi_araddr[2]),
+        .I1(axi_araddr[3]),
+        .I2(play_counter_reg[17]),
+        .O(reg_data_out[17]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[18]_i_1 
@@ -781,13 +783,13 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[18]),
         .O(reg_data_out[18]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
-    .INIT(8'h0B)) 
+    .INIT(8'h40)) 
     \axi_rdata[19]_i_1 
-       (.I0(play_counter_reg[19]),
+       (.I0(axi_araddr[2]),
         .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
+        .I2(play_counter_reg[19]),
         .O(reg_data_out[19]));
   LUT6 #(
     .INIT(64'hAAAA6666FF000F0F)) 
@@ -809,7 +811,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I4(fifo_count_reg[8]),
         .I5(fifo_count_reg[10]),
         .O(\axi_rdata[1]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[20]_i_1 
@@ -817,23 +819,23 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[20]),
         .O(reg_data_out[20]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
-    .INIT(8'h0B)) 
+    .INIT(8'h40)) 
     \axi_rdata[21]_i_1 
-       (.I0(play_counter_reg[21]),
+       (.I0(axi_araddr[2]),
         .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
+        .I2(play_counter_reg[21]),
         .O(reg_data_out[21]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT3 #(
-    .INIT(8'h0B)) 
+    .INIT(8'h40)) 
     \axi_rdata[22]_i_1 
-       (.I0(play_counter_reg[22]),
+       (.I0(axi_araddr[2]),
         .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
+        .I2(play_counter_reg[22]),
         .O(reg_data_out[22]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[23]_i_1 
@@ -841,7 +843,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[23]),
         .O(reg_data_out[23]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[24]_i_1 
@@ -849,7 +851,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[24]),
         .O(reg_data_out[24]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[25]_i_1 
@@ -857,7 +859,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[25]),
         .O(reg_data_out[25]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[26]_i_1 
@@ -865,23 +867,23 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(axi_araddr[3]),
         .I2(play_counter_reg[26]),
         .O(reg_data_out[26]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
-    .INIT(8'h0B)) 
+    .INIT(8'h40)) 
     \axi_rdata[27]_i_1 
-       (.I0(play_counter_reg[27]),
+       (.I0(axi_araddr[2]),
         .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
+        .I2(play_counter_reg[27]),
         .O(reg_data_out[27]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
-    .INIT(8'h0B)) 
+    .INIT(8'h40)) 
     \axi_rdata[28]_i_1 
-       (.I0(play_counter_reg[28]),
+       (.I0(axi_araddr[2]),
         .I1(axi_araddr[3]),
-        .I2(axi_araddr[2]),
+        .I2(play_counter_reg[28]),
         .O(reg_data_out[28]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[29]_i_1 
@@ -915,7 +917,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
        (.I0(fifo_count_reg[0]),
         .I1(fifo_count_reg[1]),
         .O(\axi_rdata[2]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[30]_i_1 
@@ -930,7 +932,7 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I1(s00_axi_arvalid),
         .I2(s00_axi_rvalid),
         .O(slv_reg_rden));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \axi_rdata[31]_i_2 
@@ -2969,14 +2971,14 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I5(play_counter),
         .O(\sample_actual[7]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0000080000000000)) 
+    .INIT(64'h0000000000000800)) 
     \sample_actual[7]_i_2 
        (.I0(\sample_actual[7]_i_4_n_0 ),
         .I1(\sample_actual[7]_i_5_n_0 ),
-        .I2(sample_counter_reg[2]),
-        .I3(sample_counter_reg[3]),
-        .I4(sample_counter_reg[1]),
-        .I5(sample_counter_reg[0]),
+        .I2(sample_counter_reg[5]),
+        .I3(sample_counter_reg[4]),
+        .I4(sample_counter_reg[3]),
+        .I5(sample_counter_reg[2]),
         .O(sample_actual0));
   LUT6 #(
     .INIT(64'hBF8FB383BC8CB080)) 
@@ -2988,22 +2990,23 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
         .I4(palabra_actual[23]),
         .I5(palabra_actual[31]),
         .O(p_1_in[7]));
-  LUT5 #(
-    .INIT(32'h00100000)) 
+  LUT6 #(
+    .INIT(64'h1000000000000000)) 
     \sample_actual[7]_i_4 
-       (.I0(sample_counter_reg[8]),
-        .I1(sample_counter_reg[9]),
-        .I2(sample_counter_reg[11]),
-        .I3(sample_counter_reg[10]),
-        .I4(sample_counter_reg[12]),
+       (.I0(sample_counter_reg[10]),
+        .I1(sample_counter_reg[11]),
+        .I2(sample_counter_reg[12]),
+        .I3(sample_counter_reg[13]),
+        .I4(sample_counter_reg[1]),
+        .I5(sample_counter_reg[0]),
         .O(\sample_actual[7]_i_4_n_0 ));
   LUT4 #(
-    .INIT(16'h0400)) 
+    .INIT(16'h1000)) 
     \sample_actual[7]_i_5 
-       (.I0(sample_counter_reg[7]),
-        .I1(sample_counter_reg[6]),
-        .I2(sample_counter_reg[4]),
-        .I3(sample_counter_reg[5]),
+       (.I0(sample_counter_reg[9]),
+        .I1(sample_counter_reg[8]),
+        .I2(sample_counter_reg[7]),
+        .I3(sample_counter_reg[6]),
         .O(\sample_actual[7]_i_5_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3124,11 +3127,19 @@ module diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AXI
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \sample_counter_reg[12]_i_1 
        (.CI(\sample_counter_reg[8]_i_1_n_0 ),
-        .CO(\NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED [3:0]),
+        .CO({\NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED [3:1],\sample_counter_reg[12]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED [3:1],\sample_counter_reg[12]_i_1_n_7 }),
-        .S({1'b0,1'b0,1'b0,sample_counter_reg[12]}));
+        .O({\NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED [3:2],\sample_counter_reg[12]_i_1_n_6 ,\sample_counter_reg[12]_i_1_n_7 }),
+        .S({1'b0,1'b0,sample_counter_reg[13:12]}));
+  FDRE #(
+    .INIT(1'b0)) 
+    \sample_counter_reg[13] 
+       (.C(s00_axi_aclk),
+        .CE(1'b1),
+        .D(\sample_counter_reg[12]_i_1_n_6 ),
+        .Q(sample_counter_reg[13]),
+        .R(\sample_counter[0]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \sample_counter_reg[1] 

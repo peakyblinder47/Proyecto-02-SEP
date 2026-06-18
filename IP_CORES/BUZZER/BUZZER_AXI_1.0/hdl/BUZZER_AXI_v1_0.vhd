@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity BUZZER_AXI_v1_0 is
 	generic (
 		-- Users to add parameters here
-        CLK_FREQ : integer := 50000000; -- 125 MHz de clock
+        CLK_FREQ : integer := 100000000; -- 100 MHz de clock
         SAMPLE : integer := 8000; --Número de muestras = 125MHz/8KHz=15625 ciclos de reloj
         --Esto actúa como  frecuencia de muestreo del audio WAV que le daremos
         TAM_ADDR_FIFO : integer := 10;

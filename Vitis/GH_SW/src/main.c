@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "platform.h"
 #include "xparameters.h"
@@ -10,8 +11,15 @@
 #include "sleep.h"
 #include "xstatus.h"
 #include "xtime_l.h"
+#include "xtmrctr.h"
+#include "xscugic.h"
+#include "xil_exception.h"
 
 #include "audio.h"
+#include "ADC.h"
+#include "LCD_Driver.h"
+#include "LCD_GUI.h"
+#include "LCD_SPI.h"
 
 // Botones GPIO
 #define BTN_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
@@ -20,7 +28,40 @@
 #define BTN_START_MASK 0x01   // BTN0
 #define BTN_STOP_MASK  0x02   // BTN1
 
+#define GPIO0_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
+
+//Definiciones que servirán para el joystick
+#define JOY_UMBRAL 200 //Umbral para detectar el movimiento del joystick
+#define JOY_CENTER_X 512 //Valor central asociado al eje x
+#define JOY_CENTER_Y 512 //Valor central asociado al eje y
+
+//Direcciones de AXI-TIMER
+#define AUDIO_TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+
+//IDs de los interrupts en el timer
+#define AUDIO_TMRCTR_INTERRUPT_ID	XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+
+// Gpio encargada de los botones
 static XGpio botones;
+//Typedef para la máquina de estados principal
+typedef enum{
+	MENU,
+	ESPERAR_BTN,
+	INTRO,
+	PLAY,
+	END
+} Estados_FSM;
+
+//Esto nos servirá como un "type" para definir las posiciones del joystick
+typedef enum {
+    DIR_NONE,
+    ARRIBA,
+    ABAJO,
+    IZQUIERDA,
+    DERECHA
+} Direccion;
+
+static XSpi SpiADC;
 
 static u32 LeerBotones(void)
 {
@@ -83,62 +124,68 @@ static const char* ElegirCancion(int num_cancion){
 	if (num_cancion == 10){
 		return "WWRY8.WAV";
 		}
+	return NULL;
 }
 
-static void WAIT_BTN(void){
-	//LeerBotones solo inicializa lee botones con
-	//return XGpio_DiscreteRead(&botones, BTN_GPIO_CHANNEL) ;
-    u32 botones_previos = LeerBotones();
-
-    while (1) {
-        u32 botones_actuales = LeerBotones();
-        //BTN_START_MASK es una máscara de bits para revisar
-        //que el botón esté presionado. Recordar que los botones
-        //vienen todos concatenados
-        if (botones_actuales & BTN_START_MASK) {
-        	xil_printf("Reproduciendo canción...\n");
-            return;
-        }
-
-        //Loop para evitar dobles lecturas mientras apreto el botón
-        while (LeerBotones() & BTN_START_MASK){
-        	usleep(500); //pausa de 500 microseg
-        }
-
+//Función para manejar los botones y cambiar estados en función de ellos
+static void WAIT_BTN(Estados_FSM *estado) {
+    u32 btn = LeerBotones();
+    //con BTN_STOP_MASK, controlamos el caso de "reset"
+    if (btn & BTN_STOP_MASK) {
+        xil_printf("Canción cancelada. Volviendo al menú inicial...\n");
+        LCD_Clear(BLACK);
+        *estado = MENU; //El restart devuelve al estado menú, que despliega al menú inicial
         return;
     }
-    usleep(500);
-}
+    //Con la otra máscara, iniciamos el START
+    if (btn & BTN_START_MASK) {
+        xil_printf("Has apretado START. Es hora de jugar!\n");
+        LCD_Clear(BLACK);
 
-static void ReproducirCancion(const char *song_path)
-{
+        while (LeerBotones() & BTN_START_MASK) {
+        	usleep(10000);
+        }
 
-    if (AUDIO_START(song_path) != XST_SUCCESS) {
-        xil_printf("ERROR: no se pudo iniciar %s\r\n", song_path);
+        *estado = INTRO; //Cuando el botón START es apretado, nos movemos al estado INTRO
         return;
     }
 
-    xil_printf("Reproduciendo el archivo: %s\r\n", song_path);
+    *estado = ESPERAR_BTN; //Si no apretamos nada, nos mantenemos en el estado que espera el botón
+}
 
-    //Si el
-    while (Audio_State() == PLAYING) {
-    	if (LeerBotones() & BTN_STOP_MASK){
-    		xil_printf("Deteniendo canción...\n");
-    		STOP_AUDIO();
 
-    		while (LeerBotones() & BTN_STOP_MASK){
-    			usleep(500);
-    		}
-    		break;
-    	}
+extern int read_joyx();
+extern int read_joyy();
 
-        //Actualiza la información de la FIFO en AXI
-        ACTUALIZAR_AUDIO();
+//Leemos hacia donde apunta el joystick
+static JoystickDirection(void){
+	//Lectura de los ejes x e y
+	int joyx = read_joyx();
+	int joyy = read_joyy();
 
-        usleep(500);
-    }
+	//Cuando está bajo un umbral definido, decimos que retorne un "None"
+	if(abs(joyx-JOY_CENTER_X)<JOY_UMBRAL && abs(joyy-JOY_CENTER_Y)<JOY_UMBRAL ){
+		return DIR_NONE;
+	}
+	//Cuando el joystick en algún eje supera el umbral,
+	//entonces se toma como un movimiento
+	//Esto está basado en códigos del proyecto del grupo 8 2024-2
+	//para hacerlo un poco más interesante, se usaron los typedef
+	if (abs(joyx-JOY_CENTER_X)>JOY_UMBRAL){
+		if (joyx-JOY_CENTER_X > 0){
+			return DERECHA;
+		} else{
+			return IZQUIERDA;
+		}
+	}
 
-    xil_printf("Volviendo al menú...\r\n");
+	if (abs(joyy-JOY_CENTER_Y)>JOY_UMBRAL){
+			if (joyy-JOY_CENTER_Y > 0){
+				return ARRIBA;
+			} else{
+				return ABAJO;
+			}
+		}
 }
 
 int main(void)
@@ -159,6 +206,12 @@ int main(void)
         return XST_FAILURE;
     }
 
+    //Inicializa ADC
+    status = init_adc(&SpiADC, SPI_DEVICE_ID_1);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar ADC/SPI del joystick\r\n");
+        return XST_FAILURE;
+    }
     // Configuramos la entrada del bloque GPIO en Vivado
     XGpio_SetDataDirection(&botones, BTN_GPIO_CHANNEL, 0xFFFFFFFF);
 
@@ -170,27 +223,114 @@ int main(void)
         xil_printf("ERROR: PLAY_SONG fallo\r\n");
         return XST_FAILURE;
     }
+    //Inicializamos SPI
+    status = XSpi_Init(&SpiInstance, SPI_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar SPI del LCD\r\n");
+        return XST_FAILURE;
+    }
 
+    //Inicializamos GPIO del LCD
+    status = XGpio_Initialize(&gpio0, GPIO0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar GPIO0 (LCD)\r\n");
+        return XST_FAILURE;
+    }
 
+    LCD_Init(SCAN_DIR_DFT);
+
+    //Movimiento del joystick
+    //int joyx_val = 0, joyy_val = 0;
+    //int joy_mov = 0;
+    //int prev_joystick_moved = -1;
+    //int contador_joy = 0;
+
+    Direccion dir_joy = DIR_NONE;
+    Estados_FSM ESTADO= MENU;
     while (1) {
-    	Menu(); //Printea el menú en pantalla
-    	scanf("Ingrese canción de preferencia: %d", &PATH_INDICE); //Input para el usuario
+    	//Máquina de estados para hacer correr el juego
+    	switch(ESTADO){
+    	case MENU:
+    		//Enseñamos el menú de selección en la consola
+			Menu();
+			xil_printf("Ingrese la canción que desea escuchar: ");
+			scanf("%d", &PATH_INDICE); //Input para el usuario
 
-    	SONG_PATH = ElegirCancion(PATH_INDICE);
-    	//ElegirCancion es una función que asigna una canción a partir del input que recibe
-    	//el código
-    	//Si el número no es válido, no hacemos nada
-    	if (SONG_PATH == NULL){
-    		xil_printf("Por favor ingresar opción válida\n");
-    		continue;
+			xil_printf("Numero ingresado: %d\r\n", PATH_INDICE);
+
+			SONG_PATH = ElegirCancion(PATH_INDICE);//ElegirCancion es una función que asigna una canción a partir del input que recibe
+			//el código
+
+			if (SONG_PATH == NULL) {
+				xil_printf("Por favor ingresar opcion valida\r\n");
+				ESTADO = MENU;
+				break;
+			}
+
+			xil_printf("Cancion seleccionada: %s\r\n", SONG_PATH);
+			xil_printf("Presione START (BTN0) para iniciar el juego\n");
+
+			ESTADO = ESPERAR_BTN;
+			break;
+    	case ESPERAR_BTN:
+    		WAIT_BTN(&ESTADO); //Esperamos que el botón se aprete para iniciar la canción
+    		usleep(20000);
+    		break;
+
+    	case INTRO:
+    		GUI_INTRO(); //Imprimos la intro en la pantalla
+    		usleep(2000000); // 2 segundos
+    		GUI_TABLERO(); //Imprime el tablero del juego
+
+    		//Empieza la canción con AUDIO_START
+
+    		if (AUDIO_START(SONG_PATH) != XST_SUCCESS) {
+				xil_printf("ERROR: no se pudo iniciar %s\r\n", SONG_PATH);
+				ESTADO = MENU;
+				break;
+			}
+    		//Mensaje para avisar que se reproduce la canción
+			xil_printf("Reproduciendo el archivo: %s\r\n", SONG_PATH);
+
+			//Reinicio de variables
+			//prev_joystick_moved = -1;
+			//contador_joy = 0;
+
+    		ESTADO = PLAY; //Estado de lógica del juego
+    		break;
+    	case PLAY:
+    		//Lectura para reiniciar con el BTN1
+    	    if (LeerBotones() & BTN_STOP_MASK) {
+    	        xil_printf("Deteniendo la reproducción...\r\n");
+    	        ESTADO = END;
+
+    	        while (LeerBotones() & BTN_STOP_MASK) {
+    	            usleep(500);
+    	        }
+
+    	        break;
+    	    }
+    	    //Actualizamos el audio
+    	    ACTUALIZAR_AUDIO();
+    	    //Damos aviso del final de la canción
+    	    if (Audio_State() != PLAYING) {
+    	        xil_printf("Fin de la canción! \n", Audio_State());
+    	        ESTADO = END;
+    	        break;
+    	    }
+
+    	    usleep(500);
+    	    break;
+
+    	case END:
+    		STOP_AUDIO();
+    		LCD_Clear(BLACK);
+    		usleep(2000000); // 2 segundos
+    		xil_printf("Volviendo al menú...\n");
+    		ESTADO = MENU;
+    		break;
     	}
 
-    	xil_printf("Escogiste la opción: %d\n", PATH_INDICE);
-
-        // Espera el botón con el cual partir la canción
-    	WAIT_BTN();
-    	//Reproduce la canción
-    	ReproducirCancion(SONG_PATH);
     }
 
     cleanup_platform();

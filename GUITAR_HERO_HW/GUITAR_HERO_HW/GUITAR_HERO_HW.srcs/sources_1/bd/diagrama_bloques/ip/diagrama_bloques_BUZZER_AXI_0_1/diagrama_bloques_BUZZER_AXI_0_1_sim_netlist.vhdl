@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sun May 31 20:36:02 2026
+-- Date        : Fri Jun 12 12:48:22 2026
 -- Host        : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/diagrama_bloques_BUZZER_AXI_0_1_sim_netlist.vhdl
@@ -238,7 +238,7 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AX
   signal \sample_actual[7]_i_5_n_0\ : STD_LOGIC;
   signal \sample_counter[0]_i_1_n_0\ : STD_LOGIC;
   signal \sample_counter[0]_i_3_n_0\ : STD_LOGIC;
-  signal sample_counter_reg : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal sample_counter_reg : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal \sample_counter_reg[0]_i_2_n_0\ : STD_LOGIC;
   signal \sample_counter_reg[0]_i_2_n_1\ : STD_LOGIC;
   signal \sample_counter_reg[0]_i_2_n_2\ : STD_LOGIC;
@@ -247,6 +247,8 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AX
   signal \sample_counter_reg[0]_i_2_n_5\ : STD_LOGIC;
   signal \sample_counter_reg[0]_i_2_n_6\ : STD_LOGIC;
   signal \sample_counter_reg[0]_i_2_n_7\ : STD_LOGIC;
+  signal \sample_counter_reg[12]_i_1_n_3\ : STD_LOGIC;
+  signal \sample_counter_reg[12]_i_1_n_6\ : STD_LOGIC;
   signal \sample_counter_reg[12]_i_1_n_7\ : STD_LOGIC;
   signal \sample_counter_reg[4]_i_1_n_0\ : STD_LOGIC;
   signal \sample_counter_reg[4]_i_1_n_1\ : STD_LOGIC;
@@ -286,8 +288,8 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AX
   signal \NLW_minusOp_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_minusOp_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_play_counter_reg[28]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   attribute COMPARATOR_THRESHOLD : integer;
   attribute COMPARATOR_THRESHOLD of PWM0_carry : label is 11;
   attribute SOFT_HLUTNM : string;
@@ -301,23 +303,23 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1_BUZZER_AXI_v1_0_S00_AX
   attribute SOFT_HLUTNM of \axi_rdata[14]_i_1\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \axi_rdata[15]_i_1\ : label is "soft_lutpair15";
   attribute SOFT_HLUTNM of \axi_rdata[16]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \axi_rdata[17]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \axi_rdata[18]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \axi_rdata[19]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \axi_rdata[20]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \axi_rdata[21]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \axi_rdata[22]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \axi_rdata[23]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \axi_rdata[24]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \axi_rdata[25]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \axi_rdata[26]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \axi_rdata[27]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \axi_rdata[28]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \axi_rdata[29]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \axi_rdata[17]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \axi_rdata[18]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \axi_rdata[19]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \axi_rdata[20]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \axi_rdata[21]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \axi_rdata[22]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \axi_rdata[23]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \axi_rdata[24]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \axi_rdata[25]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \axi_rdata[26]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \axi_rdata[27]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \axi_rdata[28]_i_1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \axi_rdata[29]_i_1\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \axi_rdata[2]_i_2\ : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \axi_rdata[2]_i_3\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \axi_rdata[30]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \axi_rdata[31]_i_2\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \axi_rdata[30]_i_1\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \axi_rdata[31]_i_2\ : label is "soft_lutpair28";
   attribute SOFT_HLUTNM of \axi_rdata[3]_i_2\ : label is "soft_lutpair17";
   attribute SOFT_HLUTNM of \axi_rdata[4]_i_2\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \axi_rdata[5]_i_2\ : label is "soft_lutpair1";
@@ -788,12 +790,12 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
     );
 \axi_rdata[17]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(17),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(17),
       O => reg_data_out(17)
     );
 \axi_rdata[18]_i_1\: unisim.vcomponents.LUT3
@@ -808,12 +810,12 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
     );
 \axi_rdata[19]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(19),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(19),
       O => reg_data_out(19)
     );
 \axi_rdata[1]_i_1\: unisim.vcomponents.LUT6
@@ -854,22 +856,22 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
     );
 \axi_rdata[21]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(21),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(21),
       O => reg_data_out(21)
     );
 \axi_rdata[22]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(22),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(22),
       O => reg_data_out(22)
     );
 \axi_rdata[23]_i_1\: unisim.vcomponents.LUT3
@@ -914,22 +916,22 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
     );
 \axi_rdata[27]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(27),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(27),
       O => reg_data_out(27)
     );
 \axi_rdata[28]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0B"
+      INIT => X"40"
     )
         port map (
-      I0 => play_counter_reg(28),
+      I0 => axi_araddr(2),
       I1 => axi_araddr(3),
-      I2 => axi_araddr(2),
+      I2 => play_counter_reg(28),
       O => reg_data_out(28)
     );
 \axi_rdata[29]_i_1\: unisim.vcomponents.LUT3
@@ -3688,15 +3690,15 @@ play_reg: unisim.vcomponents.FDRE
     );
 \sample_actual[7]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000080000000000"
+      INIT => X"0000000000000800"
     )
         port map (
       I0 => \sample_actual[7]_i_4_n_0\,
       I1 => \sample_actual[7]_i_5_n_0\,
-      I2 => sample_counter_reg(2),
-      I3 => sample_counter_reg(3),
-      I4 => sample_counter_reg(1),
-      I5 => sample_counter_reg(0),
+      I2 => sample_counter_reg(5),
+      I3 => sample_counter_reg(4),
+      I4 => sample_counter_reg(3),
+      I5 => sample_counter_reg(2),
       O => sample_actual0
     );
 \sample_actual[7]_i_3\: unisim.vcomponents.LUT6
@@ -3712,27 +3714,28 @@ play_reg: unisim.vcomponents.FDRE
       I5 => palabra_actual(31),
       O => p_1_in(7)
     );
-\sample_actual[7]_i_4\: unisim.vcomponents.LUT5
+\sample_actual[7]_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00100000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => sample_counter_reg(8),
-      I1 => sample_counter_reg(9),
-      I2 => sample_counter_reg(11),
-      I3 => sample_counter_reg(10),
-      I4 => sample_counter_reg(12),
+      I0 => sample_counter_reg(10),
+      I1 => sample_counter_reg(11),
+      I2 => sample_counter_reg(12),
+      I3 => sample_counter_reg(13),
+      I4 => sample_counter_reg(1),
+      I5 => sample_counter_reg(0),
       O => \sample_actual[7]_i_4_n_0\
     );
 \sample_actual[7]_i_5\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0400"
+      INIT => X"1000"
     )
         port map (
-      I0 => sample_counter_reg(7),
-      I1 => sample_counter_reg(6),
-      I2 => sample_counter_reg(4),
-      I3 => sample_counter_reg(5),
+      I0 => sample_counter_reg(9),
+      I1 => sample_counter_reg(8),
+      I2 => sample_counter_reg(7),
+      I3 => sample_counter_reg(6),
       O => \sample_actual[7]_i_5_n_0\
     );
 \sample_actual_reg[0]\: unisim.vcomponents.FDRE
@@ -3904,13 +3907,26 @@ play_reg: unisim.vcomponents.FDRE
 \sample_counter_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
       CI => \sample_counter_reg[8]_i_1_n_0\,
-      CO(3 downto 0) => \NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED\(3 downto 0),
+      CO(3 downto 1) => \NLW_sample_counter_reg[12]_i_1_CO_UNCONNECTED\(3 downto 1),
+      CO(0) => \sample_counter_reg[12]_i_1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 1) => \NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED\(3 downto 1),
+      O(3 downto 2) => \NLW_sample_counter_reg[12]_i_1_O_UNCONNECTED\(3 downto 2),
+      O(1) => \sample_counter_reg[12]_i_1_n_6\,
       O(0) => \sample_counter_reg[12]_i_1_n_7\,
-      S(3 downto 1) => B"000",
-      S(0) => sample_counter_reg(12)
+      S(3 downto 2) => B"00",
+      S(1 downto 0) => sample_counter_reg(13 downto 12)
+    );
+\sample_counter_reg[13]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s00_axi_aclk,
+      CE => '1',
+      D => \sample_counter_reg[12]_i_1_n_6\,
+      Q => sample_counter_reg(13),
+      R => \sample_counter[0]_i_1_n_0\
     );
 \sample_counter_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -4208,7 +4224,7 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1 is
   attribute x_interface_info : string;
   attribute x_interface_info of s00_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s00_axi_aclk : signal is "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s00_axi_aclk : signal is "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s00_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S00_AXI_RST RST";
   attribute x_interface_parameter of s00_axi_aresetn : signal is "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s00_axi_arready : signal is "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY";
@@ -4224,7 +4240,7 @@ architecture STRUCTURE of diagrama_bloques_BUZZER_AXI_0_1 is
   attribute x_interface_info of s00_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR";
   attribute x_interface_info of s00_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT";
   attribute x_interface_info of s00_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR";
-  attribute x_interface_parameter of s00_axi_awaddr : signal is "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s00_axi_awaddr : signal is "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN diagrama_bloques_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s00_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT";
   attribute x_interface_info of s00_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S00_AXI BRESP";
   attribute x_interface_info of s00_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RDATA";

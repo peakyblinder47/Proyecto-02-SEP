@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun May 31 20:36:02 2026
+| Date         : Fri Jun 12 12:48:22 2026
 | Host         : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.rpt -pb diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.pb
 | Design       : diagrama_bloques_BUZZER_AXI_0_1
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |  120 |     0 |     17600 |  0.68 |
 |   LUT as Logic          |  120 |     0 |     17600 |  0.68 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |  144 |     0 |     35200 |  0.41 |
-|   Register as Flip Flop |  144 |     0 |     35200 |  0.41 |
+| Slice Registers         |  145 |     0 |     35200 |  0.41 |
+|   Register as Flip Flop |  145 |     0 |     35200 |  0.41 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 4     |          Yes |         Set |            - |
-| 140   |          Yes |       Reset |            - |
+| 141   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,11 +147,11 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  140 |        Flop & Latch |
-| LUT6     |   57 |                 LUT |
+| FDRE     |  141 |        Flop & Latch |
+| LUT6     |   58 |                 LUT |
 | LUT4     |   33 |                 LUT |
 | LUT3     |   29 |                 LUT |
-| LUT5     |   21 |                 LUT |
+| LUT5     |   20 |                 LUT |
 | CARRY4   |   16 |          CarryLogic |
 | LUT2     |   10 |                 LUT |
 | LUT1     |    7 |                 LUT |

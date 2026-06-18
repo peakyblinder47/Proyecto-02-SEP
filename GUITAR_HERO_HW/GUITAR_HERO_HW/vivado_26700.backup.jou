@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jun 12 11:46:41 2026
+# Process ID: 26700
+# Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15308 D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.xpr
+# Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/vivado.log
+# Journal file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+endgroup
+set_property -dict [list CONFIG.C_USE_STARTUP {0} CONFIG.C_USE_STARTUP_INT {0} CONFIG.Master_mode {1}] [get_bd_cells axi_quad_spi_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/sck_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/ss_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/io1_o]
+endgroup
+set_property name MISO [get_bd_nets axi_quad_spi_0_io1_o]
+set_property name MOSI [get_bd_nets MISO]
+set_property name SCLK [get_bd_nets axi_quad_spi_0_sck_o]
+set_property name CS [get_bd_nets axi_quad_spi_0_ss_o]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_quad_spi_0/AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_0/AXI_LITE]
+regenerate_bd_layout
+set_property name MOSI [get_bd_ports io1_o_0]
+set_property name SCLK [get_bd_ports sck_o_0]
+set_property name CS [get_bd_ports ss_o_0]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_1
+endgroup
+set_property -dict [list CONFIG.C_USE_STARTUP {0} CONFIG.C_USE_STARTUP_INT {0} CONFIG.C_NUM_TRANSFER_BITS {16} CONFIG.C_SCK_RATIO {2}] [get_bd_cells axi_quad_spi_1]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_1]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {0} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_quad_spi_1/AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_1/AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_1/SPI_0]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO2_WIDTH {1} CONFIG.GPIO2_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_1]
+endgroup
+set_property name RS [get_bd_intf_ports btns_4bits]
+set_property name RST [get_bd_intf_ports btns_4bits_0]
+regenerate_bd_layout
+set_property location {2 591 708} [get_bd_cells ps7_0_axi_periph]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_quad_spi_1/ext_spi_clk]
+regenerate_bd_layout
+make_wrapper -files [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -top
+connect_bd_net [get_bd_pins axi_quad_spi_0/ext_spi_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+make_wrapper -files [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -top
+reset_run synth_1
+reset_run diagrama_bloques_axi_iic_0_0_synth_1
+reset_run diagrama_bloques_rst_ps7_0_50M_0_synth_1
+reset_run diagrama_bloques_xbar_0_synth_1
+reset_run diagrama_bloques_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS_2 {0} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_1]
+endgroup
+make_wrapper -files [get_files D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd] -top
+reset_run synth_1
+reset_run diagrama_bloques_axi_gpio_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
+ipx::edit_ip_in_project -upgrade true -name BUZZER_AXI_v1_0_project -directory D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.tmp/BUZZER_AXI_v1_0_project d:/Proyecto-02-SEP/IP_CORES/BUZZER/BUZZER_AXI_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project GUITAR_HERO_HW
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project BUZZER_AXI_v1_0_project
+current_project GUITAR_HERO_HW
+upgrade_ip -vlnv xilinx.com:user:BUZZER_AXI:1.0 [get_ips  diagrama_bloques_BUZZER_AXI_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips diagrama_bloques_BUZZER_AXI_0_1] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa
