@@ -1,4 +1,4 @@
-15:50:12 **** Incremental Build of configuration Debug for project GH_SW ****
+19:46:28 **** Incremental Build of configuration Debug for project GH_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,5 +6,5 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
 
-15:50:13 Build Finished (took 652ms)
+19:46:28 Build Finished (took 428ms)
 

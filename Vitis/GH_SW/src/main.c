@@ -264,15 +264,25 @@ int main(void)
     //Inicializamos el timer
     status = XTmrCtr_Initialize(&AudioTimer, AUDIO_TMRCTR_DEVICE_ID);
     status = InterruptAudioConfig(&AudioTimer); //configuración
+
     //Movimiento del joystick
-    //int joyx_val = 0, joyy_val = 0;
-    //int joy_mov = 0;
-    //int prev_joystick_moved = -1;
     int contador_joy = 0;
 
     //Definimos variables con los types definidos al inicio
     Direccion dir_joy = DIR_NONE; //Este es para controlar la dirección del joystick
     Estados_FSM ESTADO= MENU; //Este para cambiar los estados de la FSM
+
+    //estas dos variables son para asignar los valores del cuadrado
+    //donde se imprime el sprite.
+    //lo hicimos así para no tener que hacer distintas condiciones
+    //para limpiar la panralla
+    int pos_x = 0;
+    int pos_y = 0;
+    //Este límite es para limpiar los sprites, que son de tamaños distintos
+    //(básicamente es limitar el cuadrado donde "borramos" la imagen)
+    int limit = 0;
+    Direccion pos_anterior = DIR_NONE;
+
     while (1) {
     	//Máquina de estados para hacer correr el juego
     	switch(ESTADO){
@@ -305,7 +315,17 @@ int main(void)
 
     	case INTRO:
     		GUI_INTRO(); //Imprimos la intro en la pantalla
+    		GUI_DisString_EN(5,40,"Grupo 19",&Font16,GUI_BACKGROUND,RED);
+    		GUI_DisString_EN(1,60,"PRESENTA...",&Font16,GUI_BACKGROUND,RED);
     		usleep(2000000); // 2 segundos
+    		LCD_Clear(BLACK);
+    		usleep(1000000);
+    		GUI_DisString_EN(5,30,"DANCE",&Font16,GUI_BACKGROUND,RED);
+    		usleep(1000000);
+    		GUI_DisString_EN(15,60,"DANCE",&Font16,GUI_BACKGROUND,GREEN);
+    		usleep(1000000);
+    		GUI_DisString_EN(25,90,"BOOSTER",&Font16,GUI_BACKGROUND,MAGENTA);
+    		usleep(2000000);
     		GUI_TABLERO(); //Imprime el tablero del juego
 
     		//Aseguramos el timer detenido antes de empezar
@@ -356,18 +376,37 @@ int main(void)
     	    	AudioTimer_Stop();
 				dir_joy = JoystickDirection();
 				AudioTimer_Start();
+				if (pos_anterior != dir_joy){
+					ARROW_CLEAR(pos_x,pos_y, limit);
+				}
     	    	if (dir_joy == ARRIBA){
-    	    		GUI_DisString_EN(5,40,"ARRIBA",&Font16,GUI_BACKGROUND,CYAN);
+    	    		pos_x=49;
+					pos_y=16;
+					limit = 30;
+					DRAW_BLUE_ARROW(pos_x,pos_y,0);
     	    	}
     	    	if (dir_joy == ABAJO){
-    	    		GUI_DisString_EN(5,40,"ABAJO",&Font16,GUI_BACKGROUND,CYAN);
+    	    		pos_x=49;
+					pos_y=90;
+					limit = 30;
+					DRAW_BLUE_ARROW(pos_x,pos_y,1);
     	    	}
     	    	if (dir_joy == IZQUIERDA){
-    	    		GUI_DisString_EN(5,40,"IZQUIERDA",&Font16,GUI_BACKGROUND,CYAN);
+    	    		pos_x = 5;
+    	    		pos_y=50;
+    	    		limit = 34;
+    	    		DRAW_PINK_ARROW(pos_x,pos_y,0);
     	    	}
     	    	if (dir_joy == DERECHA){
-    	    		GUI_DisString_EN(5,40,"DERECHA",&Font16,GUI_BACKGROUND,CYAN);
+    	    		pos_x=89;
+    	    		pos_y=50;
+    	    		limit = 34;
+    	    		DRAW_PINK_ARROW(pos_x,pos_y,1);
     	    	}
+    	    	if (dir_joy == DIR_NONE){
+    	    		ARROW_CLEAR(pos_x,pos_y, limit);
+    	    	}
+    	    	pos_anterior = dir_joy;
     	    }
     	    usleep(500);
     	    break;

@@ -408,6 +408,84 @@ void GUI_TABLERO(){
 		    }
 }
 
+int IS_GREEN_BACKGROUND(COLOR pixel){
+    int r5 = pixel & 0x1F;
+    int g6 = (pixel >> 5) & 0x3F;
+    int b5 = (pixel >> 11) & 0x1F;
+
+    /*
+	Pasamos R y B a escala parecida a G.
+	R y B son de 5 bits, G es de 6 bits.
+	*/
+	int r6 = r5 << 1;
+	int b6 = b5 << 1;
+
+	/*
+	Detecta verdes y verdes mezclados.
+	No debería comerse el blanco puro, porque en blanco:
+	R, G y B son altos y parecidos.
+	*/
+	return (g6 >= 25 && g6 > r6 + 4 && g6 > b6 + 4);
+}
+
+void DRAW_PINK_ARROW(int x_i, int y_i, int mirror){
+	for (int y = 0; y<34;y++){
+		for(int x=0; x<34; x++){
+
+			//Esto es para hacer la flecha contraria
+			//así, ahorramos una imagen (y recursos)
+			int src_x;
+			if (mirror){
+				src_x = 34 - 1 - x;
+			} else {
+				src_x = x;
+			}
+			COLOR pixel = sprite_pink_arrow[y][src_x];
+
+			//Filtrado del fondo verde
+			if(!IS_GREEN_BACKGROUND(pixel)){
+				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+			}
+
+		}
+	}
+}
+
+void ARROW_CLEAR(int x_i, int y_i, int LIMIT){
+	for (int y= 0; y<LIMIT; y++){
+		for (int x = 0; x<LIMIT ; x++){
+
+			//COLOR pixel = sprite_pink_arrow[y][x];
+			GUI_DrawPoint(x+x_i, y+ y_i, tablero[y + y_i][x + x_i], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+
+		}
+	}
+}
+
+void DRAW_BLUE_ARROW(int x_i, int y_i, int mirror){
+	for (int y = 0; y<30;y++){
+		for(int x=0; x<30; x++){
+
+			//Esto es para hacer la flecha contraria
+			//así, ahorramos una imagen (y recursos)
+			int src_y;
+			if (mirror){
+				src_y = 30 - 1 - y;
+			} else {
+				src_y = y;
+			}
+			COLOR pixel = sprite_blue_arrow[src_y][x];
+
+			//Filtrado del fondo verde
+			if(!IS_GREEN_BACKGROUND(pixel)){
+				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+			}
+
+		}
+	}
+}
+
+
 
 
 
