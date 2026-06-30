@@ -10,9 +10,11 @@
 typedef struct{
 	u8 visible;
 	u32 fin_visible;
+	ClaseNota *nota;
 }TiempoVisual;
 
 static TiempoVisual t_vis[4]; //4 representa el número de lanes (que representará el número de flechas)
+static int puntaje = 0;
 
 //Idea basada en:
 //https://www.youtube.com/watch?v=G_IWm1xlx2A
@@ -34,10 +36,10 @@ static void MapaFlecha(u8 lane){
 
 static void LimpiarFlecha(u8 lane){
 	switch(lane){
-	case 0: ARROW_CLEAR(5,50,35); break;
+	case 0: ARROW_CLEAR(15,50,34); break;
 	case 1: ARROW_CLEAR(49,90,30); break;
 	case 2: ARROW_CLEAR(49,16,30); break;
-	case 3: ARROW_CLEAR(89,50,34); break;
+	case 3: ARROW_CLEAR(80,50,34); break;
 	default: break;
 	}
 }
@@ -51,6 +53,7 @@ void ResetFlechas(void){
 	for (int i = 0; i<4; i++){
 		t_vis[i].visible = 0;
 		t_vis[i].fin_visible = 0;
+		t_vis[i].nota = NULL;
 		LimpiarFlecha((u8)i);
 	}
 }
@@ -72,17 +75,56 @@ static void HabilitarFlecha(ClaseNota *nota, u32 tiempo_cancion){
 	t_vis[lane].visible = 1;
 	t_vis[lane].fin_visible = termino; //La flecha durará el tiempo
 	//en el que está la canción actualmente, sumada a la duración de la nota que entrega el MIDI
-
+	t_vis[lane].nota = nota;
 
 }
 
 static void ActualizarVisibilidad (u32 tiempo_cancion){
 	for (int i = 0; i<4;i++){
 		if(t_vis[i].visible && tiempo_cancion >= t_vis[i].fin_visible){
+
+			if (t_vis[i].nota != NULL && t_vis[i].nota->estado==SPAWN_NOTA){
+				t_vis[i].nota -> estado = NOTA_PERDIDA;
+			}
 			LimpiarFlecha((u8)i);
 			t_vis[i].visible = 0;
+			t_vis[i].fin_visible = 0;
+			t_vis[i].nota = NULL;
 		}
 	}
+}
+
+int Golpear(u8 lane, u32 tiempo_cancion){
+	if (!t_vis[lane].visible){
+		return 0; //Si el line no tiene activada la visibilidad de la flecha,
+		//retornamos 0 (no golpeamos)
+	}
+	if(t_vis[lane].nota->estado != SPAWN_NOTA){
+		return 0;
+	}
+	if(lane>=4){
+		return 0;
+	}
+	//Con  la flecha visible y la dirección correcta,
+	//vamos a considerar acierto y sumamos puntaje
+	puntaje ++;
+	t_vis[lane].nota->estado = GOLPE_NOTA; //actualizamos estado
+	LimpiarFlecha(lane);
+
+	//reiniciamos parámetros
+	t_vis[lane].visible = 0;
+	t_vis[lane].fin_visible = 0;
+	t_vis[lane].nota = NULL;
+
+	return 1; //consideramos golpe
+}
+
+void ResetPuntaje(void){
+	puntaje = 0;
+}
+
+int ObtenerPuntaje(void){
+	return puntaje;
 }
 
 void ActualizarFlechas(u32 tiempo_cancion){

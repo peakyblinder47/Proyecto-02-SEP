@@ -96,7 +96,7 @@ void DRAW_MUSIC_BLUE_SPRITE(int x_i, int y_i, int mirror);
 void DRAW_MUSIC_PINK_SPRITE(int x_i, int y_i, int mirror);
 void GUI_LOGO(int y_int, int y_fin, int izq);
 void GUI_NOLUZ(void);
-
+void GUI_DrawColorBlock(POINT Xpoint, POINT Ypoint, POINT Width, POINT Height, const COLOR *buffer);
 
 static const unsigned char waveshare[1024]=
 {

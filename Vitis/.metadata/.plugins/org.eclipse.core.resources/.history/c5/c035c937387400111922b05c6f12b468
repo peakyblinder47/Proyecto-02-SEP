@@ -1,0 +1,776 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include "platform.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "ff.h"
+#include "sleep.h"
+#include "xstatus.h"
+#include "xtime_l.h"
+#include "xtmrctr.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+#include "I2C.h"
+#include "audio.h"
+#include "ADC.h"
+#include "LCD_Driver.h"
+#include "LCD_GUI.h"
+#include "LCD_SPI.h"
+#include "chart.h"
+#include "flechas.h"
+
+// Botones GPIO
+#define BTN_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define BTN_GPIO_CHANNEL   1
+
+#define BTN_START_MASK 0x01   // BTN0 (máscara)
+#define BTN_STOP_MASK  0x02   // BTN1 (máscara)
+
+// GPIO para el led
+#define GPIO0_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
+
+//Definiciones que servirán para el joystick
+#define JOY_UMBRAL 200 //Umbral para detectar el movimiento del joystick
+#define JOY_CENTER_X 512 //Valor central asociado al eje x
+#define JOY_CENTER_Y 512 //Valor central asociado al eje y
+
+//Definiciones para sensor de luz
+#define LUX_MIN       5.0f       // Calibrar: lux con la mano sobre el sensor.
+#define LUX_MAX       1000.0f
+
+//Umbrales para el sensor de luz, definimos cuando se para y cuando se renauda el juego
+#define LUX_STOP_ON   8.0f
+#define LUX_STOP_OFF  20.0f
+#define LECTURAS_BAJAS_PARA_CONGELAR 3
+
+//Direcciones de AXI-TIMER
+#define AUDIO_TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+
+//IDs de los interrupts en el timer
+#define AUDIO_TMRCTR_INTERRUPT_ID	XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+
+#define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
+
+//Valores de control para el timer del audio
+#define TIMER_CNTR_AUDIO 0
+#define AUDIO_RESET 2000
+
+//Valores de control para el timer del sensor de luz
+#define TIMER_CNTR_SENSOR  1
+
+#define SENSOR_RESET       2      // sensor a 5 Hz, o sea cada 0.2 s
+
+// Gpio encargada de los botones
+static XGpio botones;
+//Timer encargado del audio
+static XTmrCtr AudioTimer;
+static XScuGic AudioIntc;
+static volatile int AudioEnableTimer = 0;
+
+//sensor tick avisa al código si hay que revisar o no el sensor de luz
+static volatile int SensorTick = 0;
+static volatile int SensorEnableTimer = 0;
+static volatile int JuegoCongelado = 0;
+// Para contar las lecturas del sensor bajo el umbral
+static int lecturas_luz_baja = 0;
+
+//Typedef para la máquina de estados principal
+typedef enum{
+	MENU,
+	ESPERAR_BTN,
+	INTRO,
+	PLAY,
+	CONGELADO, //estado adicional para congelar el juego por el sensor de luz
+	END
+} Estados_FSM;
+
+//Esto nos servirá como un "type" para definir las posiciones del joystick
+typedef enum {
+    DIR_NONE,
+    ARRIBA,
+    ABAJO,
+    IZQUIERDA,
+    DERECHA
+} Direccion;
+
+extern XSpi SpiInstance1;
+
+static u32 LeerBotones(void)
+{
+    return XGpio_DiscreteRead(&botones, BTN_GPIO_CHANNEL) & 0x7;
+}
+
+static void Menu(void)
+{
+	xil_printf("Escoja la canción que desea reproducir:\n");
+	xil_printf("[1] Syncronicity\n");
+	xil_printf("[2] El register espanol\n");
+	xil_printf("[3] Project: Shifter Wilds\n");
+	xil_printf("[4] Bytember\n");
+	xil_printf("[5] I XOR the feeling \n");
+}
+
+static const char* ElegirCancion(int num_cancion){
+
+	if (num_cancion == 1){
+	    return "SYNC8.WAV";
+	}
+
+	if (num_cancion == 2){
+		return "GAL8.WAV";
+	}
+
+	if (num_cancion == 3){
+		return "WILD8.WAV";
+		}
+
+	if (num_cancion == 4){
+		return "SEP8.WAV";
+		}
+
+	if (num_cancion == 5){
+		return "IGAF8.WAV";
+		}
+	return NULL;
+}
+
+static const char* ElegirChart(int num_cancion){
+	if (num_cancion == 1){
+		return "SYNC.CHT";
+	}
+
+	if (num_cancion == 2){
+		return "GAL8.CHT";
+	}
+
+	if (num_cancion == 3){
+		return "WILD.CHT";
+	}
+
+	if (num_cancion == 4){
+		return "SEP8.CHT";
+	}
+
+	if (num_cancion == 5){
+		return "IGAF.CHT";
+	}
+
+	return NULL;
+}
+
+//Función para manejar los botones y cambiar estados en función de ellos
+static void WAIT_BTN(Estados_FSM *estado) {
+    u32 btn = LeerBotones();
+    //con BTN_STOP_MASK, controlamos el caso de "reset"
+    if (btn & BTN_STOP_MASK) {
+        xil_printf("Canción cancelada. Volviendo al menú inicial...\n");
+        LCD_Clear(BLACK);
+        *estado = MENU; //El restart devuelve al estado menú, que despliega al menú inicial
+        return;
+    }
+    //Con la otra máscara, iniciamos el START
+    if (btn & BTN_START_MASK) {
+        xil_printf("Has apretado START. Es hora de jugar!\n");
+        LCD_Clear(BLACK);
+
+        while (LeerBotones() & BTN_START_MASK) {
+        	usleep(10000);
+        }
+
+        *estado = INTRO; //Cuando el botón START es apretado, nos movemos al estado INTRO
+        return;
+    }
+
+    *estado = ESPERAR_BTN; //Si no apretamos nada, nos mantenemos en el estado que espera el botón
+}
+
+//Manejamos el timer del audio y que además reconoce el estado congelado o no del juego
+static void AudioTimerHandler(void *CallBackRef, u8 TmrCtrl)
+{
+    // Timer 0: audio
+    if (TmrCtrl == TIMER_CNTR_AUDIO) {
+        if (AudioEnableTimer && Audio_State() == PLAYING && !JuegoCongelado) {
+            ACTUALIZAR_AUDIO(); //Con el estado en playing, y el juego no congelado el timer
+    		//irá actualizando el audio
+        }
+        return;
+    }
+    // No se lee el sensor en interrupción, el main es el que lee
+    // Timer 1: sensor de luz, si el timer esta activo, entonces sensor tick se setea en 1 para avisarle al main
+    if (TmrCtrl == TIMER_CNTR_SENSOR) {  //que hay que revisar luz
+        if (SensorEnableTimer) {
+            SensorTick = 1;
+        }
+        return;
+    }
+}
+
+extern int read_joyx();
+extern int read_joyy();
+
+void SensorTimer_Start(void);
+//el timer sigue funcionando, solo actua si el estado está en play o congelado
+void SensorTimer_Stop(void);
+
+int InterruptAudioConfig(XTmrCtr *AudioTmrInstance);
+void AudioTimer_Start(void);
+void AudioTimer_Stop(void);
+
+//Leemos hacia donde apunta el joystick
+Direccion JoystickDirection(void){
+	//Lectura de los ejes x e y
+	int joyx = read_joyx();
+	int joyy = read_joyy();
+
+	//Cuando está bajo un umbral definido, decimos que retorne un "None"
+	if(abs(joyx-JOY_CENTER_X)<JOY_UMBRAL && abs(joyy-JOY_CENTER_Y)<JOY_UMBRAL ){
+		return DIR_NONE;
+	}
+	//Cuando el joystick en algún eje supera el umbral,
+	//entonces se toma como un movimiento
+	//Esto está basado en códigos del proyecto del grupo 8 2024-2
+	//para hacerlo un poco más interesante, se usaron los typedef
+	if (abs(joyx-JOY_CENTER_X)>JOY_UMBRAL){
+		if (joyx-JOY_CENTER_X > 0){
+			return DERECHA;
+		} else{
+			return IZQUIERDA;
+		}
+	}
+
+	if (abs(joyy-JOY_CENTER_Y)>JOY_UMBRAL){
+			if (joyy-JOY_CENTER_Y > 0){
+				return ARRIBA;
+			} else{
+				return ABAJO;
+			}
+		}
+	return DIR_NONE;
+}
+
+// Conversión sensor de luz OPT3001
+float opt_raw_to_lux(u16 raw)
+{
+    u16 E = (raw >> 12) & 0xF;
+    u16 R = raw & 0xFFF;
+
+    return 0.01f * (float)(1U << E) * (float)R;
+}
+
+//funcion sugerida por ia para corregir la impresión de valores float de los sensores
+void print_float_2dec(const char* nombre, float valor, const char* unidad)
+{
+    int entero;
+    int decimal;
+
+    entero = (int)valor;
+
+    if (valor < 0) {
+        decimal = (int)((entero - valor) * 100.0f);
+    } else {
+        decimal = (int)((valor - entero) * 100.0f);
+    }
+
+    xil_printf("%s = %d.%02d %s", nombre, entero, decimal, unidad);
+}
+
+
+// leer sensores y printea por uart en consola
+void ReadPrintSensores(void)
+{
+    u16 raw_luz;
+    float lux;
+    int temp_c;
+
+    raw_luz = (u16)read_opt();
+    lux = opt_raw_to_lux(raw_luz);
+
+    temp_c = read_tmp();
+
+    xil_printf("[SENSORES] RAW_LUZ = 0x%04X | ", raw_luz);
+    print_float_2dec("LUX", lux, "lux");
+
+    xil_printf(" | TEMP = %d C\r\n", temp_c);
+}
+
+//revisamos la luz que registra el sensor
+// Lee solamente la luz y retorna el valor en lux.
+// Retorna XST_SUCCESS si la lectura fue válida.
+int LeerLuzJuego(float *lux_out)
+{
+    int raw_luz;
+    float lux;
+
+    raw_luz = read_opt();
+
+    if (raw_luz < 0) {
+        xil_printf("[LUZ] Error leyendo OPT3001\r\n");
+        return XST_FAILURE;
+    }
+
+    lux = opt_raw_to_lux((u16)raw_luz);
+
+    *lux_out = lux;
+
+    xil_printf("[LUZ] ");
+    print_float_2dec("LUX", lux, "lux");
+    xil_printf("\r\n");
+
+    return XST_SUCCESS;
+}
+
+
+// Revisa si el juego debe congelarse o reanudarse según la luz.
+// Se llama desde el while principal cuando SensorTick == 1.
+void RevisarCongeladoLuz(Estados_FSM *estado)
+{
+    float lux_actual;
+
+    // Solo tiene sentido revisar luz durante PLAY o CONGELADO.
+    if (*estado != PLAY && *estado != CONGELADO) {
+        return;
+    }
+
+    if (LeerLuzJuego(&lux_actual) != XST_SUCCESS) {
+        return;
+    }
+
+    // Si estamos jugando y la luz baja mucho, congelamos.
+    // Si estamos jugando, revisamos si la luz está bajo el umbral.
+    // No congelamos inmediatamente: primero exigimos varias lecturas bajas seguidas.
+    if (*estado == PLAY && lux_actual < LUX_STOP_ON) {
+        lecturas_luz_baja++;
+
+        xil_printf("[JUEGO] Lectura baja de luz %d/%d\r\n",
+                   lecturas_luz_baja,
+                   LECTURAS_BAJAS_PARA_CONGELAR);
+    }
+    else if (*estado == PLAY) {
+        lecturas_luz_baja = 0;
+    }
+
+
+    // Si ya acumulamos suficientes lecturas bajas consecutivas, congelamos el juego.
+    if (*estado == PLAY && lecturas_luz_baja >= LECTURAS_BAJAS_PARA_CONGELAR) {
+        xil_printf("[JUEGO] Luz baja confirmada. Congelando juego...\r\n");
+
+        JuegoCongelado = 1;
+        lecturas_luz_baja = 0;
+
+        // Detiene el timer de audio.
+        // El timer del sensor sigue corriendo.
+        AudioTimer_Stop();
+
+
+        GUI_NOLUZ();
+
+        *estado = CONGELADO;
+        return;
+    }
+
+    // Si estamos congelados y vuelve la luz, reanudamos.
+    if (*estado == CONGELADO && lux_actual > LUX_STOP_OFF) {
+        xil_printf("[JUEGO] Luz recuperada. Reanudando juego...\r\n");
+
+        JuegoCongelado = 0;
+        lecturas_luz_baja = 0;
+
+        LCD_Clear(BLACK);
+        GUI_TABLERO();
+
+        AudioTimer_Start();
+
+        *estado = PLAY;
+        return;
+    }
+}
+
+int main(void)
+{
+    int status; //Estado de reproducción de la canción
+    const char* SONG_PATH; //Ruta del archivo de música en la MicroSD
+    const char* CHART_PATH; //Ruta del archivo CHART en la MicroSD
+    int PATH_INDICE; //Con esta variable indicaremos qué canción tocar
+
+    init_platform(); //Inicializa la plataforma
+
+    xil_printf("=== Bienvenido a Guitar Zybo === \n");
+
+    // Inicialización de I2C para sensores de luz y temperatura
+	status = init_IIC();
+	if (status != XST_SUCCESS) {
+		xil_printf("ERROR: no se pudo inicializar I2C de sensores\r\n");
+		return XST_FAILURE;
+	}
+	xil_printf("Sensores I2C inicializados correctamente\r\n");
+
+	delay_ms(300);
+	ReadPrintSensores();
+	delay_ms(300);
+	ReadPrintSensores();
+
+    // Inicialización de los botones
+    status = XGpio_Initialize(&botones, BTN_GPIO_DEVICE_ID);
+
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar AXI GPIO\r\n");
+        return XST_FAILURE;
+    }
+
+    //Inicializa ADC
+    status = init_adc(&SpiInstance1, SPI_DEVICE_ID_1);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar ADC/SPI del joystick\r\n");
+        return XST_FAILURE;
+    }
+    // Configuramos la entrada del bloque GPIO en Vivado
+    XGpio_SetDataDirection(&botones, BTN_GPIO_CHANNEL, 0xFFFFFFFF);
+
+    // Inicialización del audio (función en audio.h)
+    //limpia el buzzer y carga el audio
+    status = PLAY_SONG();
+
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: PLAY_SONG fallo\r\n");
+        return XST_FAILURE;
+    }
+    //Inicializamos SPI
+    status = XSpi_Init(&SpiInstance, SPI_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar SPI del LCD\r\n");
+        return XST_FAILURE;
+    }
+
+    //Inicializamos GPIO del LCD
+    status = XGpio_Initialize(&gpio0, GPIO0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: no se pudo inicializar GPIO0 (LCD)\r\n");
+        return XST_FAILURE;
+    }
+
+    LCD_Init(SCAN_DIR_DFT);
+
+    //Inicializamos el timer
+    status = XTmrCtr_Initialize(&AudioTimer, AUDIO_TMRCTR_DEVICE_ID);
+    status = InterruptAudioConfig(&AudioTimer); //configuración
+
+    // El timer del sensor esta siempre pero actúa cuando el estado es PLAY o CONGELADO.
+	SensorTimer_Start();
+    //Movimiento del joystick
+    int contador_joy = 0;
+
+    //Definimos variables con los types definidos al inicio
+    Direccion dir_joy = DIR_NONE; //Este es para controlar la dirección del joystick
+    Estados_FSM ESTADO= MENU; //Este para cambiar los estados de la FSM
+
+    //estas dos variables son para asignar los valores del cuadrado
+    //donde se imprime el sprite.
+    //lo hicimos así para no tener que hacer distintas condiciones
+    //para limpiar la panralla
+    int pos_x = 0;
+    int pos_y = 0;
+    //Este límite es para limpiar los sprites, que son de tamaños distintos
+    //(básicamente es limitar el cuadrado donde "borramos" la imagen)
+    int limit = 0;
+    Direccion pos_anterior = DIR_NONE;
+
+    while (1) {
+    	if (SensorTick) {
+		   SensorTick = 0;
+		   RevisarCongeladoLuz(&ESTADO);
+		}
+    	//Máquina de estados para hacer correr el juego
+    	switch(ESTADO){
+    	case MENU:
+    		LCD_Clear(BLACK);
+    		//Enseñamos el menú de selección en la consola
+			Menu();
+			xil_printf("Ingrese la canción que desea escuchar: ");
+			scanf("%d", &PATH_INDICE); //Input para el usuario
+
+			xil_printf("Numero ingresado: %d\r\n", PATH_INDICE);
+
+			SONG_PATH = ElegirCancion(PATH_INDICE);//ElegirCancion es una función que asigna una canción a partir del input que recibe
+			//el código
+			CHART_PATH = ElegirChart(PATH_INDICE); //Con la misma lógica anterior, asigna un chart
+			//a partir del ínidice que escoge el usuario
+
+			if (SONG_PATH == NULL) {
+				xil_printf("Por favor ingresar opcion valida\n");
+				ESTADO = MENU;
+				break;
+			}
+
+			if (CHART_PATH == NULL) {
+				xil_printf("Aún no tengo el archivo CHART\n");
+				ESTADO = MENU;
+				break;
+			}
+
+			xil_printf("Cancion seleccionada: %s\r\n", SONG_PATH);
+			xil_printf("Presione START (BTN0) para iniciar el juego\n");
+
+			ESTADO = ESPERAR_BTN;
+			break;
+    	case ESPERAR_BTN:
+    		WAIT_BTN(&ESTADO); //Esperamos que el botón se aprete para iniciar la canción
+    		usleep(20000);
+    		break;
+
+    	case INTRO:
+    		GUI_INTRO(); //Imprimos la intro en la pantalla
+    		GUI_DisString_EN(5,40,"Grupo 19",&Font16,GUI_BACKGROUND,RED);
+    		GUI_DisString_EN(1,60,"PRESENTA...",&Font16,GUI_BACKGROUND,RED);
+    		usleep(2000000); // 2 segundos
+    		LCD_Clear(BLACK);
+    		usleep(1000000);
+    		GUI_LOGO(0,42,1); //Imprime el logo desde la izquierda, desde y=0 hasta y=42
+    		usleep(1000000);
+    		GUI_LOGO(84,128,0); //Imprime el logo desde la derecha, desde y=42 hasta y=84
+    		usleep(1000000);
+    		GUI_LOGO(42,84,1); //Imprime desde la derecha, desde 84 hasta 128
+    		usleep(2000000);
+    		GUI_TABLERO(); //Imprime el tablero del juego
+
+    		//Aseguramos el timer detenido antes de empezar
+    		AudioTimer_Stop();
+
+    		if (Cargar_Chart(CHART_PATH) != XST_SUCCESS) {
+				xil_printf("ERROR: no se pudo iniciar %s\n", SONG_PATH);
+				ESTADO = MENU;
+				break;
+			}
+
+    		ResetFlechas();
+
+    		if (AUDIO_START(SONG_PATH) != XST_SUCCESS) {
+				xil_printf("ERROR: no se pudo iniciar %s\n", SONG_PATH);
+				ESTADO = MENU;
+				break;
+			}
+
+
+    		//Empezamos el timer
+    		AudioTimer_Start();
+    		//Mensaje para avisar que se reproduce la canción
+			xil_printf("Reproduciendo el archivo: %s\r\n", SONG_PATH);
+
+			//Reinicio de variables
+			//prev_joystick_moved = -1;
+			//contador_joy = 0;
+
+    		ESTADO = PLAY; //Estado de lógica del juego
+    		break;
+    	case PLAY:
+    		//Lectura para reiniciar con el BTN1
+    	    if (LeerBotones() & BTN_STOP_MASK) {
+    	        xil_printf("Deteniendo la reproducción...\r\n");
+    	        AudioTimer_Stop();
+    	        ESTADO = END;
+
+    	        while (LeerBotones() & BTN_STOP_MASK) {
+    	            usleep(500);
+    	        }
+
+    	        break;
+    	    }
+
+    	    //Damos aviso del final de la canción
+    	    if (Audio_State() != PLAYING) {
+    	        xil_printf("Fin de la canción! \n", Audio_State());
+    	        AudioTimer_Stop();
+    	        ESTADO = END;
+    	        break;
+    	    }
+    	    ActualizarFlechas(Tiempo_Audio());
+    	    //Manejo del Joystick: la posición a la que se mueve
+    	    //dará la instrucción de qué sprite de flecha imprimir
+    	    contador_joy ++ ;
+    	    if (contador_joy > 100){
+    	    	contador_joy = 0;
+
+    	    	AudioTimer_Stop();
+				dir_joy = JoystickDirection();
+				AudioTimer_Start();
+				if (pos_anterior != dir_joy){
+					ARROW_CLEAR(pos_x,pos_y, limit);
+				}
+    	    	if (dir_joy == ARRIBA){
+    	    		pos_x=49;
+					pos_y=16;
+					limit = 30;
+					DRAW_BLUE_ARROW(pos_x,pos_y,0);
+    	    	}
+    	    	if (dir_joy == ABAJO){
+    	    		pos_x=49;
+					pos_y=90;
+					limit = 30;
+					DRAW_BLUE_ARROW(pos_x,pos_y,1);
+    	    	}
+    	    	if (dir_joy == IZQUIERDA){
+    	    		pos_x = 5;
+    	    		pos_y=50;
+    	    		limit = 34;
+    	    		DRAW_PINK_ARROW(pos_x,pos_y,0);
+    	    	}
+    	    	if (dir_joy == DERECHA){
+    	    		pos_x=89;
+    	    		pos_y=50;
+    	    		limit = 34;
+    	    		DRAW_PINK_ARROW(pos_x,pos_y,1);
+    	    	}
+    	    	if (dir_joy == DIR_NONE){
+    	    		ARROW_CLEAR(pos_x,pos_y, limit);
+    	    	}
+    	    	pos_anterior = dir_joy;
+    	    }
+    	    usleep(500);
+    	    break;
+
+    	case END:
+    		AudioTimer_Stop();
+    		STOP_AUDIO();
+    		LCD_Clear(BLACK);
+    		usleep(2000000); // 2 segundos
+    		xil_printf("Volviendo al menú...\n");
+    		ESTADO = MENU;
+    		SensorTick = 0;
+			lecturas_luz_baja = 0;
+    		break;
+
+    	case CONGELADO:
+			//este estado el juego se para, no lee joystick ni se cambian flechas ni se actualiza el audio
+			// el timer 1 funciona y la funcipon revisarcongeladoluz decide si se vuelve a PLAY segun la luz
+			if (LeerBotones() & BTN_STOP_MASK) {
+				xil_printf("Deteniendo desde pausa por luz...\r\n");
+
+				AudioTimer_Stop();
+				STOP_AUDIO();
+
+				JuegoCongelado = 0;
+				ESTADO = END;
+
+				SensorTick = 0;
+				lecturas_luz_baja = 0;
+				while (LeerBotones() & BTN_STOP_MASK) {
+					usleep(500);
+				}
+
+				break;
+			}
+
+			// No se lee joystick.
+			// No se actualiza audio.
+			// Solo esperamos que SensorTick active RevisarCongeladoLuz().
+			usleep(5000);
+			break;
+		}
+
+    }
+
+
+    cleanup_platform();
+
+    return 0;
+}
+
+int InterruptAudioConfig(XTmrCtr *AudioTmrInstance)
+{
+    XScuGic_Config *IntcConfig;
+    int status;
+
+    XTmrCtr_SetHandler(AudioTmrInstance, AudioTimerHandler, AudioTmrInstance);
+
+    // Timer 0: audio
+    XTmrCtr_SetOptions(AudioTmrInstance,
+                       TIMER_CNTR_AUDIO,
+                       XTC_INT_MODE_OPTION |
+                       XTC_AUTO_RELOAD_OPTION |
+                       XTC_DOWN_COUNT_OPTION);
+
+    u32 reset_audio = XPAR_TMRCTR_0_CLOCK_FREQ_HZ / AUDIO_RESET;
+
+    XTmrCtr_SetResetValue(AudioTmrInstance,
+                          TIMER_CNTR_AUDIO,
+                          reset_audio);
+
+    // Timer 1: sensor de luz
+    XTmrCtr_SetOptions(AudioTmrInstance,
+                       TIMER_CNTR_SENSOR,
+                       XTC_INT_MODE_OPTION |
+                       XTC_AUTO_RELOAD_OPTION |
+                       XTC_DOWN_COUNT_OPTION);
+
+    u32 reset_sensor = XPAR_TMRCTR_0_CLOCK_FREQ_HZ / SENSOR_RESET;
+
+    XTmrCtr_SetResetValue(AudioTmrInstance,
+                          TIMER_CNTR_SENSOR,
+                          reset_sensor);
+
+    IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+    if (IntcConfig == NULL) {
+        return XST_FAILURE;
+    }
+
+    status = XScuGic_CfgInitialize(&AudioIntc,
+                                   IntcConfig,
+                                   IntcConfig->CpuBaseAddress);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    status = XScuGic_Connect(&AudioIntc,
+                             AUDIO_TMRCTR_INTERRUPT_ID,
+                             (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+                             AudioTmrInstance);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XScuGic_Enable(&AudioIntc, AUDIO_TMRCTR_INTERRUPT_ID);
+
+    Xil_ExceptionInit();
+
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                 &AudioIntc);
+
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+}
+
+
+void AudioTimer_Start(void)
+{
+    AudioEnableTimer = 1;
+    XTmrCtr_Reset(&AudioTimer, TIMER_CNTR_AUDIO);
+    XTmrCtr_Start(&AudioTimer, TIMER_CNTR_AUDIO);
+}
+
+void AudioTimer_Stop(void)
+{
+    XTmrCtr_Stop(&AudioTimer, TIMER_CNTR_AUDIO);
+    AudioEnableTimer = 0;
+}
+
+//Funciones para manejar start y stop de lectura del sensor de luz
+void SensorTimer_Start(void)
+{
+    SensorTick = 0;
+    SensorEnableTimer = 1;
+
+    XTmrCtr_Reset(&AudioTimer, TIMER_CNTR_SENSOR);
+    XTmrCtr_Start(&AudioTimer, TIMER_CNTR_SENSOR);
+}
+
+void SensorTimer_Stop(void)
+{
+    XTmrCtr_Stop(&AudioTimer, TIMER_CNTR_SENSOR);
+    SensorEnableTimer = 0;
+    SensorTick = 0;}

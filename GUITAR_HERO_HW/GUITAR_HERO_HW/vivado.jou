@@ -2,14 +2,13 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Jun 29 14:10:33 2026
-# Process ID: 24488
+# Start of session at: Tue Jun 30 10:37:16 2026
+# Process ID: 8144
 # Current directory: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21332 D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17692 D:\Proyecto-02-SEP\GUITAR_HERO_HW\GUITAR_HERO_HW\GUITAR_HERO_HW.xpr
 # Log file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/vivado.log
 # Journal file: D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.xpr
 update_compile_order -fileset sources_1
-open_bd_design {D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques.bd}

@@ -391,4 +391,52 @@ void RST_HIGH(void)
 
 }
 
+//Esta función la recomendó la IA para optimizar la impresión de imágenes y hacerlas por bloques
+//La usarememos para poner las flechas en la imagen
+void LCD_SetBlockColor(POINT Xstart,
+                       POINT Ystart,
+                       POINT Width,
+                       POINT Height,
+                       const COLOR *buffer)
+{
+    if (buffer == NULL) {
+        return;
+    }
+
+    if (Width == 0 || Height == 0) {
+        return;
+    }
+
+    if (Xstart >= sLCD_DIS.LCD_Dis_Column || Ystart >= sLCD_DIS.LCD_Dis_Page) {
+        return;
+    }
+
+    if ((Xstart + Width) > sLCD_DIS.LCD_Dis_Column) {
+        Width = sLCD_DIS.LCD_Dis_Column - Xstart;
+    }
+
+    if ((Ystart + Height) > sLCD_DIS.LCD_Dis_Page) {
+        Height = sLCD_DIS.LCD_Dis_Page - Ystart;
+    }
+
+    /*
+     * IMPORTANTE:
+     * LCD_SetWindows usa Xend/Yend como limite superior exclusivo,
+     * porque internamente hace Xend - 1 e Yend - 1.
+     * Por eso aqui NO va Width - 1.
+     */
+    LCD_SetWindows(Xstart,
+                   Ystart,
+                   Xstart + Width,
+                   Ystart + Height);
+
+    DC_HIGH();
+
+    uint32_t total_pixels = (uint32_t)Width * (uint32_t)Height;
+
+    for (uint32_t i = 0; i < total_pixels; i++) {
+        SPI_WriteWord(&SpiInstance, buffer[i]);
+    }
+}
+
 

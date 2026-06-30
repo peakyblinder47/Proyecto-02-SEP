@@ -3,6 +3,10 @@
 
 extern LCD_DIS sLCD_DIS;
 
+#define GUI_BLOCK_MAX_W 128
+#define GUI_BLOCK_MAX_H 34
+
+static COLOR gui_block_buffer[GUI_BLOCK_MAX_W * GUI_BLOCK_MAX_H];
 void GUI_Swop(POINT Point1, POINT Point2)
 {
     POINT Temp;
@@ -478,15 +482,23 @@ void DRAW_PINK_ARROW(int x_i, int y_i, int mirror){
 	}
 }
 
-void ARROW_CLEAR(int x_i, int y_i, int LIMIT){
-	for (int y= 0; y<LIMIT; y++){
-		for (int x = 0; x<LIMIT ; x++){
+void ARROW_CLEAR(int x_i, int y_i, int LIMIT)
+{
+    if (LIMIT <= 0) {
+        return;
+    }
 
-			//COLOR pixel = sprite_pink_arrow[y][x];
-			GUI_DrawPoint(x+x_i, y+ y_i, tablero[y + y_i][x + x_i], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+    if (LIMIT > GUI_BLOCK_MAX_W || LIMIT > GUI_BLOCK_MAX_H) {
+        return;
+    }
 
-		}
-	}
+    for (int y = 0; y < LIMIT; y++) {
+        for (int x = 0; x < LIMIT; x++) {
+            gui_block_buffer[y * LIMIT + x] = tablero[y_i + y][x_i + x];
+        }
+    }
+
+    GUI_DrawColorBlock(x_i, y_i, LIMIT, LIMIT, gui_block_buffer);
 }
 
 void DRAW_BLUE_ARROW(int x_i, int y_i, int mirror){
@@ -512,50 +524,95 @@ void DRAW_BLUE_ARROW(int x_i, int y_i, int mirror){
 	}
 }
 
-void DRAW_MUSIC_PINK_SPRITE(int x_i, int y_i, int mirror){
-	for (int y = 0; y<34;y++){
-		for(int x=0; x<34; x++){
+void DRAW_MUSIC_PINK_SPRITE(int x_i, int y_i, int mirror)
+{	//La entrada mirror es para hacer la flecha contraria
+	//Así usamos solo dos imágenes y después la rotamos
+    const int W = 34;
+    const int H = 34;
 
-			//Esto es para hacer la flecha contraria
-			//así, ahorramos una imagen (y recursos)
-			int src_x;
-			if (mirror){
-				src_x = 34 - 1 - x;
-			} else {
-				src_x = x;
-			}
-			COLOR pixel = music_pink_sprite[y][src_x];
+    for (int y = 0; y < H; y++) {
+        for (int x = 0; x < W; x++) {
 
-			//Filtrado del fondo verde
-			if(!IS_GREEN_BACKGROUND(pixel)){
-				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-			}
+            int src_x;
 
-		}
-	}
+            if (mirror) {
+                src_x = W - 1 - x;
+            } else {
+                src_x = x;
+            }
+
+            COLOR pixel = music_pink_sprite[y][src_x];
+            //La imagen tiene fondo verde, así que eso lo rechazamos
+            if (IS_GREEN_BACKGROUND(pixel)) {
+                gui_block_buffer[y * W + x] = tablero[y_i + y][x_i + x];
+            } else {
+                gui_block_buffer[y * W + x] = pixel;
+            }
+        }
+    }
+
+    GUI_DrawColorBlock(x_i, y_i, W, H, gui_block_buffer);
 }
 
-void DRAW_MUSIC_BLUE_SPRITE(int x_i, int y_i, int mirror){
-	for (int y = 0; y<30;y++){
-		for(int x=0; x<30; x++){
+//Misma lógica anterior
+void DRAW_MUSIC_BLUE_SPRITE(int x_i, int y_i, int mirror)
+{
+    const int W = 30;
+    const int H = 30;
 
-			//Esto es para hacer la flecha contraria
-			//así, ahorramos una imagen (y recursos)
-			int src_y;
-			if (mirror){
-				src_y = 30 - 1 - y;
-			} else {
-				src_y = y;
-			}
-			COLOR pixel = music_blue_sprite[src_y][x];
+    for (int y = 0; y < H; y++) {
+        for (int x = 0; x < W; x++) {
 
-			//Filtrado del fondo verde
-			if(!IS_GREEN_BACKGROUND(pixel)){
-				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
-			}
+            int src_y;
 
-		}
-	}
+            if (mirror) {
+                src_y = H - 1 - y;
+            } else {
+                src_y = y;
+            }
+
+            COLOR pixel = music_blue_sprite[src_y][x];
+
+            if (IS_GREEN_BACKGROUND(pixel)) {
+                gui_block_buffer[y * W + x] = tablero[y_i + y][x_i + x];
+            } else {
+                gui_block_buffer[y * W + x] = pixel;
+            }
+        }
+    }
+
+    GUI_DrawColorBlock(x_i, y_i, W, H, gui_block_buffer);
+}
+
+//Esta función fue hecha por la IA para optimizar la impresión en pantalla
+//La gracia es que imprime por bloques, en vez de hacerlo pixel por pixel
+void GUI_DrawColorBlock(POINT Xpoint,
+                        POINT Ypoint,
+                        POINT Width,
+                        POINT Height,
+                        const COLOR *buffer)
+{
+    if (buffer == NULL) {
+        return;
+    }
+
+    if (Width == 0 || Height == 0) {
+        return;
+    }
+
+    if (Xpoint >= sLCD_DIS.LCD_Dis_Column || Ypoint >= sLCD_DIS.LCD_Dis_Page) {
+        return;
+    }
+
+    if ((Xpoint + Width) > sLCD_DIS.LCD_Dis_Column) {
+        Width = sLCD_DIS.LCD_Dis_Column - Xpoint;
+    }
+
+    if ((Ypoint + Height) > sLCD_DIS.LCD_Dis_Page) {
+        Height = sLCD_DIS.LCD_Dis_Page - Ypoint;
+    }
+
+    LCD_SetBlockColor(Xpoint, Ypoint, Width, Height, buffer);
 }
 
 
