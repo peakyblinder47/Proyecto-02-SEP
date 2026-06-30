@@ -45,11 +45,11 @@ void GUI_DrawPoint(POINT Xpoint, POINT Ypoint, COLOR Color,
 /********************************************************************************
 function:	Draw a line of arbitrary slope
 parameter:
-			Xstart ：Starting x point coordinates
-			Ystart ：Starting x point coordinates
-			Xend   ：End point x coordinate
-			Yend   ：End point y coordinate
-			Color  ：The color of the line segment
+			Xstart ï¼šStarting x point coordinates
+			Ystart ï¼šStarting x point coordinates
+			Xend   ï¼šEnd point x coordinate
+			Yend   ï¼šEnd point y coordinate
+			Color  ï¼šThe color of the line segment
 ********************************************************************************/
 void GUI_DrawLine(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend,
                   COLOR Color, LINE_STYLE Line_Style, DOT_PIXEL Dot_Pixel)
@@ -104,12 +104,12 @@ void GUI_DrawLine(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend,
 /********************************************************************************
 function:	Draw a rectangle
 parameter:
-			Xstart ：Rectangular  Starting x point coordinates
-			Ystart ：Rectangular  Starting x point coordinates
-			Xend   ：Rectangular  End point x coordinate
-			Yend   ：Rectangular  End point y coordinate
-			Color  ：The color of the Rectangular segment
-			Filled : Whether it is filled--- 1 solid 0：empty
+			Xstart ï¼šRectangular  Starting x point coordinates
+			Ystart ï¼šRectangular  Starting x point coordinates
+			Xend   ï¼šRectangular  End point x coordinate
+			Yend   ï¼šRectangular  End point y coordinate
+			Color  ï¼šThe color of the Rectangular segment
+			Filled : Whether it is filled--- 1 solid 0ï¼šempty
 ********************************************************************************/
 void GUI_DrawRectangle(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend,
                        COLOR Color, DRAW_FILL Filled, DOT_PIXEL Dot_Pixel )
@@ -142,11 +142,11 @@ void GUI_DrawRectangle(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend,
 function:	Use the 8-point method to draw a circle of the
 				specified size at the specified position.
 parameter:
-			X_Center ：Center X coordinate
-			Y_Center ：Center Y coordinate
-			Radius   ：circle Radius
-			Color  ：The color of the ：circle segment
-			Filled : Whether it is filled: 1 filling 0：Do not
+			X_Center ï¼šCenter X coordinate
+			Y_Center ï¼šCenter Y coordinate
+			Radius   ï¼šcircle Radius
+			Color  ï¼šThe color of the ï¼šcircle segment
+			Filled : Whether it is filled: 1 filling 0ï¼šDo not
 ********************************************************************************/
 void GUI_DrawCircle(POINT X_Center, POINT Y_Center, LENGTH Radius,
                     COLOR Color, DRAW_FILL  Draw_Fill , DOT_PIXEL Dot_Pixel)
@@ -209,10 +209,10 @@ void GUI_DrawCircle(POINT X_Center, POINT Y_Center, LENGTH Radius,
 /********************************************************************************
 function:	Show English characters
 parameter:
-			Xpoint ：X coordinate
-			Ypoint ：Y coordinate
-			Acsii_Char   ：To display the English characters
-			Font  ：A structure pointer that displays a character size
+			Xpoint ï¼šX coordinate
+			Ypoint ï¼šY coordinate
+			Acsii_Char   ï¼šTo display the English characters
+			Font  ï¼šA structure pointer that displays a character size
 			Color_Background : Select the background color of the English character
 			Color_Foreground : Select the foreground color of the English character
 ********************************************************************************/
@@ -254,10 +254,10 @@ void GUI_DisChar(POINT Xpoint, POINT Ypoint, const char Acsii_Char,
 /********************************************************************************
 function:	Display the string
 parameter:
-			Xstart    ：X coordinate
-			Ystart    ：Y coordinate
-			pString   ：The first address of the English string to be displayed
-			Font      ：A structure pointer that displays a character size
+			Xstart    ï¼šX coordinate
+			Ystart    ï¼šY coordinate
+			pString   ï¼šThe first address of the English string to be displayed
+			Font      ï¼šA structure pointer that displays a character size
 			Color_Background : Select the background color of the English character
 			Color_Foreground : Select the foreground color of the English character
 ********************************************************************************/
@@ -296,10 +296,10 @@ void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString,
 /****************************************WHITE****************************************
 function:	Display the string
 parameter:
-			Xstart ：X coordinate
+			Xstart ï¼šX coordinate
 			Ystart : Y coordinate
 			Nummber: The number displayed
-			Font  ：A structure pointer that displays a character size
+			Font  ï¼šA structure pointer that displays a character size
 			Color_Background : Select the background color of the English character
 			Color_Foreground : Select the foreground color of the English character
 ********************************************************************************/
@@ -390,19 +390,46 @@ void GUI_Show(void)
 	printf("GUI Display Nummber \r\n");
 	GUI_DisNum(28,55,1234567890,&Font20,GUI_BACKGROUND,BLUE);
 }
+//Intro de inicio al juego
 void GUI_INTRO(){
 	for (int y = 0; y < 128; y++) {
 	        for (int x = 0; x < 128; x++) {
-	            // Aqu� puedes ajustar el tama�o del punto y el color si es necesario.
+	            // Aquí puedes ajustar el tamaño del punto y el color si es necesario.
 	            GUI_DrawPoint(x, y, intro[y][x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
 	        }
 	    }
 }
 
+//este es el gui para la foto de la miku sin luz
+void GUI_NOLUZ(){
+	for (int y = 0; y < 128; y++) {
+		        for (int x = 0; x < 128; x++) {
+		            // Aquí puedes ajustar el tamaño del punto y el color si es necesario.
+		            GUI_DrawPoint(x, y, miku[y][x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+		        }
+		    }
+}
+//Logo dance dance booster
+void GUI_LOGO(int y_int, int y_fin, int izq){
+	if (izq){
+	for (int y = y_int; y<y_fin; y++){
+		for (int x= 0; x<128; x++){
+			GUI_DrawPoint(x,y,logo[y][x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+		}
+	}
+	} else{
+		for (int y =y_int; y<y_fin; y++){
+			for (int x= 0; x<128;x++){
+				GUI_DrawPoint(128-x,y,logo[y][128-x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
+			}
+		}
+	}
+}
+//Tablero del juego
 void GUI_TABLERO(){
 	for (int y = 0; y < 128; y++) {
 		        for (int x = 0; x < 128; x++) {
-		            // Aqu� puedes ajustar el tama�o del punto y el color si es necesario.
+		            // Aquí puedes ajustar el tamaño del punto y el color si es necesario.
 		            GUI_DrawPoint(x, y, tablero[y][x], DOT_PIXEL_1X1, DOT_FILL_AROUND);
 		        }
 		    }
@@ -422,7 +449,7 @@ int IS_GREEN_BACKGROUND(COLOR pixel){
 
 	/*
 	Detecta verdes y verdes mezclados.
-	No deber�a comerse el blanco puro, porque en blanco:
+	No debería comerse el blanco puro, porque en blanco:
 	R, G y B son altos y parecidos.
 	*/
 	return (g6 >= 25 && g6 > r6 + 4 && g6 > b6 + 4);
@@ -433,7 +460,7 @@ void DRAW_PINK_ARROW(int x_i, int y_i, int mirror){
 		for(int x=0; x<34; x++){
 
 			//Esto es para hacer la flecha contraria
-			//as�, ahorramos una imagen (y recursos)
+			//así, ahorramos una imagen (y recursos)
 			int src_x;
 			if (mirror){
 				src_x = 34 - 1 - x;
@@ -467,7 +494,7 @@ void DRAW_BLUE_ARROW(int x_i, int y_i, int mirror){
 		for(int x=0; x<30; x++){
 
 			//Esto es para hacer la flecha contraria
-			//as�, ahorramos una imagen (y recursos)
+			//así, ahorramos una imagen (y recursos)
 			int src_y;
 			if (mirror){
 				src_y = 30 - 1 - y;
@@ -485,6 +512,51 @@ void DRAW_BLUE_ARROW(int x_i, int y_i, int mirror){
 	}
 }
 
+void DRAW_MUSIC_PINK_SPRITE(int x_i, int y_i, int mirror){
+	for (int y = 0; y<34;y++){
+		for(int x=0; x<34; x++){
+
+			//Esto es para hacer la flecha contraria
+			//así, ahorramos una imagen (y recursos)
+			int src_x;
+			if (mirror){
+				src_x = 34 - 1 - x;
+			} else {
+				src_x = x;
+			}
+			COLOR pixel = music_pink_sprite[y][src_x];
+
+			//Filtrado del fondo verde
+			if(!IS_GREEN_BACKGROUND(pixel)){
+				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+			}
+
+		}
+	}
+}
+
+void DRAW_MUSIC_BLUE_SPRITE(int x_i, int y_i, int mirror){
+	for (int y = 0; y<30;y++){
+		for(int x=0; x<30; x++){
+
+			//Esto es para hacer la flecha contraria
+			//así, ahorramos una imagen (y recursos)
+			int src_y;
+			if (mirror){
+				src_y = 30 - 1 - y;
+			} else {
+				src_y = y;
+			}
+			COLOR pixel = music_blue_sprite[src_y][x];
+
+			//Filtrado del fondo verde
+			if(!IS_GREEN_BACKGROUND(pixel)){
+				GUI_DrawPoint(x+x_i, y+y_i, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+			}
+
+		}
+	}
+}
 
 
 

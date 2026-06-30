@@ -1,0 +1,12 @@
+#ifndef FLECHAS_H
+#define FLECHAS_H
+
+#include "xil_types.h"
+#include "chart.h"
+
+#define LANES_NUM 4
+#define TIEMPO_VISIBLE 120U //Tiempo de duración de la flecha
+
+
+
+#endif

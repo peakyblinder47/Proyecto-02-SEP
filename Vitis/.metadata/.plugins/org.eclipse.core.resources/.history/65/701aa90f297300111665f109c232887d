@@ -1,0 +1,13 @@
+#ifndef FLECHAS_H
+#define FLECHAS_H
+
+#include "xil_types.h"
+#include "chart.h"
+
+#define TIEMPO_VISIBLE 120U //Tiempo de duración de la flecha
+
+void Init_Flechas(void);
+void ResetFlechas(void);
+void ActualizarFlechas(u32 tiempo_cancion);
+
+#endif

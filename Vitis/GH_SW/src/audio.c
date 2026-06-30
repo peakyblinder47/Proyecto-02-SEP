@@ -18,6 +18,8 @@
 #define VOLUMEN_NUM 3
 #define VOLUMEN_DEN 2
 
+#define MUESTREO_AUDIO 8000U
+
 static FATFS sd; //sistema de archivos de la SD
 static FIL cancion; // canción abierta
 
@@ -238,4 +240,15 @@ void STOP_AUDIO (void){
 u8 Audio_State(void)
 {
     return state;
+}
+
+u32 ObtenerMuestras_Audio(void){
+	return Xil_In32(BUZZER_BASEADDR + 0x08);
+	//lee el contador de muestras proveniente del bloque AXI (llamado play_counter)
+}
+
+u32 Tiempo_Audio(void){
+	u32 sample = ObtenerMuestras_Audio();
+	return (sample*1000U)/MUESTREO_AUDIO;
+	//Audio está en formato de 8KHz, entonces 8000 muestras = 1 seg
 }

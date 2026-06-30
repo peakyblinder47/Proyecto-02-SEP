@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="PLAY_SONG" key="selection"/>
+		<item value="Flecha" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="flecha"/>
+			<item value="interrupt"/>
+			<item value="chart"/>
+			<item value="lanes_num"/>
+			<item value="state"/>
 			<item value="play_song"/>
 			<item value="actualizar_audio"/>
 			<item value="audio"/>
@@ -16,13 +21,8 @@
 			<item value="spiADC"/>
 			<item value="timer"/>
 			<item value="joy_on"/>
-			<item value="state"/>
 			<item value="playing"/>
 			<item value="PLAYING"/>
-			<item value="arrow"/>
-			<item value="intro"/>
-			<item value="LCD_DRIVER"/>
-			<item value="gpio0"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gpio1"/>

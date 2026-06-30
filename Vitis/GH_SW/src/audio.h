@@ -11,5 +11,7 @@ int AUDIO_START(const char *filename);
 void ACTUALIZAR_AUDIO(void);
 void STOP_AUDIO(void);
 u8 Audio_State(void);
+u32 ObtenerMuestras_Audio(void);
+u32 Tiempo_Audio(void);
 
 #endif

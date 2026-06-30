@@ -1,0 +1,143 @@
+#include <stdio.h>
+#include <string.h>
+#include "ff.h"
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "chart.h"
+
+ChartCancion song_chart;
+
+//Lee el acrhivo CHART desde la SD
+static int ReadLine(FIL *file, char *line, int max_len){
+	UINT br; //bytes read
+	char caracter;
+	int i = 0;
+
+	if (max_len <= 1){
+		return -1;
+	}
+
+	while (i<max_len - 1){
+		FRESULT rc = f_read(file, &caracter, 1 , &br);
+		if (rc!=FR_OK){
+			return -1;
+		}
+		if (br==0){
+			break;
+		}
+		if (caracter == '\r'){
+			continue;
+		}
+		if (caracter == '\n'){
+			break;
+		}
+
+		line[i++] = caracter;
+	}
+
+	line[i]='\0';
+	if (i==0 && br == 0){
+		return 0; //termina el archivo
+	}
+
+	return 1; //Se leyó la línea
+}
+
+void ResetState(void){
+	song_chart.next_spawn = 0;
+	for (u32 i = 0; i < song_chart.length; i++){
+		song_chart.notes[i].estado = ESPERAR_NOTA;
+	}
+}
+
+int Cargar_Chart(const char *filename){
+	FIL file;
+	FRESULT rc;
+	char line[96];
+	song_chart.bpm = 120;
+	song_chart.length = 0;
+	song_chart.next_spawn = 0;
+
+	rc = f_open(&file, filename, FA_READ);
+	if(rc!=FR_OK){
+		xil_printf("No se pude abrir correctamente el archivo %s, rc=%d",filename, rc);
+		return XST_FAILURE;
+	}
+	while(1){
+		int r = ReadLine(&file, line, sizeof(line));
+		if (r==0){
+			break;
+		}
+		if(line[0]=='\0'||line[0]=='#'){
+			continue; //salta espacio/comentarios/líneas vacías
+		}
+		// Lectura del BPM
+		if (strncmp(line, "BPM,", 4) == 0) {
+			unsigned int bpm;
+			if (sscanf(line, "BPM,%u", &bpm) == 1) {
+				song_chart.bpm = (u16)bpm;
+			}
+			continue;
+		}
+		//Esto solamente salta el encabezado para no corromper la lectura
+		if(strncmp(line, "time_ms", 7)==0){
+			continue;
+		}
+		unsigned int tiempo_ms;
+		unsigned int duracion;
+		unsigned int lane;
+		unsigned int nota_midi;
+		unsigned int velocidad;
+
+		int lectura = sscanf(line, "%u,%u,%u,%u,%u", &tiempo_ms, &duracion,&lane,&nota_midi,&velocidad);
+
+		if (lectura == 5){
+			if (song_chart.length >= NOTAS_MAX){
+				xil_printf("Llenamos la RAM:( \n");
+				break;
+			}
+
+			ClaseNota *nota = &song_chart.notes[song_chart.length];
+			nota -> tiempo_ms = (u32) tiempo_ms;
+			nota -> duracion = (u16) duracion;
+			nota -> lane = (u8) lane;
+			nota -> nota_midi = (u8) nota_midi;
+			nota -> velocidad = (u8) velocidad;
+			nota -> estado = ESPERAR_NOTA;
+
+			song_chart.length ++;
+		}
+	}
+	f_close(&file);
+	ResetState();
+	xil_printf("Chart cargado correctamente: %s\n", filename);
+	return XST_SUCCESS;
+}
+
+//Esta función es para la lógica del juego
+int LeerSgteSpawn(u32 song_time, ClaseNota **note_out){
+	if (song_chart.next_spawn >= song_chart.length){ //Verificamos si quedan notas
+		return 0;
+	}
+	//Creamos un puntero que va a tener la próxima nota que viene
+	ClaseNota *nota = &song_chart.notes[song_chart.next_spawn];
+
+	//Vemos el instante en que la flecha va a aparecer según la nota
+	u32 tiempo_spawn;
+	if (nota->tiempo_ms>GOLPE_TIME){
+		tiempo_spawn = nota -> tiempo_ms - GOLPE_TIME;
+	} else {
+		tiempo_spawn = 0;
+	}
+	//Comparamos el tiempo actual de la canción
+	//con el tiempo en el que debería aparecer la nota
+	if (song_time >= tiempo_spawn){
+		nota->estado = SPAWN_NOTA; //Cambiamos el estado para indicar que ya
+		//spawneó la flecha
+		*note_out  = nota; //esto hará que desde el main podamos apuntar
+		//a la nota que debería aparecer
+		song_chart.next_spawn++;
+		return 1;
+	}
+	return 0;
+}

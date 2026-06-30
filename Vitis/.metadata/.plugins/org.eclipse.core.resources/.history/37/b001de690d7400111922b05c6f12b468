@@ -1,0 +1,92 @@
+#include <stddef.h>
+
+#include "flechas.h"
+#include "chart.h"
+#include "LCD_GUI.h"
+#include "xil_printf.h"
+
+#define TIEMPO_MINIMO 80U
+
+typedef struct{
+	u8 visible;
+	u32 fin_visible;
+}TiempoVisual;
+
+static TiempoVisual t_vis[4]; //4 representa el número de lanes (que representará el número de flechas)
+
+//Idea basada en:
+//https://www.youtube.com/watch?v=G_IWm1xlx2A
+
+//Con esto mapareamos la flecha que aparece a partir del lane
+//es como una suerte de mapa que formaremos con los datos del MIDI
+static void MapaFlecha(u8 lane){
+	switch(lane){
+	case 0: DRAW_MUSIC_PINK_SPRITE(5,50,0); break;//Izq.
+	case 1: DRAW_MUSIC_BLUE_SPRITE(49,90,1);break;//Abajo
+	case 2: DRAW_MUSIC_BLUE_SPRITE(49,16,0);break;//Arriba
+	case 3: DRAW_MUSIC_PINK_SPRITE(89,50,1); break;//Der.
+	}
+}
+
+static void LimpiarFlecha(u8 lane){
+	switch(lane){
+	case 0: ARROW_CLEAR(5,50,35); break;
+	case 1: ARROW_CLEAR(49,90,30); break;
+	case 2: ARROW_CLEAR(49,16,30); break;
+	case 3: ARROW_CLEAR(89,50,34); break;
+	default: break;
+	}
+}
+
+void Init_Flechas(void){
+	ResetFlechas();
+}
+
+//Con esto vamos a limpiar todas las flechas que sean visuales
+void ResetFlechas(void){
+	for (int i = 0; i<4; i++){
+		t_vis[i].visible = 0;
+		t_vis[i].fin_visible = 0;
+		LimpiarFlecha((u8)i);
+	}
+}
+
+static void HabilitarFlecha(ClaseNota *nota, u32 tiempo_cancion){
+	u8 lane = nota ->lane;
+	u32 tiempo_visible = nota->duracion;
+
+	if (tiempo_visible < TIEMPO_MINIMO){
+		tiempo_visible = TIEMPO_MINIMO; //Esto es para notas muy cortas
+		//así, aseguramos que cumplan todas un tiempo mínimo de aparición
+	}
+
+	u32 termino = nota->tiempo_ms + tiempo_visible; //apagaremos la flecha
+	//al terminar la extensión completa de la nota
+
+	MapaFlecha(lane);
+
+	t_vis[lane].visible = 1;
+	t_vis[lane].fin_visible = termino; //La flecha durará el tiempo
+	//en el que está la canción actualmente, sumada a la duración de la nota que entrega el MIDI
+
+
+}
+
+static void ActualizarVisibilidad (u32 tiempo_cancion){
+	for (int i = 0; i<4;i++){
+		if(t_vis[i].visible && tiempo_cancion >= t_vis[i].fin_visible){
+			LimpiarFlecha((u8)i);
+			t_vis[i].visible = 0;
+		}
+	}
+}
+
+void ActualizarFlechas(u32 tiempo_cancion){
+	ClaseNota *nota;
+	while(LeerSgteSpawn(tiempo_cancion, &nota)){
+		HabilitarFlecha(nota, tiempo_cancion);
+		nota -> estado = SPAWN_NOTA;
+
+	}
+	ActualizarVisibilidad(tiempo_cancion);
+}

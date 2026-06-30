@@ -1,0 +1,36 @@
+#ifndef CHART_H
+#define CHART_H
+
+#include "xil_types.h"
+#include "xstatus.h"
+
+#define NOTAS_MAX 1200
+#define GOLPE_TIME 1500U //tiempo antes del golpe en el que aparece una flecha
+
+typedef enum{
+	ESPERAR_NOTA = 0,
+	SPAWN_NOTA,
+	GOLPE_NOTA,
+	NOTA_PERDIDA,
+} EstadoNota;
+
+typedef struct{
+	u32 tiempo_ms;
+	u16 duracion;
+	u8 lane;
+	u8 nota_midi;
+	u8 velocidad;
+	u8 estado;
+} EventoNota;
+
+typedef struct {
+	u16 bpm;
+	u32 length;
+	u32 next_spawn;
+	EventoNota notes[NOTAS_MAX];
+} ChartCancion;
+
+extern ChartCancion g_chart;
+
+
+#endif
