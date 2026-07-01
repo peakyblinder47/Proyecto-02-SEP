@@ -50,9 +50,11 @@
 
 //Direcciones de AXI-TIMER
 #define AUDIO_TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+#define MIC_TMRCTR_DEVICE_ID      XPAR_TMRCTR_1_DEVICE_ID //Timer para el micrófono
 
 //IDs de los interrupts en el timer
 #define AUDIO_TMRCTR_INTERRUPT_ID	XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define MIC_TMRCTR_INTERRUPT_ID   XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
 
 #define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
 
@@ -60,6 +62,9 @@
 #define TIMER_CNTR_AUDIO 0
 #define AUDIO_RESET 2000
 
+//Valores de control para el timer del micrófono
+#define TIMER_CNTR_MIC   0
+#define MIC_RESET 50   // 50 Hz, lectura cada 20 ms
 //Valores de control para el timer del sensor de luz
 #define TIMER_CNTR_SENSOR  1
 
@@ -72,6 +77,9 @@ static XGpio botones;
 static XTmrCtr AudioTimer;
 static XScuGic AudioIntc;
 static volatile int AudioEnableTimer = 0;
+
+static XTmrCtr MicTimer;
+static volatile int MicEnableTimer = 0;
 
 //sensor tick avisa al codigo si hay que revisar o no el sensor de luz
 static volatile int SensorTick = 0;
@@ -211,18 +219,6 @@ static void AudioTimerHandler(void *CallBackRef, u8 TmrCtrl)
         if (SensorEnableTimer) {
         	Joytick = 1; //Lectura del Joystick en cada tick
 
-        	int MicLec = read_MIC(); //Lectura del micrófono
-
-        	if (Audio_State() == PLAYING && !JuegoCongelado){
-        		MicLec -= 512;
-        		if (abs(MicLec) > 100){
-        			RestarScore(1);
-        			xil_printf("Puntaje descontado!\n");
-        		}
-        	}
-
-        	int MicTick = 1;
-
             sensor_div_cntr++; //Hacemos que el sensor se revise de forma interrumpida
             if (sensor_div_cntr >= SENSOR_DIV){
             	sensor_div_cntr = 0;
@@ -231,6 +227,21 @@ static void AudioTimerHandler(void *CallBackRef, u8 TmrCtrl)
         }
         return;
     }
+}
+
+static void MicTimerHandler(void *CallBackRef, u8 TmrCtrl){
+	if(TmrCtrl == TIMER_CNTR_MIC){
+		if(MicEnableTimer && Audio_State()==PLAYING && !JuegoCongelado){
+			int MicLec = read_MIC(); //Lectura del micrófono
+			MicLec -= 512;
+			if (abs(MicLec)>100){
+				RestarScore(1);
+				xil_printf("Mucho ruido! Puntaje descontado!\n");
+			}
+		}
+
+		return;
+	}
 }
 
 extern int read_joyx();
@@ -243,7 +254,8 @@ void SensorTimer_Stop(void);
 int InterruptAudioConfig(XTmrCtr *AudioTmrInstance);
 void AudioTimer_Start(void);
 void AudioTimer_Stop(void);
-
+void MicTimer_Start(void);
+void MicTimer_Stop(void);
 //Leemos hacia donde apunta el joystick
 Direccion JoystickDirection(void){
 	//Lectura de los ejes x e y
@@ -522,7 +534,9 @@ int main(void)
     xil_printf("=== Bienvenido a Guitar Zybo === \n");
 
     // Inicialización de I2C para sensores de luz y temperatura
+    delay_ms(300);
 	status = init_IIC();
+
 	if (status != XST_SUCCESS) {
 		xil_printf("ERROR: no se pudo inicializar I2C de sensores\r\n");
 		return XST_FAILURE;
@@ -579,8 +593,12 @@ int main(void)
     status = XTmrCtr_Initialize(&AudioTimer, AUDIO_TMRCTR_DEVICE_ID);
     status = InterruptAudioConfig(&AudioTimer); //configuración
 
+    status = XTmrCtr_Initialize(&MicTimer, MIC_TMRCTR_DEVICE_ID); //Hacemos lo mismo con el segundo timer
+    status = InterruptMicConfig(&MicTimer);
+
     // El timer del sensor esta siempre pero actúa cuando el estado es PLAY o CONGELADO.
 	SensorTimer_Start();
+	MicTimer_Start();
     //Definimos variables con los types definidos al inicio
     Estados_FSM ESTADO= MENU; //Este para cambiar los estados de la FSM
 
@@ -822,15 +840,40 @@ int InterruptAudioConfig(XTmrCtr *AudioTmrInstance)
 
     Xil_ExceptionInit();
 
-    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-                                 &AudioIntc);
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)XScuGic_InterruptHandler,&AudioIntc);
 
     Xil_ExceptionEnable();
+
+    //XScuGic_SetPriorityTriggerType(&AudioIntc, AUDIO_TMRCTR_INTERRUPT_ID,0x20,0x3);
+    //Le damos prioridad al audio
 
     return XST_SUCCESS;
 }
 
+//Configuramos la segunda interrupción: la del micrófono
+int InterruptMicConfig(XTmrCtr *MicTmrInstance){
+	int status;
+	XTmrCtr_SetHandler(MicTmrInstance, MicTimerHandler, MicTmrInstance);
+	XTmrCtr_SetOptions(MicTmrInstance,
+	                       TIMER_CNTR_MIC,
+	                       XTC_INT_MODE_OPTION |
+	                       XTC_AUTO_RELOAD_OPTION |
+	                       XTC_DOWN_COUNT_OPTION);
+	u32 reset_mic = XPAR_TMRCTR_1_CLOCK_FREQ_HZ / MIC_RESET;
+
+	XTmrCtr_SetResetValue(MicTmrInstance,TIMER_CNTR_MIC,reset_mic);
+	//Le damos menor prioridad a la lectura del micrófono
+	//XScuGic_SetPriorityTriggerType(&AudioIntc,MIC_TMRCTR_INTERRUPT_ID,0x60,0x3);
+
+	status = XScuGic_Connect(&AudioIntc,MIC_TMRCTR_INTERRUPT_ID,(Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+	                             MicTmrInstance);
+	if (status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XScuGic_Enable(&AudioIntc, MIC_TMRCTR_INTERRUPT_ID);
+
+	return XST_SUCCESS;
+}
 
 void AudioTimer_Start(void)
 {
@@ -864,3 +907,13 @@ void SensorTimer_Stop(void)
     Joytick = 0;
 }
 
+void MicTimer_Start(void){
+	MicEnableTimer = 1;
+	XTmrCtr_Reset(&MicTimer, TIMER_CNTR_MIC);
+	XTmrCtr_Start(&MicTimer, TIMER_CNTR_MIC);
+}
+
+void MicTimer_Stop(void){
+	XTmrCtr_Stop(&MicTimer, TIMER_CNTR_MIC);
+	MicEnableTimer = 0;
+}

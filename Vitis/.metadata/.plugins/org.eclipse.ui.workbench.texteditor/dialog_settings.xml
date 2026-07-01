@@ -2,12 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="LeerLuzJuego" key="selection"/>
+		<item value="init_IIC" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="init_iic"/>
+			<item value="setpriority"/>
+			<item value="mictimer_start"/>
+			<item value="start"/>
+			<item value="interruptaudioconfig"/>
+			<item value="interruptconfig"/>
+			<item value="interrupt"/>
 			<item value="leerluzjuego"/>
 			<item value="readprint"/>
 			<item value="struct"/>
@@ -16,13 +23,6 @@
 			<item value="audiohandler"/>
 			<item value="spi"/>
 			<item value="ia"/>
-			<item value="arrow_clear"/>
-			<item value="arrowclear"/>
-			<item value="extern"/>
-			<item value="canci"/>
-			<item value="reprodu"/>
-			<item value="deteniendo"/>
-			<item value="joytick"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gpio1"/>

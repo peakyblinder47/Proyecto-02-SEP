@@ -20,18 +20,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18248
+INFO: [Synth 8-7075] Helper process launched with PID 27652
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1071.727 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1079.070 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter CLK_FREQ bound to: 125000000 - type: integer 
 	Parameter SAMPLE bound to: 8000 - type: integer 
 	Parameter TAM_ADDR_FIFO bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BUZZER_AXI_v1_0' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0.vhd:5' bound to instance 'U0' of component 'BUZZER_AXI_v1_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'BUZZER_AXI_v1_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0.vhd:52]
+INFO: [Synth 8-3491] module 'BUZZER_AXI_v1_0' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0.vhd:5' bound to instance 'U0' of component 'BUZZER_AXI_v1_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'BUZZER_AXI_v1_0' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0.vhd:53]
 	Parameter CLK_FREQ bound to: 125000000 - type: integer 
 	Parameter SAMPLE bound to: 8000 - type: integer 
 	Parameter TAM_ADDR_FIFO bound to: 10 - type: integer 
@@ -42,69 +42,71 @@ INFO: [Synth 8-638] synthesizing module 'BUZZER_AXI_v1_0' [d:/Proyecto-02-SEP/GU
 	Parameter TAM_ADDR_FIFO bound to: 10 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'BUZZER_AXI_v1_0_S00_AXI' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:5' bound to instance 'BUZZER_AXI_v1_0_S00_AXI_inst' of component 'BUZZER_AXI_v1_0_S00_AXI' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'BUZZER_AXI_v1_0_S00_AXI' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-3491] module 'BUZZER_AXI_v1_0_S00_AXI' declared at 'd:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:5' bound to instance 'BUZZER_AXI_v1_0_S00_AXI_inst' of component 'BUZZER_AXI_v1_0_S00_AXI' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'BUZZER_AXI_v1_0_S00_AXI' [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:90]
 	Parameter CLK_FREQ bound to: 125000000 - type: integer 
 	Parameter SAMPLE bound to: 8000 - type: integer 
 	Parameter TAM_ADDR_FIFO bound to: 10 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:273]
-INFO: [Synth 8-226] default block is never used [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:429]
-INFO: [Synth 8-256] done synthesizing module 'BUZZER_AXI_v1_0_S00_AXI' (1#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'BUZZER_AXI_v1_0' (2#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/5429/hdl/BUZZER_AXI_v1_0.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' (3#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:83]
+INFO: [Synth 8-226] default block is never used [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:277]
+INFO: [Synth 8-226] default block is never used [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:433]
+INFO: [Synth 8-256] done synthesizing module 'BUZZER_AXI_v1_0_S00_AXI' (1#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'BUZZER_AXI_v1_0' (2#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ipshared/d314/hdl/BUZZER_AXI_v1_0.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'diagrama_bloques_BUZZER_AXI_0_1' (3#1) [d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/synth/diagrama_bloques_BUZZER_AXI_0_1.vhd:84]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1129.883 ; gain = 58.156
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1131.637 ; gain = 52.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1129.883 ; gain = 58.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1131.637 ; gain = 52.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1129.883 ; gain = 58.156
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1131.637 ; gain = 52.566
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1129.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1131.637 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1232.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1237.984 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1232.582 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1238.039 ; gain = 0.055
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   31 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 3     
 	   2 Input   10 Bit       Adders := 3     
-	   2 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 2     
 	               11 Bit    Registers := 1     
@@ -116,9 +118,12 @@ Detailed RTL Component Info :
 +---RAMs : 
 	              32K Bit	(1024 X 32 bit)          RAMs := 1     
 +---Muxes : 
-	   4 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 3     
 	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
 	   8 Input    2 Bit        Muxes := 1     
 	   2 Input    1 Bit        Muxes := 36    
 	   4 Input    1 Bit        Muxes := 2     
@@ -138,7 +143,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -159,13 +164,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1232.582 ; gain = 160.855
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1238.039 ; gain = 158.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -186,7 +191,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance U0/BUZZER_AXI_v1_0_S00_AXI_inst/fifo_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1245.195 ; gain = 173.469
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1245.539 ; gain = 166.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -204,37 +209,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.004 ; gain = 178.277
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.004 ; gain = 178.277
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.004 ; gain = 178.277
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.004 ; gain = 178.277
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1250.020 ; gain = 178.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1250.020 ; gain = 178.293
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,41 +255,41 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |    16|
-|2     |LUT1     |     7|
-|3     |LUT2     |    10|
-|4     |LUT3     |    29|
-|5     |LUT4     |    33|
-|6     |LUT5     |    20|
-|7     |LUT6     |    58|
+|1     |CARRY4   |    30|
+|2     |LUT1     |     8|
+|3     |LUT2     |    41|
+|4     |LUT3     |    48|
+|5     |LUT4     |    30|
+|6     |LUT5     |    45|
+|7     |LUT6     |    68|
 |8     |RAMB36E1 |     1|
 |9     |FDRE     |   141|
 |10    |FDSE     |     4|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1250.020 ; gain = 178.293
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1250.020 ; gain = 75.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1250.020 ; gain = 178.293
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1252.336 ; gain = 66.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1252.336 ; gain = 173.266
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1263.078 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1264.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1263.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1264.430 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 28 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1263.078 ; gain = 191.352
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.430 ; gain = 185.359
 INFO: [Common 17-1381] The checkpoint 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/diagrama_bloques_BUZZER_AXI_0_1.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP diagrama_bloques_BUZZER_AXI_0_1, cache-ID = 6ad128f899b4efb5
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP diagrama_bloques_BUZZER_AXI_0_1, cache-ID = 74267254b8eef8c6
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.runs/diagrama_bloques_BUZZER_AXI_0_1_synth_1/diagrama_bloques_BUZZER_AXI_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.rpt -pb diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 12 12:48:22 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 02:35:16 2026...

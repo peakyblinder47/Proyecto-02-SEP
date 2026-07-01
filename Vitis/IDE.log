@@ -6460,3 +6460,475 @@ con
 
 17:33:29 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
 18:21:42 INFO  : Disconnected from the channel tcfchan#16.
+23:40:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Proyecto-02-SEP\Vitis\temp_xsdb_launch_script.tcl
+23:40:11 INFO  : XSCT server has started successfully.
+23:40:11 INFO  : plnx-install-location is set to ''
+23:40:11 INFO  : Successfully done setting XSCT server connection channel  
+23:40:11 INFO  : Successfully done setting workspace for the tool. 
+23:40:21 INFO  : Platform repository initialization has completed.
+23:40:21 INFO  : Registering command handlers for Vitis TCF services
+23:40:24 INFO  : Successfully done query RDI_DATADIR 
+23:42:25 INFO  : Hardware specification for platform project 'GH_HW' is updated.
+23:43:14 INFO  : Result from executing command 'getProjects': GH_HW
+23:43:14 INFO  : Result from executing command 'getPlatforms': GH_HW|D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm
+00:02:46 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:02:46 INFO  : Updating application flags with new BSP settings...
+00:02:46 INFO  : Successfully updated application flags for project GH_SW.
+00:03:11 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:04:11 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:05:20 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:05:33 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:05:37 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:05:38 INFO  : The hardware specfication used by project 'GH_SW' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+00:05:38 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream\diagrama_bloques_wrapper.bit' stored in project is removed.
+00:05:38 INFO  : The updated bitstream files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream' in project 'GH_SW'.
+00:05:38 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit\ps7_init.tcl' stored in project is removed.
+00:05:43 INFO  : The updated ps init files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit' in project 'GH_SW'.
+00:09:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:09:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+00:09:49 INFO  : 'jtag frequency' command is executed.
+00:09:49 INFO  : Context for 'APU' is selected.
+00:09:49 INFO  : System reset is completed.
+00:09:52 INFO  : 'after 3000' command is executed.
+00:09:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+00:09:53 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+00:09:53 INFO  : Context for 'APU' is selected.
+00:09:54 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+00:09:54 INFO  : 'configparams force-mem-access 1' command is executed.
+00:09:54 INFO  : Context for 'APU' is selected.
+00:09:54 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+00:09:54 INFO  : 'ps7_init' command is executed.
+00:09:54 INFO  : 'ps7_post_config' command is executed.
+00:09:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:09:56 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:09:56 INFO  : 'configparams force-mem-access 0' command is executed.
+00:09:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:09:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:09:56 INFO  : 'con' command is executed.
+00:09:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:09:56 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+00:15:16 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:15:20 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:15:30 INFO  : Disconnected from the channel tcfchan#3.
+00:15:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:15:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+00:15:31 INFO  : 'jtag frequency' command is executed.
+00:15:31 INFO  : Context for 'APU' is selected.
+00:15:31 INFO  : System reset is completed.
+00:15:34 INFO  : 'after 3000' command is executed.
+00:15:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+00:15:36 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+00:15:36 INFO  : Context for 'APU' is selected.
+00:15:36 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+00:15:36 INFO  : 'configparams force-mem-access 1' command is executed.
+00:15:36 INFO  : Context for 'APU' is selected.
+00:15:36 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+00:15:36 INFO  : 'ps7_init' command is executed.
+00:15:36 INFO  : 'ps7_post_config' command is executed.
+00:15:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:15:38 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:15:38 INFO  : 'configparams force-mem-access 0' command is executed.
+00:15:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:15:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:15:38 INFO  : 'con' command is executed.
+00:15:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:15:38 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+00:16:54 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:17:00 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:18:20 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:18:24 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:18:36 INFO  : Disconnected from the channel tcfchan#5.
+00:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:18:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+00:18:38 INFO  : 'jtag frequency' command is executed.
+00:18:38 INFO  : Context for 'APU' is selected.
+00:18:38 INFO  : System reset is completed.
+00:18:41 INFO  : 'after 3000' command is executed.
+00:18:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+00:18:42 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+00:18:42 INFO  : Context for 'APU' is selected.
+00:18:42 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+00:18:42 INFO  : 'configparams force-mem-access 1' command is executed.
+00:18:42 INFO  : Context for 'APU' is selected.
+00:18:42 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+00:18:42 INFO  : 'ps7_init' command is executed.
+00:18:42 INFO  : 'ps7_post_config' command is executed.
+00:18:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:18:45 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:18:45 INFO  : 'configparams force-mem-access 0' command is executed.
+00:18:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:18:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:18:45 INFO  : 'con' command is executed.
+00:18:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:18:45 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+00:19:50 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:19:54 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:20:06 INFO  : Disconnected from the channel tcfchan#8.
+00:20:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:20:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+00:20:07 INFO  : 'jtag frequency' command is executed.
+00:20:07 INFO  : Context for 'APU' is selected.
+00:20:07 INFO  : System reset is completed.
+00:20:10 INFO  : 'after 3000' command is executed.
+00:20:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+00:20:11 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+00:20:11 INFO  : Context for 'APU' is selected.
+00:20:11 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+00:20:11 INFO  : 'configparams force-mem-access 1' command is executed.
+00:20:11 INFO  : Context for 'APU' is selected.
+00:20:11 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+00:20:12 INFO  : 'ps7_init' command is executed.
+00:20:12 INFO  : 'ps7_post_config' command is executed.
+00:20:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:20:14 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:20:14 INFO  : 'configparams force-mem-access 0' command is executed.
+00:20:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:20:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:20:14 INFO  : 'con' command is executed.
+00:20:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:20:14 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+00:21:20 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:21:25 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+00:21:36 INFO  : Disconnected from the channel tcfchan#10.
+00:21:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+00:21:37 INFO  : 'jtag frequency' command is executed.
+00:21:37 INFO  : Context for 'APU' is selected.
+00:21:37 INFO  : System reset is completed.
+00:21:40 INFO  : 'after 3000' command is executed.
+00:21:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+00:21:42 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+00:21:42 INFO  : Context for 'APU' is selected.
+00:21:42 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+00:21:42 INFO  : 'configparams force-mem-access 1' command is executed.
+00:21:42 INFO  : Context for 'APU' is selected.
+00:21:42 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+00:21:42 INFO  : 'ps7_init' command is executed.
+00:21:42 INFO  : 'ps7_post_config' command is executed.
+00:21:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:21:44 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:21:44 INFO  : 'configparams force-mem-access 0' command is executed.
+00:21:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:21:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:21:44 INFO  : 'con' command is executed.
+00:21:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:21:44 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+01:10:55 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+01:11:00 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+01:11:20 INFO  : Disconnected from the channel tcfchan#12.
+01:11:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:11:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+01:11:21 INFO  : 'jtag frequency' command is executed.
+01:11:21 INFO  : Context for 'APU' is selected.
+01:11:21 INFO  : System reset is completed.
+01:11:24 INFO  : 'after 3000' command is executed.
+01:11:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+01:11:25 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+01:11:25 INFO  : Context for 'APU' is selected.
+01:11:25 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+01:11:25 INFO  : 'configparams force-mem-access 1' command is executed.
+01:11:25 INFO  : Context for 'APU' is selected.
+01:11:25 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+01:11:26 INFO  : 'ps7_init' command is executed.
+01:11:26 INFO  : 'ps7_post_config' command is executed.
+01:11:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:11:28 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:11:28 INFO  : 'configparams force-mem-access 0' command is executed.
+01:11:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:11:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:11:28 INFO  : 'con' command is executed.
+01:11:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:11:28 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+01:20:19 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+01:20:27 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+01:20:39 INFO  : Disconnected from the channel tcfchan#14.
+01:20:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:20:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+01:20:40 INFO  : 'jtag frequency' command is executed.
+01:20:40 INFO  : Context for 'APU' is selected.
+01:20:40 INFO  : System reset is completed.
+01:20:43 INFO  : 'after 3000' command is executed.
+01:20:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+01:20:45 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+01:20:45 INFO  : Context for 'APU' is selected.
+01:20:45 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+01:20:45 INFO  : 'configparams force-mem-access 1' command is executed.
+01:20:45 INFO  : Context for 'APU' is selected.
+01:20:45 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+01:20:45 INFO  : 'ps7_init' command is executed.
+01:20:45 INFO  : 'ps7_post_config' command is executed.
+01:20:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:47 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:20:47 INFO  : 'configparams force-mem-access 0' command is executed.
+01:20:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:20:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:47 INFO  : 'con' command is executed.
+01:20:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:20:47 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+02:26:05 INFO  : Hardware specification for platform project 'GH_HW' is updated.
+02:26:21 INFO  : Result from executing command 'getProjects': GH_HW
+02:26:21 INFO  : Result from executing command 'getPlatforms': GH_HW|D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm
+02:26:43 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+02:26:48 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+02:26:49 INFO  : The hardware specfication used by project 'GH_SW' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+02:26:49 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream\diagrama_bloques_wrapper.bit' stored in project is removed.
+02:26:49 INFO  : The updated bitstream files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream' in project 'GH_SW'.
+02:26:49 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit\ps7_init.tcl' stored in project is removed.
+02:26:54 INFO  : The updated ps init files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit' in project 'GH_SW'.
+02:27:04 INFO  : Disconnected from the channel tcfchan#16.
+02:27:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:27:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+02:27:05 INFO  : 'jtag frequency' command is executed.
+02:27:06 INFO  : Context for 'APU' is selected.
+02:27:06 INFO  : System reset is completed.
+02:27:09 INFO  : 'after 3000' command is executed.
+02:27:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+02:27:10 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+02:27:10 INFO  : Context for 'APU' is selected.
+02:27:10 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+02:27:10 INFO  : 'configparams force-mem-access 1' command is executed.
+02:27:10 INFO  : Context for 'APU' is selected.
+02:27:10 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+02:27:11 INFO  : 'ps7_init' command is executed.
+02:27:11 INFO  : 'ps7_post_config' command is executed.
+02:27:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:27:13 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:27:13 INFO  : 'configparams force-mem-access 0' command is executed.
+02:27:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:27:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:27:13 INFO  : 'con' command is executed.
+02:27:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:27:13 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+02:41:01 INFO  : Hardware specification for platform project 'GH_HW' is updated.
+02:41:08 INFO  : Result from executing command 'getProjects': GH_HW
+02:41:08 INFO  : Result from executing command 'getPlatforms': GH_HW|D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm
+02:41:13 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+02:41:16 INFO  : Checking for BSP changes to sync application flags for project 'GH_SW'...
+02:41:17 INFO  : The hardware specfication used by project 'GH_SW' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+02:41:17 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream\diagrama_bloques_wrapper.bit' stored in project is removed.
+02:41:17 INFO  : The updated bitstream files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\bitstream' in project 'GH_SW'.
+02:41:17 INFO  : The file 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit\ps7_init.tcl' stored in project is removed.
+02:41:23 INFO  : The updated ps init files are copied from platform to folder 'D:\Proyecto-02-SEP\Vitis\GH_SW\_ide\psinit' in project 'GH_SW'.
+02:41:50 INFO  : Disconnected from the channel tcfchan#19.
+02:41:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:41:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FB80A' is selected.
+02:41:52 INFO  : 'jtag frequency' command is executed.
+02:41:52 INFO  : Context for 'APU' is selected.
+02:41:52 INFO  : System reset is completed.
+02:41:55 INFO  : 'after 3000' command is executed.
+02:41:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}' command is executed.
+02:41:56 INFO  : FPGA configured successfully with bitstream "D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit"
+02:41:56 INFO  : Context for 'APU' is selected.
+02:41:56 INFO  : Hardware design and registers information is loaded from 'D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa'.
+02:41:56 INFO  : 'configparams force-mem-access 1' command is executed.
+02:41:56 INFO  : Context for 'APU' is selected.
+02:41:56 INFO  : Sourcing of 'D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl' is done.
+02:41:57 INFO  : 'ps7_init' command is executed.
+02:41:57 INFO  : 'ps7_post_config' command is executed.
+02:41:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:41:59 INFO  : The application 'D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:41:59 INFO  : 'configparams force-mem-access 0' command is executed.
+02:41:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FB80A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FB80A-13722093-0"}
+fpga -file D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/hw/diagrama_bloques_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:41:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:41:59 INFO  : 'con' command is executed.
+02:41:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:41:59 INFO  : Launch script is exported to file 'D:\Proyecto-02-SEP\Vitis\.sdk\launch_scripts\single_application_debug\debugger_gh_sw-default.tcl'
+03:03:41 INFO  : Disconnected from the channel tcfchan#22.

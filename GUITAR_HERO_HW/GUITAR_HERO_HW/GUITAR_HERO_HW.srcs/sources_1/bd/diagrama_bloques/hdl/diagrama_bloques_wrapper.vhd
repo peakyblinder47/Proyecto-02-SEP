@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Thu Jun 18 00:28:59 2026
+--Date        : Wed Jul  1 02:34:34 2026
 --Host        : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 --Command     : generate_target diagrama_bloques_wrapper.bd
 --Design      : diagrama_bloques_wrapper
@@ -43,7 +43,6 @@ entity diagrama_bloques_wrapper is
     RST_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     RS_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     SCLK : out STD_LOGIC;
-    clk : in STD_LOGIC;
     iic_rtl_scl_io : inout STD_LOGIC;
     iic_rtl_sda_io : inout STD_LOGIC;
     spi_rtl_io0_io : inout STD_LOGIC;
@@ -57,25 +56,38 @@ architecture STRUCTURE of diagrama_bloques_wrapper is
   component diagrama_bloques is
   port (
     BUZZER_PWM : out STD_LOGIC;
-    clk : in STD_LOGIC;
     BTN0 : in STD_LOGIC;
     BTN1 : in STD_LOGIC;
     BTN_JY : in STD_LOGIC;
     SCLK : out STD_LOGIC;
     CS : out STD_LOGIC_VECTOR ( 0 to 0 );
     MOSI : out STD_LOGIC;
-    iic_rtl_scl_i : in STD_LOGIC;
-    iic_rtl_scl_o : out STD_LOGIC;
-    iic_rtl_scl_t : out STD_LOGIC;
-    iic_rtl_sda_i : in STD_LOGIC;
-    iic_rtl_sda_o : out STD_LOGIC;
-    iic_rtl_sda_t : out STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
+    iic_rtl_scl_i : in STD_LOGIC;
+    iic_rtl_scl_o : out STD_LOGIC;
+    iic_rtl_scl_t : out STD_LOGIC;
+    iic_rtl_sda_i : in STD_LOGIC;
+    iic_rtl_sda_o : out STD_LOGIC;
+    iic_rtl_sda_t : out STD_LOGIC;
+    spi_rtl_io0_i : in STD_LOGIC;
+    spi_rtl_io0_o : out STD_LOGIC;
+    spi_rtl_io0_t : out STD_LOGIC;
+    spi_rtl_io1_i : in STD_LOGIC;
+    spi_rtl_io1_o : out STD_LOGIC;
+    spi_rtl_io1_t : out STD_LOGIC;
+    spi_rtl_sck_i : in STD_LOGIC;
+    spi_rtl_sck_o : out STD_LOGIC;
+    spi_rtl_sck_t : out STD_LOGIC;
+    spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    spi_rtl_ss_t : out STD_LOGIC;
+    RS_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    RST_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -90,21 +102,7 @@ architecture STRUCTURE of diagrama_bloques_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    spi_rtl_io0_i : in STD_LOGIC;
-    spi_rtl_io0_o : out STD_LOGIC;
-    spi_rtl_io0_t : out STD_LOGIC;
-    spi_rtl_io1_i : in STD_LOGIC;
-    spi_rtl_io1_o : out STD_LOGIC;
-    spi_rtl_io1_t : out STD_LOGIC;
-    spi_rtl_sck_i : in STD_LOGIC;
-    spi_rtl_sck_o : out STD_LOGIC;
-    spi_rtl_sck_t : out STD_LOGIC;
-    spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    spi_rtl_ss_t : out STD_LOGIC;
-    RS_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    RST_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component diagrama_bloques;
   component IOBUF is
@@ -167,7 +165,6 @@ diagrama_bloques_i: component diagrama_bloques
       RST_tri_o(0) => RST_tri_o(0),
       RS_tri_o(0) => RS_tri_o(0),
       SCLK => SCLK,
-      clk => clk,
       iic_rtl_scl_i => iic_rtl_scl_i,
       iic_rtl_scl_o => iic_rtl_scl_o,
       iic_rtl_scl_t => iic_rtl_scl_t,

@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -112,9 +113,17 @@ set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUI
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/diagrama_bloques_axi_quad_spi_1_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_ila_0_0/diagrama_bloques_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_1_0/diagrama_bloques_axi_timer_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_1_0/diagrama_bloques_axi_timer_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_vio_0_0/diagrama_bloques_vio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_vio_0_0/diagrama_bloques_vio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_auto_pc_0/diagrama_bloques_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/diagrama_bloques_ooc.xdc]
 
 OPTRACE "Adding files" END { }

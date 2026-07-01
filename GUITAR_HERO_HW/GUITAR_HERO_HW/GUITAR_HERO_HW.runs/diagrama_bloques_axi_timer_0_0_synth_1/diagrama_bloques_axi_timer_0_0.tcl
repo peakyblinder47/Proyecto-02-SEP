@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "diagrama_bloques_axi_timer_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -91,7 +92,7 @@ set_property ip_output_repo d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUI
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0.xci
+read_ip -quiet D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0.xci
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/diagrama_bloques_axi_timer_0_0_ooc.xdc]
 

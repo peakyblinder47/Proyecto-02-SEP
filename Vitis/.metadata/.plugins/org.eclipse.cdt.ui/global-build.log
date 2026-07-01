@@ -1,16 +1,16 @@
 Nothing to build in platform 'GH_HW'
 
-17:32:57 **** Incremental Build of configuration Debug for project GH_SW ****
+02:41:16 **** Incremental Build of configuration Debug for project GH_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
-17:32:58 **** Incremental Build of configuration Debug for project GH_SW_system ****
+02:41:23 **** Incremental Build of configuration Debug for project GH_SW_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58886 D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm standalone_domain D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/system.bif
+generate_system_bif.bat 58239 D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm standalone_domain D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/system.bif
 sdcard_gen --xpfm D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm --sys_config GH_HW --bif D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/system.bif --bitstream D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit --elf D:/Proyecto-02-SEP/Vitis/GH_SW/Debug/GH_SW.elf,ps7_cortexa9_0
 creating BOOT.BIN using D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
 Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

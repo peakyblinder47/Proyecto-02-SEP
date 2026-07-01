@@ -1,0 +1,48 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/new/Debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Debouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_iic_0_0/sim/diagrama_bloques_axi_iic_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_iic_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_rst_ps7_0_50M_0/sim/diagrama_bloques_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_rst_ps7_0_50M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ipshared/b961/hdl/BUZZER_AXI_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BUZZER_AXI_v1_0_S00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ipshared/b961/hdl/BUZZER_AXI_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BUZZER_AXI_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_BUZZER_AXI_0_1/sim/diagrama_bloques_BUZZER_AXI_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_BUZZER_AXI_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_Debouncer_0_0/sim/diagrama_bloques_Debouncer_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_Debouncer_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_Debouncer_0_1/sim/diagrama_bloques_Debouncer_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_Debouncer_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_Debouncer_1_0/sim/diagrama_bloques_Debouncer_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_Debouncer_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_0_0/sim/diagrama_bloques_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_0_0/sim/diagrama_bloques_axi_quad_spi_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_quad_spi_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_gpio_1_0/sim/diagrama_bloques_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_gpio_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_quad_spi_1_0/sim/diagrama_bloques_axi_quad_spi_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_quad_spi_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_0_0/sim/diagrama_bloques_axi_timer_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_timer_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_ila_0_0/sim/diagrama_bloques_ila_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_ila_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_axi_timer_1_0/sim/diagrama_bloques_axi_timer_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_axi_timer_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/ip/diagrama_bloques_vio_0_0/sim/diagrama_bloques_vio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_vio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.ip_user_files/bd/diagrama_bloques/sim/diagrama_bloques.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm00_couplers_imp_Y5TYHL'
+INFO: [VRFC 10-3107] analyzing entity 'm01_couplers_imp_17ACQBY'
+INFO: [VRFC 10-3107] analyzing entity 'm02_couplers_imp_UM2SOM'
+INFO: [VRFC 10-3107] analyzing entity 'm03_couplers_imp_123AGIP'
+INFO: [VRFC 10-3107] analyzing entity 'm04_couplers_imp_MMJJ7R'
+INFO: [VRFC 10-3107] analyzing entity 'm05_couplers_imp_1ENTF2O'
+INFO: [VRFC 10-3107] analyzing entity 'm06_couplers_imp_J2SCQ0'
+INFO: [VRFC 10-3107] analyzing entity 'm07_couplers_imp_19GR667'
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_SY30KV'
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_ps7_0_axi_periph_0'
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/GUITAR_HERO_HW.srcs/sources_1/bd/diagrama_bloques/hdl/diagrama_bloques_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'diagrama_bloques_wrapper'

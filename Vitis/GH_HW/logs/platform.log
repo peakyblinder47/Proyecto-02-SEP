@@ -7644,3 +7644,2148 @@ TRACE::2026-06-20.16:56:26::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vit
 D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2026-06-20.16:56:26::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:15::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:15::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:15::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:17::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:17::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:17::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:17::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWReader::Active system found as  GH_HW
+TRACE::2026-06-30.23:42:18::SCWReader::Handling sysconfig GH_HW
+TRACE::2026-06-30.23:42:18::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-30.23:42:18::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-06-30.23:42:18::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-30.23:42:18::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-06-30.23:42:18::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-30.23:42:18::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-06-30.23:42:18::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:42:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:42:18::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:18::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-06-30.23:42:18::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWReader::No isolation master present  
+TRACE::2026-06-30.23:42:18::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-30.23:42:18::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-06-30.23:42:18::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-06-30.23:42:18::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-30.23:42:18::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-06-30.23:42:18::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:42:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:42:18::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:18::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-06-30.23:42:18::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:18::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:18::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:18::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:18::SCWReader::No isolation master present  
+TRACE::2026-06-30.23:42:21::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:21::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:21::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:21::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:21::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform:: Platform location is D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-06-30.23:42:21::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:21::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:23::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:23::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:23::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-06-30.23:42:23::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:23::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2026-06-30.23:42:23::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:23::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:23::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-30.23:42:25::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:25::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-30.23:42:25::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-06-30.23:42:25::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-30.23:42:25::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:42:25::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:42:25::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:25::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-06-30.23:42:25::SCWMssOS::Writing the mss file completed D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:25::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:25::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:25::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:25::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:25::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:25::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:25::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"88dcb98b59025e717e532a5de7d454d0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-06-30.23:42:48::SCWPlatform::Started generating the artifacts platform GH_HW
+TRACE::2026-06-30.23:42:48::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-06-30.23:42:48::SCWPlatform::Started generating the artifacts for system configuration GH_HW
+LOG::2026-06-30.23:42:48::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-06-30.23:42:48::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-06-30.23:42:48::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-06-30.23:42:48::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-06-30.23:42:48::SCWSystem::Checking the domain standalone_domain
+LOG::2026-06-30.23:42:48::SCWSystem::Not a boot domain 
+LOG::2026-06-30.23:42:48::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-06-30.23:42:48::SCWDomain::Generating domain artifcats
+TRACE::2026-06-30.23:42:48::SCWMssOS::Generating standalone artifcats
+TRACE::2026-06-30.23:42:48::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/qemu/
+TRACE::2026-06-30.23:42:48::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/qemu/
+TRACE::2026-06-30.23:42:48::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-06-30.23:42:48::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:48::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:48::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:48::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:42:48::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:42:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:42:48::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:48::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:42:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:42:48::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:48::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:42:48::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:48::SCWMssOS::Completed writing the mss file at D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2026-06-30.23:42:48::SCWMssOS::Mss edits present, copying mssfile into export location D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:42:48::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2026-06-30.23:42:50::SCWMssOS::doing bsp build ... 
+TRACE::2026-06-30.23:42:50::SCWMssOS::System Command Ran  D: & cd  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2026-06-30.23:42:50::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2026-06-30.23:42:51::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2026-06-30.23:42:51::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2026-06-30.23:42:51::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2026-06-30.23:42:51::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2026-06-30.23:42:51::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2026-06-30.23:42:51::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:51::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:51::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2026-06-30.23:42:51::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2026-06-30.23:42:51::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2026-06-30.23:42:51::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2026-06-30.23:42:51::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:51::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:51::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2026-06-30.23:42:51::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2026-06-30.23:42:51::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_6/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:42:51::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:42:51::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2026-06-30.23:42:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:51::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:51::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2026-06-30.23:42:52::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2026-06-30.23:42:52::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2026-06-30.23:42:52::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2026-06-30.23:42:52::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/spi_v4_6/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spi_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:42:52::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:42:52::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2026-06-30.23:42:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2026-06-30.23:42:52::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2026-06-30.23:42:52::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_6/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2026-06-30.23:42:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2026-06-30.23:42:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2026-06-30.23:42:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2026-06-30.23:42:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2026-06-30.23:42:53::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2026-06-30.23:42:53::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:53::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2026-06-30.23:42:55::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2026-06-30.23:42:55::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2026-06-30.23:42:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2026-06-30.23:42:55::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Compiling ddrps"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:42:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:42:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:55::SCWMssOS::"Compiling devcfg"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2026-06-30.23:42:56::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2026-06-30.23:42:56::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::"Compiling dmaps"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2026-06-30.23:42:56::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2026-06-30.23:42:56::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:56::SCWMssOS::"Compiling emacps"
+
+TRACE::2026-06-30.23:42:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2026-06-30.23:42:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:42:57::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:42:57::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:58::SCWMssOS::"Compiling gpiops"
+
+TRACE::2026-06-30.23:42:58::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_6/src"
+
+TRACE::2026-06-30.23:42:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2026-06-30.23:42:58::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2026-06-30.23:42:58::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:58::SCWMssOS::"Compiling gpio"
+
+TRACE::2026-06-30.23:42:59::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_6/src"
+
+TRACE::2026-06-30.23:42:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+TRACE::2026-06-30.23:42:59::SCWMssOS::IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+TRACE::2026-06-30.23:42:59::SCWMssOS::es -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:42:59::SCWMssOS::"Compiling iic"
+
+TRACE::2026-06-30.23:43:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2026-06-30.23:43:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:01::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:01::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:01::SCWMssOS::"Compiling qspips"
+
+TRACE::2026-06-30.23:43:02::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2026-06-30.23:43:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:02::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:02::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:02::SCWMssOS::"Compiling scugic"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2026-06-30.23:43:03::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2026-06-30.23:43:03::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::"Compiling scutimer"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:03::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:03::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:03::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2026-06-30.23:43:04::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2026-06-30.23:43:04::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2026-06-30.23:43:04::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2026-06-30.23:43:04::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:04::SCWMssOS::"Compiling sdps"
+
+TRACE::2026-06-30.23:43:05::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/spi_v4_6/src"
+
+TRACE::2026-06-30.23:43:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/spi_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+TRACE::2026-06-30.23:43:05::SCWMssOS::IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+TRACE::2026-06-30.23:43:05::SCWMssOS::es -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:05::SCWMssOS::"Compiling spi"
+
+TRACE::2026-06-30.23:43:06::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2026-06-30.23:43:06::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2026-06-30.23:43:06::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2026-06-30.23:43:06::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:06::SCWMssOS::"Compiling standalone"
+
+TRACE::2026-06-30.23:43:09::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_6/src"
+
+TRACE::2026-06-30.23:43:09::SCWMssOS::make -C ps7_cortexa9_0/libsrc/tmrctr_v4_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:09::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:09::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:09::SCWMssOS::"Compiling tmrctr"
+
+TRACE::2026-06-30.23:43:10::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2026-06-30.23:43:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:10::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:10::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:10::SCWMssOS::"Compiling uartps"
+
+TRACE::2026-06-30.23:43:11::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2026-06-30.23:43:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2026-06-30.23:43:11::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2026-06-30.23:43:11::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:11::SCWMssOS::"Compiling usbps"
+
+TRACE::2026-06-30.23:43:12::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2026-06-30.23:43:12::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:12::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:12::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:12::SCWMssOS::"Compiling xadcps"
+
+TRACE::2026-06-30.23:43:13::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2026-06-30.23:43:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2026-06-30.23:43:13::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2026-06-30.23:43:13::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2026-06-30.23:43:13::SCWMssOS::"Compiling XilFFs Library"
+
+TRACE::2026-06-30.23:43:14::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-06-30.23:43:14::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-06-30.23:43:14::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-06-30.23:43:14::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-06-30.23:43:14::SCWSystem::Completed Processing the sysconfig GH_HW
+LOG::2026-06-30.23:43:14::SCWPlatform::Completed generating the artifacts for system configuration GH_HW
+TRACE::2026-06-30.23:43:14::SCWPlatform::Started preparing the platform 
+TRACE::2026-06-30.23:43:14::SCWSystem::Writing the bif file for system config GH_HW
+TRACE::2026-06-30.23:43:14::SCWSystem::dir created 
+TRACE::2026-06-30.23:43:14::SCWSystem::Writing the bif 
+TRACE::2026-06-30.23:43:14::SCWPlatform::Started writing the spfm file 
+TRACE::2026-06-30.23:43:14::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-06-30.23:43:14::SCWPlatform::Completed generating the platform
+TRACE::2026-06-30.23:43:14::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:43:14::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-30.23:43:14::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:43:14::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-30.23:43:14::SCWMssOS::Running validate of swdbs.
+KEYINFO::2026-06-30.23:43:14::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2026-06-30.23:43:14::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2026-06-30.23:43:14::SCWMssOS::Cleared the swdb table entry
+TRACE::2026-06-30.23:43:14::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-06-30.23:43:14::SCWMssOS::Writing the mss file completed D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::Commit changes completed.
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:43:14::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:43:14::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:43:14::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:43:14::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"cab96dc776956108f9cea29aec71d042",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-06-30.23:43:14::SCWPlatform::updated the xpfm file.
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-06-30.23:43:14::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-06-30.23:43:14::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_1
+TRACE::2026-06-30.23:43:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-30.23:43:14::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-30.23:43:14::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-06-30.23:43:14::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:55::SCWPlatform::Clearing the existing platform
+TRACE::2026-07-01.02:25:55::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-07-01.02:25:55::SCWBDomain::clearing the fsbl build
+TRACE::2026-07-01.02:25:55::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:55::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:55::SCWSystem::Clearing the domains completed.
+TRACE::2026-07-01.02:25:55::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-07-01.02:25:55::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:55::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:55::SCWPlatform:: Platform location is D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:56::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:56::SCWPlatform::Removing the HwDB with name D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:56::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:56::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:56::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWReader::Active system found as  GH_HW
+TRACE::2026-07-01.02:25:58::SCWReader::Handling sysconfig GH_HW
+TRACE::2026-07-01.02:25:58::SCWDomain::checking for install qemu data   : 
+TRACE::2026-07-01.02:25:58::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-07-01.02:25:58::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-07-01.02:25:58::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-07-01.02:25:58::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:25:58::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-07-01.02:25:58::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:25:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:25:58::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:25:58::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-07-01.02:25:58::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWReader::No isolation master present  
+TRACE::2026-07-01.02:25:58::SCWDomain::checking for install qemu data   : 
+TRACE::2026-07-01.02:25:58::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-07-01.02:25:58::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-07-01.02:25:58::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:25:58::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-07-01.02:25:58::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:25:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:25:58::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:25:58::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-07-01.02:25:58::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:25:58::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:25:58::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:25:58::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:25:58::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:25:58::SCWReader::No isolation master present  
+TRACE::2026-07-01.02:26:01::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:01::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:01::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:01::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:01::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform:: Platform location is D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:26:01::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:03::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_4
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_3
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:03::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:03::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_4
+TRACE::2026-07-01.02:26:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:03::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-07-01.02:26:03::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:03::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2026-07-01.02:26:03::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:03::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:03::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:04::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:04::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:04::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-07-01.02:26:05::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:05::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-07-01.02:26:05::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-07-01.02:26:05::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:26:05::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:26:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:26:05::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:05::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-07-01.02:26:05::SCWMssOS::Writing the mss file completed D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:05::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:05::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:05::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:05::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:05::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:05::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"cab96dc776956108f9cea29aec71d042",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-07-01.02:26:20::SCWPlatform::Started generating the artifacts platform GH_HW
+TRACE::2026-07-01.02:26:20::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-07-01.02:26:20::SCWPlatform::Started generating the artifacts for system configuration GH_HW
+LOG::2026-07-01.02:26:20::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-07-01.02:26:20::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-07-01.02:26:20::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-07-01.02:26:20::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-07-01.02:26:20::SCWSystem::Checking the domain standalone_domain
+LOG::2026-07-01.02:26:20::SCWSystem::Not a boot domain 
+LOG::2026-07-01.02:26:20::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-07-01.02:26:20::SCWDomain::Generating domain artifcats
+TRACE::2026-07-01.02:26:20::SCWMssOS::Generating standalone artifcats
+TRACE::2026-07-01.02:26:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/qemu/
+TRACE::2026-07-01.02:26:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/qemu/
+TRACE::2026-07-01.02:26:20::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-07-01.02:26:20::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:20::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:20::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:20::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:20::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:20::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:20::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:20::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:20::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:20::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:20::SCWMssOS::Completed writing the mss file at D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2026-07-01.02:26:20::SCWMssOS::Mss edits present, copying mssfile into export location D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:20::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-07-01.02:26:20::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-07-01.02:26:20::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2026-07-01.02:26:20::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-07-01.02:26:20::SCWMssOS::Copying to export directory.
+TRACE::2026-07-01.02:26:21::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-07-01.02:26:21::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-07-01.02:26:21::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-07-01.02:26:21::SCWSystem::Completed Processing the sysconfig GH_HW
+LOG::2026-07-01.02:26:21::SCWPlatform::Completed generating the artifacts for system configuration GH_HW
+TRACE::2026-07-01.02:26:21::SCWPlatform::Started preparing the platform 
+TRACE::2026-07-01.02:26:21::SCWSystem::Writing the bif file for system config GH_HW
+TRACE::2026-07-01.02:26:21::SCWSystem::dir created 
+TRACE::2026-07-01.02:26:21::SCWSystem::Writing the bif 
+TRACE::2026-07-01.02:26:21::SCWPlatform::Started writing the spfm file 
+TRACE::2026-07-01.02:26:21::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-07-01.02:26:21::SCWPlatform::Completed generating the platform
+TRACE::2026-07-01.02:26:21::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:26:21::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:26:21::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:21::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:26:21::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:26:21::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:21::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:21::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:21::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:21::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"cab96dc776956108f9cea29aec71d042",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-07-01.02:26:21::SCWPlatform::updated the xpfm file.
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:26:21::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:26:21::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_5
+TRACE::2026-07-01.02:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:26:21::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:26:21::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:26:21::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:52::SCWPlatform::Clearing the existing platform
+TRACE::2026-07-01.02:40:52::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-07-01.02:40:52::SCWBDomain::clearing the fsbl build
+TRACE::2026-07-01.02:40:52::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:52::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:52::SCWSystem::Clearing the domains completed.
+TRACE::2026-07-01.02:40:52::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-07-01.02:40:52::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform:: Platform location is D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:52::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:52::SCWPlatform::Removing the HwDB with name D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:52::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWReader::Active system found as  GH_HW
+TRACE::2026-07-01.02:40:54::SCWReader::Handling sysconfig GH_HW
+TRACE::2026-07-01.02:40:54::SCWDomain::checking for install qemu data   : 
+TRACE::2026-07-01.02:40:54::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-07-01.02:40:54::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-07-01.02:40:54::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-07-01.02:40:54::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:40:54::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2026-07-01.02:40:54::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:40:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:40:54::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:40:54::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-07-01.02:40:54::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWReader::No isolation master present  
+TRACE::2026-07-01.02:40:54::SCWDomain::checking for install qemu data   : 
+TRACE::2026-07-01.02:40:54::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2026-07-01.02:40:54::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-07-01.02:40:54::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:40:54::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2026-07-01.02:40:54::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:40:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:40:54::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:40:54::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-07-01.02:40:54::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:54::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:54::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:54::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:54::SCWReader::No isolation master present  
+TRACE::2026-07-01.02:40:57::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:57::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:57::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:57::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:57::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform:: Platform location is D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:40:57::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:57::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:59::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_8
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_7
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:40:59::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/tempdsa/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::update - Opened existing hwdb diagrama_bloques_wrapper_8
+TRACE::2026-07-01.02:40:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:40:59::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2026-07-01.02:40:59::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:40:59::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2026-07-01.02:40:59::SCWMssOS::Removing the swdes entry for  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:40:59::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:40:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:40:59::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-07-01.02:41:01::SCWPlatform::Opened new HwDB with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:01::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-07-01.02:41:01::SCWMssOS::No sw design opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::mss exists loading the mss file  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Opened the sw design from mss  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Adding the swdes entry D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2026-07-01.02:41:01::SCWMssOS::updating the scw layer about changes
+TRACE::2026-07-01.02:41:01::SCWMssOS::Opened the sw design.  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:41:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:41:01::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:41:01::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2026-07-01.02:41:01::SCWMssOS::Writing the mss file completed D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:01::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:01::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:01::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:01::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:01::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:01::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:01::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"cab96dc776956108f9cea29aec71d042",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-07-01.02:41:08::SCWPlatform::Started generating the artifacts platform GH_HW
+TRACE::2026-07-01.02:41:08::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-07-01.02:41:08::SCWPlatform::Started generating the artifacts for system configuration GH_HW
+LOG::2026-07-01.02:41:08::SCWSystem::Checking the domain zynq_fsbl
+LOG::2026-07-01.02:41:08::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2026-07-01.02:41:08::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2026-07-01.02:41:08::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2026-07-01.02:41:08::SCWSystem::Checking the domain standalone_domain
+LOG::2026-07-01.02:41:08::SCWSystem::Not a boot domain 
+LOG::2026-07-01.02:41:08::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-07-01.02:41:08::SCWDomain::Generating domain artifcats
+TRACE::2026-07-01.02:41:08::SCWMssOS::Generating standalone artifcats
+TRACE::2026-07-01.02:41:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/qemu/
+TRACE::2026-07-01.02:41:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/sw/GH_HW/standalone_domain/qemu/
+TRACE::2026-07-01.02:41:08::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:08::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:08::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::Completed writing the mss file at D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2026-07-01.02:41:08::SCWMssOS::Mss edits present, copying mssfile into export location D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-07-01.02:41:08::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-07-01.02:41:08::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2026-07-01.02:41:08::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-07-01.02:41:08::SCWMssOS::Copying to export directory.
+TRACE::2026-07-01.02:41:08::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-07-01.02:41:08::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-07-01.02:41:08::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-07-01.02:41:08::SCWSystem::Completed Processing the sysconfig GH_HW
+LOG::2026-07-01.02:41:08::SCWPlatform::Completed generating the artifacts for system configuration GH_HW
+TRACE::2026-07-01.02:41:08::SCWPlatform::Started preparing the platform 
+TRACE::2026-07-01.02:41:08::SCWSystem::Writing the bif file for system config GH_HW
+TRACE::2026-07-01.02:41:08::SCWSystem::dir created 
+TRACE::2026-07-01.02:41:08::SCWSystem::Writing the bif 
+TRACE::2026-07-01.02:41:08::SCWPlatform::Started writing the spfm file 
+TRACE::2026-07-01.02:41:08::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-07-01.02:41:08::SCWPlatform::Completed generating the platform
+TRACE::2026-07-01.02:41:08::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:41:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:41:08::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:41:08::SCWMssOS::Saving the mss changes D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-07-01.02:41:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-07-01.02:41:08::SCWMssOS::Commit changes completed.
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:08::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:08::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:08::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:08::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWWriter::formatted JSON is {
+	"platformName":	"GH_HW",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"GH_HW",
+	"platHandOff":	"D:/Proyecto-02-SEP/GUITAR_HERO_HW/GUITAR_HERO_HW/diagrama_bloques_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/diagrama_bloques_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"GH_HW",
+	"systems":	[{
+			"systemName":	"GH_HW",
+			"systemDesc":	"GH_HW",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"GH_HW",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"8100e137e411e78ea5c7dfa1eaf66394",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"cab96dc776956108f9cea29aec71d042",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-07-01.02:41:08::SCWPlatform::updated the xpfm file.
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to open the hw design at D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA given D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA absoulate path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform::DSA directory D:/Proyecto-02-SEP/Vitis/GH_HW/hw
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Platform Path D:/Proyecto-02-SEP/Vitis/GH_HW/hw/diagrama_bloques_wrapper.xsa
+TRACE::2026-07-01.02:41:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2026-07-01.02:41:08::SCWPlatform::Trying to set the existing hwdb with name diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Opened existing hwdb diagrama_bloques_wrapper_9
+TRACE::2026-07-01.02:41:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-07-01.02:41:08::SCWMssOS::Checking the sw design at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2026-07-01.02:41:08::SCWMssOS::DEBUG:  swdes dump  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Proyecto-02-SEP/Vitis/GH_HW/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2026-07-01.02:41:08::SCWMssOS::Sw design exists and opened at  D:/Proyecto-02-SEP/Vitis/GH_HW/ps7_cortexa9_0/standalone_domain/bsp/system.mss

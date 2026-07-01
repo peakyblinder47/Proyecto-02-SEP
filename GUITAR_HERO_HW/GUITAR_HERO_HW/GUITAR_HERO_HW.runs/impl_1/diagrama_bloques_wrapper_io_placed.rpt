@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date                      : Thu Jun 18 00:33:06 2026
+| Date                      : Wed Jul  1 02:37:20 2026
 | Host                      : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 | Command                   : report_io -file diagrama_bloques_wrapper_io_placed.rpt
 | Design                    : diagrama_bloques_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           146 |
+|           145 |
 +---------------+
 
 
@@ -231,7 +231,7 @@ Table of Contents
 | K14        |                   | High Range | IO_L20P_T3_AD6P_35      | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K15        |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K16        |                   | High Range | IO_L24P_T3_AD15P_35     | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| K17        | clk               | High Range | IO_L12P_T1_MRCC_35      | INPUT         | LVCMOS33           |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| K17        |                   | High Range | IO_L12P_T1_MRCC_35      | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K18        |                   | High Range | IO_L12N_T1_MRCC_35      | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K19        |                   | High Range | IO_L10P_T1_AD11P_35     | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K20        |                   | High Range | VCCO_35                 | VCCO          |                    |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Jun 12 12:48:22 2026
+| Date         : Wed Jul  1 02:35:15 2026
 | Host         : LAPTOP-NHP826N0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.rpt -pb diagrama_bloques_BUZZER_AXI_0_1_utilization_synth.pb
 | Design       : diagrama_bloques_BUZZER_AXI_0_1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  120 |     0 |     17600 |  0.68 |
-|   LUT as Logic          |  120 |     0 |     17600 |  0.68 |
+| Slice LUTs*             |  184 |     0 |     17600 |  1.05 |
+|   LUT as Logic          |  184 |     0 |     17600 |  1.05 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
 | Slice Registers         |  145 |     0 |     35200 |  0.41 |
 |   Register as Flip Flop |  145 |     0 |     35200 |  0.41 |
@@ -148,13 +148,13 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  141 |        Flop & Latch |
-| LUT6     |   58 |                 LUT |
-| LUT4     |   33 |                 LUT |
-| LUT3     |   29 |                 LUT |
-| LUT5     |   20 |                 LUT |
-| CARRY4   |   16 |          CarryLogic |
-| LUT2     |   10 |                 LUT |
-| LUT1     |    7 |                 LUT |
+| LUT6     |   68 |                 LUT |
+| LUT3     |   48 |                 LUT |
+| LUT5     |   45 |                 LUT |
+| LUT2     |   41 |                 LUT |
+| LUT4     |   30 |                 LUT |
+| CARRY4   |   30 |          CarryLogic |
+| LUT1     |    8 |                 LUT |
 | FDSE     |    4 |        Flop & Latch |
 | RAMB36E1 |    1 |        Block Memory |
 +----------+------+---------------------+
