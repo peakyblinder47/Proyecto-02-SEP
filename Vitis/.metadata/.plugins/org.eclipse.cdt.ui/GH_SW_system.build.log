@@ -1,4 +1,4 @@
-12:32:54 **** Incremental Build of configuration Debug for project GH_SW_system ****
+17:32:58 **** Incremental Build of configuration Debug for project GH_SW_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 58886 D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm standalone_domain D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/system.bif
@@ -6,5 +6,5 @@ sdcard_gen --xpfm D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm --sys_c
 creating BOOT.BIN using D:/Proyecto-02-SEP/Vitis/GH_SW/_ide/bitstream/diagrama_bloques_wrapper.bit
 Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-12:33:04 Build Finished (took 10s.167ms)
+17:33:08 Build Finished (took 9s.725ms)
 

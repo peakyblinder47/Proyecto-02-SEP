@@ -391,7 +391,7 @@ void RST_HIGH(void)
 
 }
 
-//Esta función la recomendó la IA para optimizar la impresión de imágenes y hacerlas por bloques
+//Esta función la recomendó e hizo la IA para optimizar la impresión de imágenes y hacerlas por bloques
 //La usarememos para poner las flechas en la imagen
 void LCD_SetBlockColor(POINT Xstart,
                        POINT Ystart,

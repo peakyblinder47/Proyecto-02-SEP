@@ -12,4 +12,5 @@ void ActualizarFlechas(u32 tiempo_cancion);
 int Golpear(u8 lane, u32 tiempo_cancion);
 void ResetPuntaje(void);
 int ObtenerPuntaje(void);
+void RestarScore(int puntos);
 #endif

@@ -123,6 +123,14 @@ void ResetPuntaje(void){
 	puntaje = 0;
 }
 
+void RestarScore(int puntos){
+	if (puntaje >= puntos){
+		puntaje -= puntos;
+	} else{
+		puntaje = 0;
+	}
+}
+
 int ObtenerPuntaje(void){
 	return puntaje;
 }

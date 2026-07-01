@@ -81,6 +81,7 @@ static volatile int Joytick = 0;
 // Para contar las lecturas del sensor bajo el umbral
 static int lecturas_luz_baja = 0;
 
+
 //Typedef para la máquina de estados principal
 typedef enum{
 	MENU,
@@ -210,6 +211,18 @@ static void AudioTimerHandler(void *CallBackRef, u8 TmrCtrl)
         if (SensorEnableTimer) {
         	Joytick = 1; //Lectura del Joystick en cada tick
 
+        	int MicLec = read_MIC(); //Lectura del micrófono
+
+        	if (Audio_State() == PLAYING && !JuegoCongelado){
+        		MicLec -= 512;
+        		if (abs(MicLec) > 100){
+        			RestarScore(1);
+        			xil_printf("Puntaje descontado!\n");
+        		}
+        	}
+
+        	int MicTick = 1;
+
             sensor_div_cntr++; //Hacemos que el sensor se revise de forma interrumpida
             if (sensor_div_cntr >= SENSOR_DIV){
             	sensor_div_cntr = 0;
@@ -308,10 +321,29 @@ void ReadPrintSensores(void)
     xil_printf(" | TEMP = %d C\r\n", temp_c);
 }
 
+int LeerTemp(int *temp_out)
+{
+    int temp_c;
+
+    temp_c = read_tmp();
+
+    if (temp_c < -100) {
+        xil_printf("[TEMP] Error leyendo TMP\r\n");
+        return XST_FAILURE;
+    }
+
+    *temp_out = temp_c;
+
+    //xil_printf("[TEMP] TEMP = %d C\r\n", temp_c);
+
+    return XST_SUCCESS;
+}
+
+
 //revisamos la luz que registra el sensor
 // Lee solamente la luz y retorna el valor en lux.
 // Retorna XST_SUCCESS si la lectura fue válida.
-int LeerLuzJuego(float *lux_out)
+int LeerLuzJuego(float *lux_out, int print)
 {
     int raw_luz;
     float lux;
@@ -327,9 +359,9 @@ int LeerLuzJuego(float *lux_out)
 
     *lux_out = lux;
 
-    xil_printf("[LUZ] ");
-    print_float_2dec("LUX", lux, "lux");
-    xil_printf("\r\n");
+    //xil_printf("[LUZ] ");
+    //print_float_2dec("LUX", lux, "lux");
+    //xil_printf("\r\n");
 
     return XST_SUCCESS;
 }
@@ -414,16 +446,20 @@ static void JoystickControl(Direccion *pos_anterior, int *pos_x, int *pos_y, int
 void RevisarCongeladoLuz(Estados_FSM *estado)
 {
     float lux_actual;
+    int temp_actual;
 
     // Solo tiene sentido revisar luz durante PLAY o CONGELADO.
     if (*estado != PLAY && *estado != CONGELADO) {
         return;
     }
 
-    if (LeerLuzJuego(&lux_actual) != XST_SUCCESS) {
+    if (LeerLuzJuego(&lux_actual, *estado == PLAY ) != XST_SUCCESS) {
         return;
     }
 
+    if (*estado == PLAY){
+    	LeerTemp(&temp_actual);
+    }
     // Si estamos jugando y la luz baja mucho, congelamos.
     // Si estamos jugando, revisamos si la luz está bajo el umbral.
     // No congelamos inmediatamente: primero exigimos varias lecturas bajas seguidas.
@@ -506,7 +542,7 @@ int main(void)
         return XST_FAILURE;
     }
 
-    //Inicializa ADC
+    //Inicializa ADC (Con el que usaremos el Joystick y el Micrófono)
     status = init_adc(&SpiInstance1, SPI_DEVICE_ID_1);
     if (status != XST_SUCCESS) {
         xil_printf("ERROR: no se pudo inicializar ADC/SPI del joystick\r\n");

@@ -34,11 +34,23 @@ int init_IIC() {
 }
 
 int read_tmp(){
+	int sent_reg;
+	int received;
 	SendBuffer[0] = 0x01; 																//TEMPERATURE MEASUREMENT REGISTER ADDRESS
-	XIic_Send(iic.BaseAddress, TMP_ADDR, (u8 *)&SendBuffer, 1, XIIC_REPEATED_START);	//SEND FROM ZYBO TO BOOSTER THE TEMPERATURE REGISTER THROUGH SDA BUS
-	XIic_Recv(iic.BaseAddress, TMP_ADDR, (u8 *)&RecvBuffer, 2, XIIC_STOP);				//RECIEVE THE TMP MEASURED FROM BOOSTER
-	val = (RecvBuffer[0] << 8) | (RecvBuffer[1]);
+
+	sent_reg = XIic_Send(iic.BaseAddress, TMP_ADDR, (u8 *)&SendBuffer, 1, XIIC_REPEATED_START);	//SEND FROM ZYBO TO BOOSTER THE TEMPERATURE REGISTER THROUGH SDA BUS
+
+	received = XIic_Recv(iic.BaseAddress, TMP_ADDR, (u8 *)&RecvBuffer, 2, XIIC_STOP);				//RECIEVE THE TMP MEASURED FROM BOOSTER
+
+	if (sent_reg != 1 || received != 2){
+		xil_printf("[TEMP] Error lectura: sent_reg=%d received=%d\r\n",
+				sent_reg,received);
+		return -1000;
+	}
+    val = (int16_t)(((u16)RecvBuffer[0] << 8) | RecvBuffer[1]);
+
 	temp = val / 128;																	//CELSIUS DEGREES
+
 	return temp;
 }
 
@@ -81,7 +93,7 @@ int read_opt()
             XIIC_STOP
         );
 
-        xil_printf("[OPT] config sent=%d\r\n", sent_config);
+        //xil_printf("[OPT] config sent=%d\r\n", sent_config);
 
         if (sent_config != 3) {
             xil_printf("[OPT] ERROR: no se pudo configurar OPT3001, sent_config=%d\r\n", sent_config);
@@ -123,8 +135,8 @@ int read_opt()
 
     Lux = ((u16)RecvBuffer[0] << 8) | RecvBuffer[1];
 
-    xil_printf("[OPT] sent_reg=%d received=%d raw=0x%04X b0=0x%02X b1=0x%02X\r\n",
-               sent_reg, received, Lux, RecvBuffer[0], RecvBuffer[1]);
+    //xil_printf("[OPT] sent_reg=%d received=%d raw=0x%04X b0=0x%02X b1=0x%02X\r\n",
+               //sent_reg, received, Lux, RecvBuffer[0], RecvBuffer[1]);
 
     return Lux;
 }

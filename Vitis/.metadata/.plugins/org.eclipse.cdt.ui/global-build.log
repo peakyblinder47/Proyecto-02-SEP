@@ -1,13 +1,13 @@
 Nothing to build in platform 'GH_HW'
 
-12:32:53 **** Incremental Build of configuration Debug for project GH_SW ****
+17:32:57 **** Incremental Build of configuration Debug for project GH_SW ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
-12:32:54 **** Incremental Build of configuration Debug for project GH_SW_system ****
+17:32:58 **** Incremental Build of configuration Debug for project GH_SW_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 58886 D:/Proyecto-02-SEP/Vitis/GH_HW/export/GH_HW/GH_HW.xpfm standalone_domain D:/Proyecto-02-SEP/Vitis/GH_SW_system/Debug/system.bif
